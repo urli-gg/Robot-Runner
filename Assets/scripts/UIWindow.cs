@@ -4,9 +4,24 @@ using NaughtyAttributes;
 
 public class UIWindow : MonoBehaviour
 {
+    [Header("Data")]
+    [SerializeField] private string _id;
+
+    [Header("UI Settings")]
     [SerializeField] private RectTransform _canvasRectTransform;
     [SerializeField] private CanvasGroup _canvasGroup;
     [SerializeField] private bool _hideOnStart;
+
+    [Header("Animation Settings")]
+    [SerializeField] private float showDuration = 0.5f;
+    [SerializeField] private float hideDuration = 0.5f;
+
+    [SerializeField] private Ease showEase = Ease.OutBack;
+    [SerializeField] private Ease hideEase = Ease.InBack;
+
+    public string Id =>_id;
+
+
     void Start()
     {
         Initalize();
