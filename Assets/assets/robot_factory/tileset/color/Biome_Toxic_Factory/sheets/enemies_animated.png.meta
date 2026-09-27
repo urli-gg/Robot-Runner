@@ -1,0 +1,2223 @@
+fileFormatVersion: 2
+guid: 6d1e7862a2936f94680d1d0c8a8899a3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5190320401035590315
+    second: enemies_animated_0
+  - first:
+      213: -588904520328770063
+    second: enemies_animated_1
+  - first:
+      213: 4003182396475803859
+    second: enemies_animated_2
+  - first:
+      213: 2838948856329844103
+    second: enemies_animated_3
+  - first:
+      213: -7303440327696207313
+    second: enemies_animated_4
+  - first:
+      213: 6529166682500379096
+    second: enemies_animated_5
+  - first:
+      213: 7248357900892573443
+    second: enemies_animated_6
+  - first:
+      213: 1097027983706723666
+    second: enemies_animated_7
+  - first:
+      213: -507859756384914403
+    second: enemies_animated_8
+  - first:
+      213: -3125897126613187459
+    second: enemies_animated_9
+  - first:
+      213: 1472616706255591151
+    second: enemies_animated_10
+  - first:
+      213: 2933927334120999698
+    second: enemies_animated_11
+  - first:
+      213: -26407231390381026
+    second: enemies_animated_12
+  - first:
+      213: 7526104627395123356
+    second: enemies_animated_13
+  - first:
+      213: -8881404102108793122
+    second: enemies_animated_14
+  - first:
+      213: -1149137052747644305
+    second: enemies_animated_15
+  - first:
+      213: 4397320145866658221
+    second: enemies_animated_16
+  - first:
+      213: 3479168870751503593
+    second: enemies_animated_17
+  - first:
+      213: -744197720331963544
+    second: enemies_animated_18
+  - first:
+      213: -3007674209435436418
+    second: enemies_animated_19
+  - first:
+      213: -2369817559091805607
+    second: enemies_animated_20
+  - first:
+      213: -6569235885440336104
+    second: enemies_animated_21
+  - first:
+      213: 3820886920378452685
+    second: enemies_animated_22
+  - first:
+      213: 6903609521575717318
+    second: enemies_animated_23
+  - first:
+      213: 5150251851349463693
+    second: enemies_animated_24
+  - first:
+      213: -8724338258036708189
+    second: enemies_animated_25
+  - first:
+      213: 9133291057298958241
+    second: enemies_animated_26
+  - first:
+      213: -7223254071981669779
+    second: enemies_animated_27
+  - first:
+      213: -2305585022940820442
+    second: enemies_animated_28
+  - first:
+      213: 6366596419619520246
+    second: enemies_animated_29
+  - first:
+      213: 2810248807021664749
+    second: enemies_animated_30
+  - first:
+      213: 7053319719276939789
+    second: enemies_animated_31
+  - first:
+      213: 737483513485270015
+    second: enemies_animated_32
+  - first:
+      213: -243317089269009000
+    second: enemies_animated_33
+  - first:
+      213: -7494975047838619915
+    second: enemies_animated_34
+  - first:
+      213: -2544496338411734154
+    second: enemies_animated_35
+  - first:
+      213: -270560350858212909
+    second: enemies_animated_36
+  - first:
+      213: -6593212730103240319
+    second: enemies_animated_37
+  - first:
+      213: 3280570503976198181
+    second: enemies_animated_38
+  - first:
+      213: -352142331350993803
+    second: enemies_animated_39
+  - first:
+      213: 1257850380609849544
+    second: enemies_animated_40
+  - first:
+      213: -3879046564500569518
+    second: enemies_animated_41
+  - first:
+      213: 3665195093703402917
+    second: enemies_animated_42
+  - first:
+      213: 8070891479089310130
+    second: enemies_animated_43
+  - first:
+      213: -8597740042934504980
+    second: enemies_animated_44
+  - first:
+      213: -6704829786470374639
+    second: enemies_animated_45
+  - first:
+      213: -5451755248115958670
+    second: enemies_animated_46
+  - first:
+      213: -5996916677212259990
+    second: enemies_animated_47
+  - first:
+      213: -2547128826162110032
+    second: enemies_animated_48
+  - first:
+      213: -6506811636704312847
+    second: enemies_animated_49
+  - first:
+      213: -4075960783777456367
+    second: enemies_animated_50
+  - first:
+      213: 8555156910689920545
+    second: enemies_animated_51
+  - first:
+      213: -2700846223363579348
+    second: enemies_animated_52
+  - first:
+      213: -6330544412612347623
+    second: enemies_animated_53
+  - first:
+      213: 6974078179349135898
+    second: enemies_animated_54
+  - first:
+      213: 3236660718175883407
+    second: enemies_animated_55
+  - first:
+      213: -6155099842867838095
+    second: enemies_animated_56
+  - first:
+      213: -6203390022470157898
+    second: enemies_animated_57
+  - first:
+      213: 2480914603207042815
+    second: enemies_animated_58
+  - first:
+      213: -6357959451280825421
+    second: enemies_animated_59
+  - first:
+      213: 218875065194283430
+    second: enemies_animated_60
+  - first:
+      213: 8445482489667785624
+    second: enemies_animated_61
+  - first:
+      213: 398701129935495550
+    second: enemies_animated_62
+  - first:
+      213: 4390667259351330955
+    second: enemies_animated_63
+  - first:
+      213: -5493185066448779741
+    second: enemies_animated_64
+  - first:
+      213: -5810864365668273073
+    second: enemies_animated_65
+  - first:
+      213: 3193830253515029860
+    second: enemies_animated_66
+  - first:
+      213: -3092544167884554296
+    second: enemies_animated_67
+  - first:
+      213: -7747589282565018666
+    second: enemies_animated_68
+  - first:
+      213: -7263351429066388961
+    second: enemies_animated_69
+  - first:
+      213: 4867248985588964249
+    second: enemies_animated_70
+  - first:
+      213: 755383823161586572
+    second: enemies_animated_71
+  - first:
+      213: 6069996655810552602
+    second: enemies_animated_72
+  - first:
+      213: -6398841977530665684
+    second: enemies_animated_73
+  - first:
+      213: 3192732381422615982
+    second: enemies_animated_74
+  - first:
+      213: -687135075381068353
+    second: enemies_animated_75
+  - first:
+      213: -7628290068886664539
+    second: enemies_animated_76
+  - first:
+      213: -1935246057914638663
+    second: enemies_animated_77
+  - first:
+      213: 3027978773124025583
+    second: enemies_animated_78
+  - first:
+      213: 7266787692809998071
+    second: enemies_animated_79
+  - first:
+      213: 3303335053334834357
+    second: enemies_animated_80
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enemies_animated_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 221
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5558fc1481748f7b0800000000000000
+      internalID: -5190320401035590315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 221
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fd8e2b757ac3d7f0800000000000000
+      internalID: -588904520328770063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 221
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d889090e292e8730800000000000000
+      internalID: 4003182396475803859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 225
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 785ba0581f8f56720800000000000000
+      internalID: 2838948856329844103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_4
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 222
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f22b76d97b7f4aa90800000000000000
+      internalID: -7303440327696207313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_5
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 223
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d130c531824c9a50800000000000000
+      internalID: 6529166682500379096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_6
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 221
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30f099f7b17579460800000000000000
+      internalID: 7248357900892573443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_7
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 221
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 255908d832d693f00800000000000000
+      internalID: 1097027983706723666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_8
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 221
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d14f5f80e38b3f8f0800000000000000
+      internalID: -507859756384914403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_9
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 221
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d748ec300259e94d0800000000000000
+      internalID: -3125897126613187459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_10
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 221
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe69ba29719cf6410800000000000000
+      internalID: 1472616706255591151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_11
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 221
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21b4713ad5767b820800000000000000
+      internalID: 2933927334120999698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_12
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 225
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1c897153ce22aff0800000000000000
+      internalID: -26407231390381026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_13
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 222
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c985f4a9848127860800000000000000
+      internalID: 7526104627395123356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_14
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 223
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed6bb1b560aeeb480800000000000000
+      internalID: -8881404102108793122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_15
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 187
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f62ccbc50f17d00f0800000000000000
+      internalID: -1149137052747644305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_16
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 187
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da11d0aef5b660d30800000000000000
+      internalID: 4397320145866658221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_17
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 187
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e48dbe87ad784030800000000000000
+      internalID: 3479168870751503593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_18
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 190
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86335f4cd141ca5f0800000000000000
+      internalID: -744197720331963544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_19
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 190
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7a3f7aed389246d0800000000000000
+      internalID: -3007674209435436418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_20
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 192
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95289df5c77bc1fd0800000000000000
+      internalID: -2369817559091805607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_21
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 187
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f749a74c265d4a0800000000000000
+      internalID: -6569235885440336104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_22
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 187
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dca08100964860530800000000000000
+      internalID: 3820886920378452685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_23
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 187
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c96681784c8ecf50800000000000000
+      internalID: 6903609521575717318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_24
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 187
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d829b7785ce597740800000000000000
+      internalID: 5150251851349463693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_25
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 187
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ac2f5de39cece680800000000000000
+      internalID: -8724338258036708189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_26
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 187
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a76e8c83d7ffbe70800000000000000
+      internalID: 9133291057298958241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_27
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 190
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d62832521b8d1cb90800000000000000
+      internalID: -7223254071981669779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_28
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 190
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62cc62c13aae000e0800000000000000
+      internalID: -2305585022940820442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_29
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 192
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fef1b346b1ba5850800000000000000
+      internalID: 6366596419619520246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_30
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 153
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de9ddf09662000720800000000000000
+      internalID: 2810248807021664749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_31
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 153
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a82c22aec62e160800000000000000
+      internalID: 7053319719276939789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_32
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 153
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffb1ff029511c3a00800000000000000
+      internalID: 737483513485270015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_33
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 153
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 895b65e75609f9cf0800000000000000
+      internalID: -243317089269009000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_34
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 150
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f6a92177ef7cf790800000000000000
+      internalID: -7494975047838619915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_35
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 158
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67bbfa0cf0220bcd0800000000000000
+      internalID: -2544496338411734154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_36
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 153
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d98acc5bc6ce3cf0800000000000000
+      internalID: -270560350858212909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_37
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 153
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 189ec9d44f33084a0800000000000000
+      internalID: -6593212730103240319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_38
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 153
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 520202efd7de68d20800000000000000
+      internalID: 3280570503976198181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_39
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 153
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57432755a60fc1bf0800000000000000
+      internalID: -352142331350993803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_40
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 153
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c807dcb148c47110800000000000000
+      internalID: 1257850380609849544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_41
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 153
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2528ebf93bbda2ac0800000000000000
+      internalID: -3879046564500569518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_42
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 153
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a522b8c4836dd230800000000000000
+      internalID: 3665195093703402917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_43
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 150
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b968dfe901910070800000000000000
+      internalID: 8070891479089310130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_44
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 158
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce1bcb5dbf0bea880800000000000000
+      internalID: -8597740042934504980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_45
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 119
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 113a9f935d8a3f2a0800000000000000
+      internalID: -6704829786470374639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_46
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 128
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27c3da98c797754b0800000000000000
+      internalID: -5451755248115958670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_47
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 119
+        width: 33
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a69b52b1e0ca6cca0800000000000000
+      internalID: -5996916677212259990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_48
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 119
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b1237fe3d7c6acd0800000000000000
+      internalID: -2547128826162110032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_49
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 123
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f18cdd7a4923b5a0800000000000000
+      internalID: -6506811636704312847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_50
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 119
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f958433474f67c0800000000000000
+      internalID: -4075960783777456367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_51
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 119
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 126a66312e50ab670800000000000000
+      internalID: 8555156910689920545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_52
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 119
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2265776baaa48ad0800000000000000
+      internalID: -2700846223363579348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_53
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 119
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 919386bb5636528a0800000000000000
+      internalID: -6330544412612347623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_54
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 119
+        width: 34
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1288e36727e8c060800000000000000
+      internalID: 6974078179349135898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_55
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 119
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f80955d46cdeaec20800000000000000
+      internalID: 3236660718175883407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_56
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 119
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 173ccc4dd41b49aa0800000000000000
+      internalID: -6155099842867838095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_57
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 119
+        width: 34
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b9b67b34a129e9a0800000000000000
+      internalID: -6203390022470157898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_58
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 123
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff62c3aefaafd6220800000000000000
+      internalID: 2480914603207042815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_59
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 119
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b3a112a09df3c7a0800000000000000
+      internalID: -6357959451280825421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_60
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 119
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a1881f46b9990300800000000000000
+      internalID: 218875065194283430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_61
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 119
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8931e690491643570800000000000000
+      internalID: 8445482489667785624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_62
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 119
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e712a55b098788500800000000000000
+      internalID: 398701129935495550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_63
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 85
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b80f2901c98ceec30800000000000000
+      internalID: 4390667259351330955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_64
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 85
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32607d4494944c3b0800000000000000
+      internalID: -5493185066448779741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_65
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 85
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f44fd5e85a9ab5fa0800000000000000
+      internalID: -5810864365668273073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_66
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 89
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46db8a5a1b3c25c20800000000000000
+      internalID: 3193830253515029860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_67
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 86
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cff80dd6731515d0800000000000000
+      internalID: -3092544167884554296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_68
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 87
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dba61398980b7490800000000000000
+      internalID: -7747589282565018666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_69
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 89
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1a0cafab54633b90800000000000000
+      internalID: -7263351429066388961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_70
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 86
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99b19632a21fb8340800000000000000
+      internalID: 4867248985588964249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_71
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 87
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c837f90c599ab7a00800000000000000
+      internalID: 755383823161586572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_72
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 57
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a13a5695cc5fc3450800000000000000
+      internalID: 6069996655810552602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_73
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 51
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c253d6bbf1fb237a0800000000000000
+      internalID: -6398841977530665684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_74
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 51
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eadf4916f2dde4c20800000000000000
+      internalID: 3192732381422615982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_75
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 56
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbd333f1a4ec676f0800000000000000
+      internalID: -687135075381068353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_76
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 51
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aace58499ed22690800000000000000
+      internalID: -7628290068886664539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_77
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 53
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bed505b6ff9425e0800000000000000
+      internalID: -1935246057914638663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_78
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 56
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fec0b77b6aa850a20800000000000000
+      internalID: 3027978773124025583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_79
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 51
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fece10d7e0d8d460800000000000000
+      internalID: 7266787692809998071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_animated_80
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 53
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bc6e1caabdc7dd20800000000000000
+      internalID: 3303335053334834357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      enemies_animated_0: -5190320401035590315
+      enemies_animated_1: -588904520328770063
+      enemies_animated_10: 1472616706255591151
+      enemies_animated_11: 2933927334120999698
+      enemies_animated_12: -26407231390381026
+      enemies_animated_13: 7526104627395123356
+      enemies_animated_14: -8881404102108793122
+      enemies_animated_15: -1149137052747644305
+      enemies_animated_16: 4397320145866658221
+      enemies_animated_17: 3479168870751503593
+      enemies_animated_18: -744197720331963544
+      enemies_animated_19: -3007674209435436418
+      enemies_animated_2: 4003182396475803859
+      enemies_animated_20: -2369817559091805607
+      enemies_animated_21: -6569235885440336104
+      enemies_animated_22: 3820886920378452685
+      enemies_animated_23: 6903609521575717318
+      enemies_animated_24: 5150251851349463693
+      enemies_animated_25: -8724338258036708189
+      enemies_animated_26: 9133291057298958241
+      enemies_animated_27: -7223254071981669779
+      enemies_animated_28: -2305585022940820442
+      enemies_animated_29: 6366596419619520246
+      enemies_animated_3: 2838948856329844103
+      enemies_animated_30: 2810248807021664749
+      enemies_animated_31: 7053319719276939789
+      enemies_animated_32: 737483513485270015
+      enemies_animated_33: -243317089269009000
+      enemies_animated_34: -7494975047838619915
+      enemies_animated_35: -2544496338411734154
+      enemies_animated_36: -270560350858212909
+      enemies_animated_37: -6593212730103240319
+      enemies_animated_38: 3280570503976198181
+      enemies_animated_39: -352142331350993803
+      enemies_animated_4: -7303440327696207313
+      enemies_animated_40: 1257850380609849544
+      enemies_animated_41: -3879046564500569518
+      enemies_animated_42: 3665195093703402917
+      enemies_animated_43: 8070891479089310130
+      enemies_animated_44: -8597740042934504980
+      enemies_animated_45: -6704829786470374639
+      enemies_animated_46: -5451755248115958670
+      enemies_animated_47: -5996916677212259990
+      enemies_animated_48: -2547128826162110032
+      enemies_animated_49: -6506811636704312847
+      enemies_animated_5: 6529166682500379096
+      enemies_animated_50: -4075960783777456367
+      enemies_animated_51: 8555156910689920545
+      enemies_animated_52: -2700846223363579348
+      enemies_animated_53: -6330544412612347623
+      enemies_animated_54: 6974078179349135898
+      enemies_animated_55: 3236660718175883407
+      enemies_animated_56: -6155099842867838095
+      enemies_animated_57: -6203390022470157898
+      enemies_animated_58: 2480914603207042815
+      enemies_animated_59: -6357959451280825421
+      enemies_animated_6: 7248357900892573443
+      enemies_animated_60: 218875065194283430
+      enemies_animated_61: 8445482489667785624
+      enemies_animated_62: 398701129935495550
+      enemies_animated_63: 4390667259351330955
+      enemies_animated_64: -5493185066448779741
+      enemies_animated_65: -5810864365668273073
+      enemies_animated_66: 3193830253515029860
+      enemies_animated_67: -3092544167884554296
+      enemies_animated_68: -7747589282565018666
+      enemies_animated_69: -7263351429066388961
+      enemies_animated_7: 1097027983706723666
+      enemies_animated_70: 4867248985588964249
+      enemies_animated_71: 755383823161586572
+      enemies_animated_72: 6069996655810552602
+      enemies_animated_73: -6398841977530665684
+      enemies_animated_74: 3192732381422615982
+      enemies_animated_75: -687135075381068353
+      enemies_animated_76: -7628290068886664539
+      enemies_animated_77: -1935246057914638663
+      enemies_animated_78: 3027978773124025583
+      enemies_animated_79: 7266787692809998071
+      enemies_animated_8: -507859756384914403
+      enemies_animated_80: 3303335053334834357
+      enemies_animated_9: -3125897126613187459
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

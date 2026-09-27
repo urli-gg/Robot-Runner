@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextureAtlas imagePath="vfx_gray_animated.png" width="256" height="256">
+    <!--VFX Steam-->
+	<sprite n="vfx_steam01.png" x="2" y="2" w="32" h="32" pX="0.0" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="vfx_steam02.png" x="36" y="2" w="32" h="32" pX="0.0" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="vfx_steam03.png" x="70" y="2" w="32" h="32" pX="0.0" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="vfx_steam04.png" x="104" y="2" w="32" h="32" pX="0.0" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="vfx_steam05.png" x="138" y="2" w="32" h="32" pX="0.0" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="vfx_steam06.png" x="172" y="2" w="32" h="32" pX="0.0" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    
+	<!--Explosion-->
+    <sprite n="Explosion_01.png" x="2" y="36" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="Explosion_02.png" x="36" y="36" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="Explosion_03.png" x="70" y="36" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="Explosion_04.png" x="104" y="36" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="Explosion_05.png" x="138" y="36" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="Explosion_06.png" x="172" y="36" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+   
+    <!--Plasma Explosion-->
+    <sprite n="Plasma_Explosion01.png" x="2" y="70" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="Plasma_Explosion02.png" x="36" y="70" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="Plasma_Explosion03.png" x="70" y="70" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="Plasma_Explosion04.png" x="104" y="70" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="Plasma_Explosion05.png" x="138" y="70" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="Plasma_Explosion06.png" x="172" y="70" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="Plasma_Explosion07.png" x="206" y="70" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    
+	<!--Spark -->
+	<sprite n="SparkA_01.png" x="2" y="104" w="32" h="32" pX="0.5" pY="1.0" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="SparkA_02.png" x="36" y="104" w="32" h="32" pX="0.5" pY="1.0" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="SparkA_03.png" x="70" y="104" w="32" h="32" pX="0.5" pY="1.0" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="SparkB_01.png" x="104" y="104" w="32" h="32" pX="0.5" pY="0.0" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="SparkB_02.png" x="138" y="104" w="32" h="32" pX="0.5" pY="0.0" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="SparkB_03.png" x="172" y="104" w="32" h="32" pX="0.5" pY="0.0" oX="0" oY="0" oW="32" oH="32"/>
+    
+	<!--Normal Bullet-->
+	<sprite n="Bullet_Muzzle01.png" x="2" y="138" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="Bullet_Loop01.png" x="36" y="138" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="Bullet_Loop02.png" x="70" y="138" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="Bullet_Loop03.png" x="104" y="138" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="Bullet_Destroy01.png" x="138" y="138" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="Bullet_Destroy02.png" x="172" y="138" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="Bullet_Trail01.png" x="206" y="138" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    
+	<!--Plasma Bullet-->
+	<sprite n="PlasmaBullet_Muzzle01.png" x="2" y="172" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="PlasmaBullet_Loop01.png" x="36" y="172" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="PlasmaBullet_Loop02.png" x="70" y="172" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="PlasmaBullet_Loop03.png" x="104" y="172" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="PlasmaBullet_Destroy01.png" x="138" y="172" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="PlasmaBullet_Destroy02.png" x="172" y="172" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="PlasmaBullet_Trail01.png" x="206" y="172" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+
+    <!--Missile Bullet-->
+    <sprite n="MissileBullet_Muzzle01.png" x="2" y="206" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="MissileBullet_Loop01.png" x="36" y="206" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="MissileBullet_Loop02.png" x="70" y="206" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="MissileBullet_Loop03.png" x="104" y="206" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="MissileBullet_Destroy01.png" x="138" y="206" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="MissileBullet_Destroy02.png" x="172" y="206" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="MissileBullet_Trail01.png" x="206" y="206" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    
+</TextureAtlas>

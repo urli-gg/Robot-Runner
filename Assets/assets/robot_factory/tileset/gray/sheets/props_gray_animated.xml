@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextureAtlas imagePath="props_gray_animated.png" width="256" height="256">
+  <!--Electric Saw-->
+  <sprite n="ElectricSaw_Activation_01.png" x="2" y="104" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+  <sprite n="ElectricSaw_Activation_02.png" x="36" y="104" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+  <sprite n="ElectricSaw_Activation_03.png" x="70" y="104" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+  
+  <sprite n="ElectricSaw_Loop_01.png" x="2" y="138" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+  <sprite n="ElectricSaw_Loop_02.png" x="36" y="138" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+  <sprite n="ElectricSaw_Loop_03.png" x="70" y="138" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+ 
+  <!--Robotic Arm-->
+  <sprite n="RoboticArm_Grab_PingPong_01.png" x="2" y="206" w="32" h="32" pX="0.5" pY="0.0" oX="0" oY="0" oW="32" oH="32"/>
+  <sprite n="RoboticArm_Grab_PingPong_02.png" x="36" y="206" w="32" h="32" pX="0.5" pY="0.0" oX="0" oY="0" oW="32" oH="32"/>
+  <sprite n="RoboticArm_Grab_PingPong_03.png" x="70" y="206" w="32" h="32" pX="0.5" pY="0.0" oX="0" oY="0" oW="32" oH="32"/>
+  
+  <!--Conveyor-->
+  <sprite n="Conveyor_Loop_01.png" x="2" y="2" w="32" h="32" pX="0.0" pY="0.0" oX="0" oY="0" oW="32" oH="32"/>
+  <sprite n="Conveyor_Loop_02.png" x="36" y="2" w="32" h="32" pX="0.0" pY="0.0" oX="0" oY="0" oW="32" oH="32"/>
+  <sprite n="Conveyor_Loop_03.png" x="70" y="2" w="32" h="32" pX="0.0" pY="0.0" oX="0" oY="0" oW="32" oH="32"/>
+  <sprite n="Conveyor_ExtremeLeft_Loop_01.png" x="2" y="36" w="32" h="32" pX="0.0" pY="0.0" oX="0" oY="0" oW="32" oH="32"/>
+  <sprite n="Conveyor_ExtremeLeft_Loop_02.png" x="36" y="36" w="32" h="32" pX="0.0" pY="0.0" oX="0" oY="0" oW="32" oH="32"/>
+  <sprite n="Conveyor_ExtremeLeft_Loop_03.png" x="70" y="36" w="32" h="32" pX="0.0" pY="0.0" oX="0" oY="0" oW="32" oH="32"/>
+  <sprite n="Conveyor_ExtremeRight_Loop_01.png" x="2" y="70" w="32" h="32" pX="0.0" pY="0.0" oX="0" oY="0" oW="32" oH="32"/>
+  <sprite n="Conveyor_ExtremeRight_Loop_02.png" x="36" y="70" w="32" h="32" pX="0.0" pY="0.0" oX="0" oY="0" oW="32" oH="32"/>
+  <sprite n="Conveyor_ExtremeRight_Loop_03.png" x="70" y="70" w="32" h="32" pX="0.0" pY="0.0" oX="0" oY="0" oW="32" oH="32"/>
+  
+  <!--Toggle-->
+  <sprite n="Toggle_Activation_PingPong_01.png" x="2" y="172" w="32" h="32" pX="0.5" pY="1.0" oX="0" oY="0" oW="32" oH="32"/>
+  <sprite n="Toggle_Activation_PingPong_02.png" x="36" y="172" w="32" h="32" pX="0.5" pY="1.0" oX="0" oY="0" oW="32" oH="32"/>
+  <sprite n="Toggle_Activation_PingPong_03.png" x="70" y="172" w="32" h="32" pX="0.5" pY="1.0" oX="0" oY="0" oW="32" oH="32"/>
+  
+  <!--Doors-->
+  <sprite n="Door_Open_PingPong_01.png" x="104" y="2" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+  <sprite n="Door_Open_PingPong_02.png" x="138" y="2" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+  <sprite n="Door_Open_PingPong_03.png" x="172" y="2" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+  
+  <sprite n="Door_Unlock_PingPong_01.png" x="104" y="36" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+  <sprite n="Door_Unlock_PingPong_02.png" x="138" y="36" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+  <sprite n="Door_Unlock_PingPong_03.png" x="172" y="36" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+ 
+  <!--Liquids-->
+  <sprite n="Liquid_Loop_01.png" x="104" y="70" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+  <sprite n="Liquid_Loop_02.png" x="138" y="70" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+  <sprite n="Liquid_Loop_03.png" x="172" y="70" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+  
+  <sprite n="Fluid_Pipe_Flow_Loop_01.png" x="104" y="104" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+  <sprite n="Fluid_Pipe_Flow_Loop_02.png" x="138" y="104" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+  <sprite n="Fluid_Pipe_Flow_Loop_03.png" x="172" y="104" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+  
+  <sprite n="Fluid_WaterFall_Impact_Loop_01.png" x="104" y="138" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+  <sprite n="Fluid_WaterFall_Impact_Loop_02.png" x="138" y="138" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+  <sprite n="Fluid_WaterFall_Impact_Loop_03.png" x="172" y="138" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+ 
+  <sprite n="Liquid_Splash_01.png" x="104" y="172" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+  <sprite n="Liquid_Splash_02.png" x="138" y="172" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+  <sprite n="Liquid_Splash_03.png" x="172" y="172" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+ 
+  <!--Energy Reactor-->
+  <sprite n="Energy_Reactor_Destroy_01.png" x="104" y="206" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+  <sprite n="Energy_Reactor_Destroy_02.png" x="138" y="206" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+  <sprite n="Energy_Reactor_Destroy_03.png" x="172" y="206" w="32" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+ 
+</TextureAtlas>

@@ -1,0 +1,70 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+END USER LICENSE AGREEGMENT (EULA) ASSET PACK
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Asset Pack :Industrial Robot Factory 
+Copyright(c) 2026 CookieEfedu 
+Contact: cookieefedu.gamedev@gmail.com 
+Art Portafolio:https://www.deviantart.com/cookieefedu
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+1-GRANT OF LICENSE
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+ By Purchasing or Downloading this Asset Pack, you are Granted a Non-Exclusive, 
+Non-Transferable, 
+Worldwide License to Use the Included Art Assets Subject 
+to the Terms Outlined Below
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+2-PERMITED USES
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- COMMERCIAL & NON-COMMERCIAL: You may Use these Assets in Both Non-Commercial 
+and Commercial Vide Games, Interactive Applications, Animations, or Media.
+
+- MODIFICATIONS: You are Free to Edit, Recolor, Crop, Animate, or Modify the Assets as Needed to Fit your Specific Project.
+
+- EMBEDDING: You may embed these Assets within your Compiled Game Binaries, Executables, and Published Project Builds.
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+3-RESTRICTIONS
+------------------------------------------------
+
+- NO REDISTRIBUTION OR RESALE: You may NOT Resell, Sub-License, Share, Donate, or Redistribute these Original Source Files,
+  Edited Versions, or Parts of them as Standalone Assets, Tilesets, or Stock Images on any Marketplace, Website, or Repository.
+
+- NO NFT / BLOCKCHAIN: You may NOT Use these Assets or Derivative Works to Create, Mint, Sell or Associated with Non-Fungible Tokens (NFTs) , 
+  Blockchain Technology or Web3 Applications
+- NO AI TRAINING: You may NOT Use these Assets to Train Machine Learning or Generative Artificial Intelligence (AI) Models.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+4-ATTRIBUTIONS
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ - Credit is NOT Strictly Required, But it is Highly Appreciated!
+ 
+- If you Wish to Include Credit in your Game, you may Attribute or Credit Using the Following Format:
+
+  "2D Art by CookieEfedu(https://cookieefedu.itch.io)"
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+5-OWNERSHIP & COPYRIGHT
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  The creator ( CookieEfedu ) Retains Full Copyright and Intellectual Property 
+Rights Over 
+the Original Assets. This License Grants you the Right to USE the Assets, not Ownership of the Underlying Artwork.
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Thanks you for Supporting Indie Creators! Good Luck with your Game
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------

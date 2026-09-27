@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextureAtlas imagePath="small_props_gray.png" width="256" height="128">
+  
+   <!--ZipLines-->
+   <sprite n="ZipLine_VerticalA_01.png" x="66" y="18" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="ZipLine_VerticalA_02.png" x="66" y="34" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="ZipLine_VerticalA_03.png" x="66" y="50" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="ZipLine_HorizontalA_01.png" x="82" y="2" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="ZipLine_HorizontalA_02.png" x="98" y="2" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="ZipLine_HorizontalA_03.png" x="114" y="2" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+    
+   <!--Robot Pieces-->
+   <sprite n="Robot_Part_01.png" x="130" y="2" w="14" h="14" pX="0.5" pY="1.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="Robot_Part_02.png" x="130" y="18" w="14" h="14" pX="0.5" pY="1.0" oX="0" oY="0" oW="14" oH="14"/>
+   
+   <!--Light Sources-->
+   <sprite n="Lamp_01.png" x="82" y="50" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="Lamp_02.png" x="82" y="66" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="Led_01.png" x="82" y="18" w="14" h="14" pX="0.5" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="Led_02.png" x="98" y="18" w="14" h="14" pX="0.0" pY="0.5" oX="0" oY="0" oW="14" oH="14"/>
+   
+    
+   <!--Switchs-->
+   <sprite n="SwitchA_Off.png" x="34" y="66" w="14" h="14" pX="0.0" pY="0.5" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="SwitchA_On.png" x="50" y="66" w="14" h="14" pX="0.0" pY="0.5" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="SwitchB_Off.png" x="34" y="82" w="14" h="14" pX="0.0" pY="0.5" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="SwitchB_On.png" x="50" y="82" w="14" h="14" pX="0.0" pY="0.5" oX="0" oY="0" oW="14" oH="14"/>
+   
+   
+   <!-- On/Off Leds -->
+   <sprite n="LedOff_A.png" x="98" y="50" w="14" h="14" pX="0.5" pY="0.5" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="LedOff_B.png" x="98" y="66" w="14" h="14" pX="0.5" pY="0.5" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="LedOn_A.png" x="114" y="50" w="14" h="14" pX="0.5" pY="0.5" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="LedOn_B.png" x="114" y="66" w="14" h="14" pX="0.5" pY="0.5" oX="0" oY="0" oW="14" oH="14"/>
+   
+  
+   <!--Machines-->
+   <sprite n="MachineA_01.png" x="2" y="82" w="14" h="14" pX="0.5" pY="1.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="MachineA_02.png" x="2" y="98" w="14" h="14" pX="0.5" pY="1.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="MachineB.png" x="18" y="82" w="14" h="14" pX="0.5" pY="1.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="MachineC.png" x="18" y="98" w="14" h="14" pX="0.5" pY="1.0" oX="0" oY="0" oW="14" oH="14"/>
+
+   <!--Pipes-->  
+   <sprite n="PipeA_01.png" x="2" y="2" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="PipeA_02.png" x="18" y="2" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>  
+   <sprite n="PipeA_03.png" x="18" y="18" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="PipeA_04.png" x="2" y="18" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="PipeA_05.png" x="34" y="2" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="PipeA_06.png" x="50" y="2" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>  
+   <sprite n="PipeA_07.png" x="50" y="18" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="PipeA_08.png" x="34" y="18" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="PipeA_09.png" x="66" y="2" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="PipeA_10.png" x="2" y="34" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>  
+   <sprite n="PipeA_11.png" x="2" y="50" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="PipeA_12.png" x="18" y="34" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="PipeA_13.png" x="18" y="50" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="PipeA_14.png" x="34" y="34" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>  
+   <sprite n="PipeA_15.png" x="34" y="50" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="PipeA_16.png" x="50" y="34" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="PipeA_17.png" x="50" y="50" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   
+   <sprite n="PipeB_01.png" x="146" y="2" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="PipeB_02.png" x="162" y="2" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>  
+   <sprite n="PipeB_03.png" x="162" y="18" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="PipeB_04.png" x="146" y="18" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="PipeB_05.png" x="178" y="2" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="PipeB_06.png" x="194" y="2" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>  
+   <sprite n="PipeB_07.png" x="194" y="18" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="PipeB_08.png" x="178" y="18" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="PipeB_09.png" x="210" y="2" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="PipeB_10.png" x="146" y="34" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>  
+   <sprite n="PipeB_11.png" x="146" y="50" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="PipeB_12.png" x="162" y="34" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="PipeB_13.png" x="162" y="50" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="PipeB_14.png" x="178" y="34" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>  
+   <sprite n="PipeB_15.png" x="178" y="50" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="PipeB_16.png" x="194" y="34" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="PipeB_17.png" x="194" y="50" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   
+   <!--Iman Machine-->
+   <sprite n="Iman_01.png" x="82" y="34" w="14" h="14" pX="0.5" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="Iman_02.png" x="98" y="34" w="14" h="14" pX="0.0" pY="0.5" oX="0" oY="0" oW="14" oH="14"/>
+   
+   <!--Metal Pieces-->
+   <sprite n="Metal_Piece.png" x="2" y="66" w="14" h="14" pX="0.5" pY="1.0" oX="0" oY="0" oW="14" oH="14"/>
+  
+   <!--Chains-->
+   <sprite n="Chain.png" x="18" y="66" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+  
+   <!--Wires-->
+   <sprite n="Wire_01.png" x="114" y="18" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   <sprite n="Wire_02.png" x="114" y="34" w="14" h="14" pX="0.0" pY="0.0" oX="0" oY="0" oW="14" oH="14"/>
+   
+</TextureAtlas>

@@ -1,0 +1,2223 @@
+fileFormatVersion: 2
+guid: 39987dcf125fb684ba2cc8efa09ad9e7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2557055552373987783
+    second: enemies_gray_animated_0
+  - first:
+      213: -1013539784967970778
+    second: enemies_gray_animated_1
+  - first:
+      213: 5133412025345859822
+    second: enemies_gray_animated_2
+  - first:
+      213: 6732945123740991939
+    second: enemies_gray_animated_3
+  - first:
+      213: 8065122211872873594
+    second: enemies_gray_animated_4
+  - first:
+      213: 1356562020979276524
+    second: enemies_gray_animated_5
+  - first:
+      213: -215998543410200526
+    second: enemies_gray_animated_6
+  - first:
+      213: -2283740998787799076
+    second: enemies_gray_animated_7
+  - first:
+      213: -8599108042052608993
+    second: enemies_gray_animated_8
+  - first:
+      213: 6043392300773852873
+    second: enemies_gray_animated_9
+  - first:
+      213: -8817942700021983618
+    second: enemies_gray_animated_10
+  - first:
+      213: -115017039069052255
+    second: enemies_gray_animated_11
+  - first:
+      213: -8391658842391294016
+    second: enemies_gray_animated_12
+  - first:
+      213: -8401405836201697739
+    second: enemies_gray_animated_13
+  - first:
+      213: 8551738856715134790
+    second: enemies_gray_animated_14
+  - first:
+      213: -1251021651181970060
+    second: enemies_gray_animated_15
+  - first:
+      213: -1966794363730021603
+    second: enemies_gray_animated_16
+  - first:
+      213: -8681425980870987819
+    second: enemies_gray_animated_17
+  - first:
+      213: 8145944014327607542
+    second: enemies_gray_animated_18
+  - first:
+      213: 1789675547090732989
+    second: enemies_gray_animated_19
+  - first:
+      213: 339211341072347613
+    second: enemies_gray_animated_20
+  - first:
+      213: -3999418125707099229
+    second: enemies_gray_animated_21
+  - first:
+      213: -7891017012675901064
+    second: enemies_gray_animated_22
+  - first:
+      213: 7257348914224047020
+    second: enemies_gray_animated_23
+  - first:
+      213: -4851653794469905673
+    second: enemies_gray_animated_24
+  - first:
+      213: 7721659685237967454
+    second: enemies_gray_animated_25
+  - first:
+      213: -8594111969411793470
+    second: enemies_gray_animated_26
+  - first:
+      213: -1407852775004632469
+    second: enemies_gray_animated_27
+  - first:
+      213: 7989472249112344148
+    second: enemies_gray_animated_28
+  - first:
+      213: 7959495499526764709
+    second: enemies_gray_animated_29
+  - first:
+      213: -5219658957571931739
+    second: enemies_gray_animated_30
+  - first:
+      213: -7324851854904414761
+    second: enemies_gray_animated_31
+  - first:
+      213: -1336773608064270270
+    second: enemies_gray_animated_32
+  - first:
+      213: -2355195311365889177
+    second: enemies_gray_animated_33
+  - first:
+      213: -5046342432864298953
+    second: enemies_gray_animated_34
+  - first:
+      213: -5676574488726577583
+    second: enemies_gray_animated_35
+  - first:
+      213: -7378780461521584932
+    second: enemies_gray_animated_36
+  - first:
+      213: -2443186263080525548
+    second: enemies_gray_animated_37
+  - first:
+      213: -6085004823728621454
+    second: enemies_gray_animated_38
+  - first:
+      213: -19396360850384579
+    second: enemies_gray_animated_39
+  - first:
+      213: -1744041037104889806
+    second: enemies_gray_animated_40
+  - first:
+      213: 9046246848913913292
+    second: enemies_gray_animated_41
+  - first:
+      213: -2311682282167545548
+    second: enemies_gray_animated_42
+  - first:
+      213: 6215799138782726787
+    second: enemies_gray_animated_43
+  - first:
+      213: 6912244559699495849
+    second: enemies_gray_animated_44
+  - first:
+      213: 2961148785328683187
+    second: enemies_gray_animated_45
+  - first:
+      213: -5009416048030762199
+    second: enemies_gray_animated_46
+  - first:
+      213: -5943680670829076075
+    second: enemies_gray_animated_47
+  - first:
+      213: 1834233230310676510
+    second: enemies_gray_animated_48
+  - first:
+      213: -3511871098920985876
+    second: enemies_gray_animated_49
+  - first:
+      213: 1281562858732203761
+    second: enemies_gray_animated_50
+  - first:
+      213: 2619722371334609284
+    second: enemies_gray_animated_51
+  - first:
+      213: 4045081804409462897
+    second: enemies_gray_animated_52
+  - first:
+      213: -1280297219121578484
+    second: enemies_gray_animated_53
+  - first:
+      213: -6539992001537620320
+    second: enemies_gray_animated_54
+  - first:
+      213: -1329978640683227736
+    second: enemies_gray_animated_55
+  - first:
+      213: 4566358360488492535
+    second: enemies_gray_animated_56
+  - first:
+      213: 2062201623614354311
+    second: enemies_gray_animated_57
+  - first:
+      213: 8298877020656849723
+    second: enemies_gray_animated_58
+  - first:
+      213: 5879300732050243134
+    second: enemies_gray_animated_59
+  - first:
+      213: -4005606558775951329
+    second: enemies_gray_animated_60
+  - first:
+      213: -8517369098817455214
+    second: enemies_gray_animated_61
+  - first:
+      213: 5370283223979544267
+    second: enemies_gray_animated_62
+  - first:
+      213: -6292056294261357759
+    second: enemies_gray_animated_63
+  - first:
+      213: 1102540820217249581
+    second: enemies_gray_animated_64
+  - first:
+      213: -1004263522195307322
+    second: enemies_gray_animated_65
+  - first:
+      213: -5180256569075654995
+    second: enemies_gray_animated_66
+  - first:
+      213: 6494407254523404516
+    second: enemies_gray_animated_67
+  - first:
+      213: 4736892759942520547
+    second: enemies_gray_animated_68
+  - first:
+      213: 8059822995342055679
+    second: enemies_gray_animated_69
+  - first:
+      213: -4536894389128355690
+    second: enemies_gray_animated_70
+  - first:
+      213: -7323288148521383906
+    second: enemies_gray_animated_71
+  - first:
+      213: 7184913405371784626
+    second: enemies_gray_animated_72
+  - first:
+      213: -6386942259218839268
+    second: enemies_gray_animated_73
+  - first:
+      213: -3360761434001611343
+    second: enemies_gray_animated_74
+  - first:
+      213: 5885339570324114311
+    second: enemies_gray_animated_75
+  - first:
+      213: -5470155360764896859
+    second: enemies_gray_animated_76
+  - first:
+      213: 559446342689588300
+    second: enemies_gray_animated_77
+  - first:
+      213: -8149468533244285539
+    second: enemies_gray_animated_78
+  - first:
+      213: -7893665270281851350
+    second: enemies_gray_animated_79
+  - first:
+      213: 1958430776798603929
+    second: enemies_gray_animated_80
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enemies_gray_animated_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 221
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c9113e1a7c7c7320800000000000000
+      internalID: 2557055552373987783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 221
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 620224f7fee2fe1f0800000000000000
+      internalID: -1013539784967970778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 221
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee065700a0b8d3740800000000000000
+      internalID: 5133412025345859822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 225
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c1c7c8dae9307d50800000000000000
+      internalID: 6732945123740991939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_4
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 222
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7c9bccbbe11def60800000000000000
+      internalID: 8065122211872873594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_5
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 223
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cea714088f973d210800000000000000
+      internalID: 1356562020979276524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_6
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 221
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 230880c187e900df0800000000000000
+      internalID: -215998543410200526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_7
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 221
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd7e14059a58e40e0800000000000000
+      internalID: -2283740998787799076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_8
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 221
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1cdf38bbc4d9a880800000000000000
+      internalID: -8599108042052608993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_9
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 221
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c6c4fd37417ed350800000000000000
+      internalID: 6043392300773852873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_10
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 221
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e76d07375df50a580800000000000000
+      internalID: -8817942700021983618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_11
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 221
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a20c23cc90676ef0800000000000000
+      internalID: -115017039069052255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_12
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 225
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cf40076eb6da8b80800000000000000
+      internalID: -8391658842391294016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_13
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 222
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53edd4f87e5386b80800000000000000
+      internalID: -8401405836201697739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_14
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 223
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 647296e5e21eda670800000000000000
+      internalID: 8551738856715134790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_15
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 187
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47dd9fabf6a73aee0800000000000000
+      internalID: -1251021651181970060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_16
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 187
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d13b1ab52fa84b4e0800000000000000
+      internalID: -1966794363730021603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_17
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 187
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5df665a0111658780800000000000000
+      internalID: -8681425980870987819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_18
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 190
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f077360ce43c0170800000000000000
+      internalID: 8145944014327607542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_19
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 190
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db7cb8f8d6436d810800000000000000
+      internalID: 1789675547090732989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_20
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 192
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd1b660eaee15b400800000000000000
+      internalID: 339211341072347613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_21
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 187
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a348fc87663f78c0800000000000000
+      internalID: -3999418125707099229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_22
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 187
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87983ead5d97d7290800000000000000
+      internalID: -7891017012675901064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_23
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 187
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca3246be26847b460800000000000000
+      internalID: 7257348914224047020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_24
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 187
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7faf17f34967bacb0800000000000000
+      internalID: -4851653794469905673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_25
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 187
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5a40179298d82b60800000000000000
+      internalID: 7721659685237967454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_26
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 187
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cdf64782b49bb880800000000000000
+      internalID: -8594111969411793470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_27
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 190
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6a0dc93c5d467ce0800000000000000
+      internalID: -1407852775004632469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_28
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 190
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 456be273eae40ee60800000000000000
+      internalID: 7989472249112344148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_29
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 192
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a8fc905cfec57e60800000000000000
+      internalID: 7959495499526764709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_30
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 153
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a14d3145db0097b0800000000000000
+      internalID: -5219658957571931739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_31
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 153
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ddaf04fb06e85a90800000000000000
+      internalID: -7324851854904414761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_32
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 153
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 240463a6c73d27de0800000000000000
+      internalID: -1336773608064270270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_33
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 153
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 763ee59b75aa05fd0800000000000000
+      internalID: -2355195311365889177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_34
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 150
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73894224b4ac7f9b0800000000000000
+      internalID: -5046342432864298953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_35
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 158
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15e586a0491c831b0800000000000000
+      internalID: -5676574488726577583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_36
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 153
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdcb963c34e499990800000000000000
+      internalID: -7378780461521584932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_37
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 153
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 411a8fcc90f081ed0800000000000000
+      internalID: -2443186263080525548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_38
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 153
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 278fd114a58bd8ba0800000000000000
+      internalID: -6085004823728621454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_39
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 153
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d39d391dc171bbff0800000000000000
+      internalID: -19396360850384579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_40
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 153
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 230c8a5caebebc7e0800000000000000
+      internalID: -1744041037104889806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_41
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 153
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc5b20c7499ba8d70800000000000000
+      internalID: 9046246848913913292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_42
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 153
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 431d6d156314befd0800000000000000
+      internalID: -2311682282167545548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_43
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 150
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38ac25e4264f24650800000000000000
+      internalID: 6215799138782726787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_44
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 158
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9abc38dedc93def50800000000000000
+      internalID: 6912244559699495849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_45
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 119
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b87894a12d181920800000000000000
+      internalID: 2961148785328683187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_46
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 128
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92b3cf435aafa7ab0800000000000000
+      internalID: -5009416048030762199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_47
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 119
+        width: 33
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 591a0ecbbedc38da0800000000000000
+      internalID: -5943680670829076075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_48
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 119
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1892ef9761847910800000000000000
+      internalID: 1834233230310676510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_49
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 123
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cea9adb97d3534fc0800000000000000
+      internalID: -3511871098920985876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_50
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 119
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fe211841a609c110800000000000000
+      internalID: 1281562858732203761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_51
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 119
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4891b89ed9f1b5420800000000000000
+      internalID: 2619722371334609284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_52
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 119
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 170e8372874032830800000000000000
+      internalID: 4045081804409462897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_53
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 119
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0e765766787b3ee0800000000000000
+      internalID: -1280297219121578484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_54
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 119
+        width: 34
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a6447acce74d35a0800000000000000
+      internalID: -6539992001537620320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_55
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 119
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a5283b0977fa8de0800000000000000
+      internalID: -1329978640683227736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_56
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 119
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fd3d0a3cb6fe5f30800000000000000
+      internalID: 4566358360488492535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_57
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 119
+        width: 34
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78374ce53796e9c10800000000000000
+      internalID: 2062201623614354311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_58
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 123
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3357e25ea88b2370800000000000000
+      internalID: 8298877020656849723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_59
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 119
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3e7c8dadd8779150800000000000000
+      internalID: 5879300732050243134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_60
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 119
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f104f22be0a3968c0800000000000000
+      internalID: -4005606558775951329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_61
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 119
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29bb81c7ee93cc980800000000000000
+      internalID: -8517369098817455214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_62
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 119
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bce4a84a324178a40800000000000000
+      internalID: 5370283223979544267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_63
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 85
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1438ac913202ea8a0800000000000000
+      internalID: -6292056294261357759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_64
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 85
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2fba63d8030d4f00800000000000000
+      internalID: 1102540820217249581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_65
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 85
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c48aaab5a32012f0800000000000000
+      internalID: -1004263522195307322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_66
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 89
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dae9cdab8180c18b0800000000000000
+      internalID: -5180256569075654995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_67
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 86
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e066983df4c02a50800000000000000
+      internalID: 6494407254523404516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_68
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 87
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ee5e773ed2dcb140800000000000000
+      internalID: 4736892759942520547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_69
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 89
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff853edbf4e3adf60800000000000000
+      internalID: 8059822995342055679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_70
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 86
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 690aa803796b901c0800000000000000
+      internalID: -4536894389128355690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_71
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 87
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e180e87ba347e5a90800000000000000
+      internalID: -7323288148521383906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_72
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 57
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bd9025cca0f5b360800000000000000
+      internalID: 7184913405371784626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_73
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 51
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c19845ecad50d57a0800000000000000
+      internalID: -6386942259218839268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_74
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 51
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b56087284d2c51d0800000000000000
+      internalID: -3360761434001611343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_75
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 56
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78b08b7482deca150800000000000000
+      internalID: 5885339570324114311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_76
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 51
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a9d8677eaa1614b0800000000000000
+      internalID: -5470155360764896859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_77
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 53
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4487ee0c7d83c700800000000000000
+      internalID: 559446342689588300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_78
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 56
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9d20c7fb8547ee80800000000000000
+      internalID: -8149468533244285539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_79
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 51
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2e23055241147290800000000000000
+      internalID: -7893665270281851350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemies_gray_animated_80
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 53
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99ae5405a6ebd2b10800000000000000
+      internalID: 1958430776798603929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      enemies_gray_animated_0: 2557055552373987783
+      enemies_gray_animated_1: -1013539784967970778
+      enemies_gray_animated_10: -8817942700021983618
+      enemies_gray_animated_11: -115017039069052255
+      enemies_gray_animated_12: -8391658842391294016
+      enemies_gray_animated_13: -8401405836201697739
+      enemies_gray_animated_14: 8551738856715134790
+      enemies_gray_animated_15: -1251021651181970060
+      enemies_gray_animated_16: -1966794363730021603
+      enemies_gray_animated_17: -8681425980870987819
+      enemies_gray_animated_18: 8145944014327607542
+      enemies_gray_animated_19: 1789675547090732989
+      enemies_gray_animated_2: 5133412025345859822
+      enemies_gray_animated_20: 339211341072347613
+      enemies_gray_animated_21: -3999418125707099229
+      enemies_gray_animated_22: -7891017012675901064
+      enemies_gray_animated_23: 7257348914224047020
+      enemies_gray_animated_24: -4851653794469905673
+      enemies_gray_animated_25: 7721659685237967454
+      enemies_gray_animated_26: -8594111969411793470
+      enemies_gray_animated_27: -1407852775004632469
+      enemies_gray_animated_28: 7989472249112344148
+      enemies_gray_animated_29: 7959495499526764709
+      enemies_gray_animated_3: 6732945123740991939
+      enemies_gray_animated_30: -5219658957571931739
+      enemies_gray_animated_31: -7324851854904414761
+      enemies_gray_animated_32: -1336773608064270270
+      enemies_gray_animated_33: -2355195311365889177
+      enemies_gray_animated_34: -5046342432864298953
+      enemies_gray_animated_35: -5676574488726577583
+      enemies_gray_animated_36: -7378780461521584932
+      enemies_gray_animated_37: -2443186263080525548
+      enemies_gray_animated_38: -6085004823728621454
+      enemies_gray_animated_39: -19396360850384579
+      enemies_gray_animated_4: 8065122211872873594
+      enemies_gray_animated_40: -1744041037104889806
+      enemies_gray_animated_41: 9046246848913913292
+      enemies_gray_animated_42: -2311682282167545548
+      enemies_gray_animated_43: 6215799138782726787
+      enemies_gray_animated_44: 6912244559699495849
+      enemies_gray_animated_45: 2961148785328683187
+      enemies_gray_animated_46: -5009416048030762199
+      enemies_gray_animated_47: -5943680670829076075
+      enemies_gray_animated_48: 1834233230310676510
+      enemies_gray_animated_49: -3511871098920985876
+      enemies_gray_animated_5: 1356562020979276524
+      enemies_gray_animated_50: 1281562858732203761
+      enemies_gray_animated_51: 2619722371334609284
+      enemies_gray_animated_52: 4045081804409462897
+      enemies_gray_animated_53: -1280297219121578484
+      enemies_gray_animated_54: -6539992001537620320
+      enemies_gray_animated_55: -1329978640683227736
+      enemies_gray_animated_56: 4566358360488492535
+      enemies_gray_animated_57: 2062201623614354311
+      enemies_gray_animated_58: 8298877020656849723
+      enemies_gray_animated_59: 5879300732050243134
+      enemies_gray_animated_6: -215998543410200526
+      enemies_gray_animated_60: -4005606558775951329
+      enemies_gray_animated_61: -8517369098817455214
+      enemies_gray_animated_62: 5370283223979544267
+      enemies_gray_animated_63: -6292056294261357759
+      enemies_gray_animated_64: 1102540820217249581
+      enemies_gray_animated_65: -1004263522195307322
+      enemies_gray_animated_66: -5180256569075654995
+      enemies_gray_animated_67: 6494407254523404516
+      enemies_gray_animated_68: 4736892759942520547
+      enemies_gray_animated_69: 8059822995342055679
+      enemies_gray_animated_7: -2283740998787799076
+      enemies_gray_animated_70: -4536894389128355690
+      enemies_gray_animated_71: -7323288148521383906
+      enemies_gray_animated_72: 7184913405371784626
+      enemies_gray_animated_73: -6386942259218839268
+      enemies_gray_animated_74: -3360761434001611343
+      enemies_gray_animated_75: 5885339570324114311
+      enemies_gray_animated_76: -5470155360764896859
+      enemies_gray_animated_77: 559446342689588300
+      enemies_gray_animated_78: -8149468533244285539
+      enemies_gray_animated_79: -7893665270281851350
+      enemies_gray_animated_8: -8599108042052608993
+      enemies_gray_animated_80: 1958430776798603929
+      enemies_gray_animated_9: 6043392300773852873
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

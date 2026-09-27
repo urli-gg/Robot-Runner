@@ -1,0 +1,4147 @@
+fileFormatVersion: 2
+guid: 7fa95b7cf4ae9c44a81ec022ef79d26c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7899551370062001875
+    second: terrain_gray_0
+  - first:
+      213: -3641450794129118582
+    second: terrain_gray_1
+  - first:
+      213: -819991853489506684
+    second: terrain_gray_2
+  - first:
+      213: -5154764220235925516
+    second: terrain_gray_3
+  - first:
+      213: 7332911447909409852
+    second: terrain_gray_4
+  - first:
+      213: -1807747680468731233
+    second: terrain_gray_5
+  - first:
+      213: -1032029624429410184
+    second: terrain_gray_6
+  - first:
+      213: 4511452676070110749
+    second: terrain_gray_7
+  - first:
+      213: -6906992580243620560
+    second: terrain_gray_8
+  - first:
+      213: 7601370974452445565
+    second: terrain_gray_9
+  - first:
+      213: -7607906308376547788
+    second: terrain_gray_10
+  - first:
+      213: -8892161018491836244
+    second: terrain_gray_11
+  - first:
+      213: -1691018867948687253
+    second: terrain_gray_12
+  - first:
+      213: -7820053034863176570
+    second: terrain_gray_13
+  - first:
+      213: 1186353396082462133
+    second: terrain_gray_14
+  - first:
+      213: -2008016224591825382
+    second: terrain_gray_15
+  - first:
+      213: -2844860952072672150
+    second: terrain_gray_16
+  - first:
+      213: -2229703872226165095
+    second: terrain_gray_17
+  - first:
+      213: -8626555645567121107
+    second: terrain_gray_18
+  - first:
+      213: -9009195726101610626
+    second: terrain_gray_19
+  - first:
+      213: -617648450045543356
+    second: terrain_gray_20
+  - first:
+      213: 5474545893812724344
+    second: terrain_gray_21
+  - first:
+      213: 9048453354840653909
+    second: terrain_gray_22
+  - first:
+      213: -2880291341972019019
+    second: terrain_gray_23
+  - first:
+      213: 223169479474184508
+    second: terrain_gray_24
+  - first:
+      213: -2445227186289318284
+    second: terrain_gray_25
+  - first:
+      213: 1130958739599882487
+    second: terrain_gray_26
+  - first:
+      213: 5992713042990445394
+    second: terrain_gray_27
+  - first:
+      213: 6984626992581643525
+    second: terrain_gray_28
+  - first:
+      213: 8188910272707504327
+    second: terrain_gray_29
+  - first:
+      213: -7637623533038190264
+    second: terrain_gray_30
+  - first:
+      213: 7358951170443911855
+    second: terrain_gray_31
+  - first:
+      213: 3751230603598824248
+    second: terrain_gray_32
+  - first:
+      213: -8008327718474274574
+    second: terrain_gray_33
+  - first:
+      213: 5893777408215204938
+    second: terrain_gray_34
+  - first:
+      213: 2312099473992862194
+    second: terrain_gray_35
+  - first:
+      213: -354219542059139152
+    second: terrain_gray_36
+  - first:
+      213: 5364700283419992445
+    second: terrain_gray_37
+  - first:
+      213: 8756773466606924800
+    second: terrain_gray_38
+  - first:
+      213: -4190512289316515822
+    second: terrain_gray_39
+  - first:
+      213: 6952940007039624401
+    second: terrain_gray_40
+  - first:
+      213: 2514208553888821523
+    second: terrain_gray_41
+  - first:
+      213: 7349963105363150768
+    second: terrain_gray_42
+  - first:
+      213: 333204798279517606
+    second: terrain_gray_43
+  - first:
+      213: -4140829928388728159
+    second: terrain_gray_44
+  - first:
+      213: -7387951750871959182
+    second: terrain_gray_45
+  - first:
+      213: -7137004248774680634
+    second: terrain_gray_46
+  - first:
+      213: 1476004986591402834
+    second: terrain_gray_47
+  - first:
+      213: 3513151493246538210
+    second: terrain_gray_48
+  - first:
+      213: -999319647618592024
+    second: terrain_gray_49
+  - first:
+      213: 7358196340507805940
+    second: terrain_gray_50
+  - first:
+      213: 8304803367658961331
+    second: terrain_gray_51
+  - first:
+      213: 8526277634742751709
+    second: terrain_gray_52
+  - first:
+      213: -5898141010828669331
+    second: terrain_gray_53
+  - first:
+      213: -7818500605732477658
+    second: terrain_gray_54
+  - first:
+      213: 5962411703645354864
+    second: terrain_gray_55
+  - first:
+      213: -2076462661738830154
+    second: terrain_gray_56
+  - first:
+      213: 7930983805373367040
+    second: terrain_gray_57
+  - first:
+      213: -1831544076873481447
+    second: terrain_gray_58
+  - first:
+      213: -7404207981758656212
+    second: terrain_gray_59
+  - first:
+      213: -2429423366747043538
+    second: terrain_gray_60
+  - first:
+      213: 3292293050419061365
+    second: terrain_gray_61
+  - first:
+      213: 2777525637039859181
+    second: terrain_gray_62
+  - first:
+      213: 5054797887164411245
+    second: terrain_gray_63
+  - first:
+      213: 2963647750086504462
+    second: terrain_gray_64
+  - first:
+      213: 7525892914816548863
+    second: terrain_gray_65
+  - first:
+      213: 5363952146137880631
+    second: terrain_gray_66
+  - first:
+      213: 1004939705402940174
+    second: terrain_gray_67
+  - first:
+      213: 6738720464813749708
+    second: terrain_gray_68
+  - first:
+      213: -7501442419984702359
+    second: terrain_gray_69
+  - first:
+      213: -5287756562161941384
+    second: terrain_gray_70
+  - first:
+      213: -5746120237680863511
+    second: terrain_gray_71
+  - first:
+      213: -3310580452419118480
+    second: terrain_gray_72
+  - first:
+      213: 7138231664087611666
+    second: terrain_gray_73
+  - first:
+      213: -8044802857280263863
+    second: terrain_gray_74
+  - first:
+      213: -8698725411633528151
+    second: terrain_gray_75
+  - first:
+      213: -2624866521662194665
+    second: terrain_gray_76
+  - first:
+      213: -7713754809087342125
+    second: terrain_gray_77
+  - first:
+      213: 3378818012366208518
+    second: terrain_gray_78
+  - first:
+      213: 6137995880498650005
+    second: terrain_gray_79
+  - first:
+      213: 6468529059242249332
+    second: terrain_gray_80
+  - first:
+      213: -1124465116106101567
+    second: terrain_gray_81
+  - first:
+      213: 8841135441950968552
+    second: terrain_gray_82
+  - first:
+      213: 2338661107217191676
+    second: terrain_gray_83
+  - first:
+      213: 5184035211155374891
+    second: terrain_gray_84
+  - first:
+      213: 9131489380214999018
+    second: terrain_gray_85
+  - first:
+      213: 6882503627767395384
+    second: terrain_gray_86
+  - first:
+      213: 3938293212006077971
+    second: terrain_gray_87
+  - first:
+      213: -4651521119925905867
+    second: terrain_gray_88
+  - first:
+      213: -7807575985024989520
+    second: terrain_gray_89
+  - first:
+      213: -320027115705780748
+    second: terrain_gray_90
+  - first:
+      213: 617540250159395998
+    second: terrain_gray_91
+  - first:
+      213: 2092367326159639463
+    second: terrain_gray_92
+  - first:
+      213: 2942009716908429040
+    second: terrain_gray_93
+  - first:
+      213: -5781363152174882922
+    second: terrain_gray_94
+  - first:
+      213: 1953202097429452949
+    second: terrain_gray_95
+  - first:
+      213: -3502465852094026394
+    second: terrain_gray_96
+  - first:
+      213: -4058775541194993085
+    second: terrain_gray_97
+  - first:
+      213: -6442247017419462054
+    second: terrain_gray_98
+  - first:
+      213: -8843455168246908017
+    second: terrain_gray_99
+  - first:
+      213: -1478746971570403806
+    second: terrain_gray_100
+  - first:
+      213: -6136612777993040517
+    second: terrain_gray_101
+  - first:
+      213: 3978329822646019893
+    second: terrain_gray_102
+  - first:
+      213: 5281735555599897621
+    second: terrain_gray_103
+  - first:
+      213: 9063420947842502581
+    second: terrain_gray_104
+  - first:
+      213: 7915320686938316128
+    second: terrain_gray_105
+  - first:
+      213: -1290064125934623198
+    second: terrain_gray_106
+  - first:
+      213: -5076469181542152730
+    second: terrain_gray_107
+  - first:
+      213: -440102152325727344
+    second: terrain_gray_108
+  - first:
+      213: 2710636983268928435
+    second: terrain_gray_109
+  - first:
+      213: -342756931561275392
+    second: terrain_gray_110
+  - first:
+      213: -3309028647170413838
+    second: terrain_gray_111
+  - first:
+      213: -2659916084373490961
+    second: terrain_gray_112
+  - first:
+      213: -4168594990897964074
+    second: terrain_gray_113
+  - first:
+      213: -1855021266015502378
+    second: terrain_gray_114
+  - first:
+      213: -3543274810650173693
+    second: terrain_gray_115
+  - first:
+      213: 830719605015974607
+    second: terrain_gray_116
+  - first:
+      213: -2571954148815924033
+    second: terrain_gray_117
+  - first:
+      213: 4385818593859871175
+    second: terrain_gray_118
+  - first:
+      213: 7094159444888409319
+    second: terrain_gray_119
+  - first:
+      213: -4778882346248952855
+    second: terrain_gray_120
+  - first:
+      213: -6040892802031347625
+    second: terrain_gray_121
+  - first:
+      213: 2424408205258341520
+    second: terrain_gray_122
+  - first:
+      213: -8789297210990067916
+    second: terrain_gray_123
+  - first:
+      213: -1671833155026352748
+    second: terrain_gray_124
+  - first:
+      213: -8947122473455625651
+    second: terrain_gray_125
+  - first:
+      213: 595023276454912279
+    second: terrain_gray_126
+  - first:
+      213: 4552113354065642178
+    second: terrain_gray_127
+  - first:
+      213: -2419968895762140614
+    second: terrain_gray_128
+  - first:
+      213: -623570281706947466
+    second: terrain_gray_129
+  - first:
+      213: 3214304402600689816
+    second: terrain_gray_130
+  - first:
+      213: -8844385730813656714
+    second: terrain_gray_131
+  - first:
+      213: 6884232155952024947
+    second: terrain_gray_132
+  - first:
+      213: -3410538334954679559
+    second: terrain_gray_133
+  - first:
+      213: 6778912355866865075
+    second: terrain_gray_134
+  - first:
+      213: 5520432929633171020
+    second: terrain_gray_135
+  - first:
+      213: 2544527896403704329
+    second: terrain_gray_136
+  - first:
+      213: 6064054045922429886
+    second: terrain_gray_137
+  - first:
+      213: 4281471618366385301
+    second: terrain_gray_138
+  - first:
+      213: 371547475287368987
+    second: terrain_gray_139
+  - first:
+      213: 6522060653765157357
+    second: terrain_gray_140
+  - first:
+      213: -7481763060171092535
+    second: terrain_gray_141
+  - first:
+      213: 6518055852425040644
+    second: terrain_gray_142
+  - first:
+      213: -4219969857936171910
+    second: terrain_gray_143
+  - first:
+      213: 2486539271234651766
+    second: terrain_gray_144
+  - first:
+      213: 1022235847305473361
+    second: terrain_gray_145
+  - first:
+      213: -3895401672973832146
+    second: terrain_gray_146
+  - first:
+      213: 5520795416243315193
+    second: terrain_gray_147
+  - first:
+      213: 3498434595131572380
+    second: terrain_gray_148
+  - first:
+      213: -1347098338068557898
+    second: terrain_gray_149
+  - first:
+      213: 7380121322230770298
+    second: terrain_gray_150
+  - first:
+      213: 5794639704867414902
+    second: terrain_gray_151
+  - first:
+      213: 5067598850238606873
+    second: terrain_gray_152
+  - first:
+      213: 7270007590859525881
+    second: terrain_gray_153
+  - first:
+      213: 1181057731115294903
+    second: terrain_gray_154
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: terrain_gray_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 477
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d29018ee1e72f5290800000000000000
+      internalID: -7899551370062001875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 443
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8aaed4cbc7f67dc0800000000000000
+      internalID: -3641450794129118582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_2
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 477
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4863b06f0cdce94f0800000000000000
+      internalID: -819991853489506684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_3
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 443
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f7b1f7b0499678b0800000000000000
+      internalID: -5154764220235925516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_4
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 477
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3429064c1cb3c560800000000000000
+      internalID: 7332911447909409852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_5
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 443
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9aff1eff0799e6e0800000000000000
+      internalID: -1807747680468731233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_6
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 477
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8788436468e7da1f0800000000000000
+      internalID: -1032029624429410184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_7
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 443
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d16f4226e46eb9e30800000000000000
+      internalID: 4511452676070110749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_8
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 477
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03df154d7de6520a0800000000000000
+      internalID: -6906992580243620560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_9
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 443
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d71f332a0ae7d7960800000000000000
+      internalID: 7601370974452445565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_10
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 477
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43e23cc55894b6690800000000000000
+      internalID: -7607906308376547788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_11
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 443
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca8e7379aa2b89480800000000000000
+      internalID: -8892161018491836244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_12
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 477
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b607f6b8c4b4888e0800000000000000
+      internalID: -1691018867948687253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_13
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 443
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 684d34c7237997390800000000000000
+      internalID: -7820053034863176570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_14
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 477
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bdc29fc026c67010800000000000000
+      internalID: 1186353396082462133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_15
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 443
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a16bbf5f1e71224e0800000000000000
+      internalID: -2008016224591825382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_16
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 477
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6c245c69060588d0800000000000000
+      internalID: -2844860952072672150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_17
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 443
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99e75a544208e01e0800000000000000
+      internalID: -2229703872226165095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_18
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 477
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d29c4d68851584880800000000000000
+      internalID: -8626555645567121107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_19
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 443
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7ffeb94838e8f280800000000000000
+      internalID: -9009195726101610626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_20
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 477
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44cf6f2d10cad67f0800000000000000
+      internalID: -617648450045543356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_21
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 477
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 872e74b2c7e79fb40800000000000000
+      internalID: 5474545893812724344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_22
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 443
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55008fda260929d70800000000000000
+      internalID: 9048453354840653909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_23
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 409
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8ef10f8462708d0800000000000000
+      internalID: -2880291341972019019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 375
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3184cc857bd81300800000000000000
+      internalID: 223169479474184508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_25
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 409
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 476e81654dec01ed0800000000000000
+      internalID: -2445227186289318284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_26
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 375
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f879794bf8f1bf00800000000000000
+      internalID: 1130958739599882487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_27
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 409
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 253bb4803c46a2350800000000000000
+      internalID: 5992713042990445394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_28
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 375
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50d0f6d5e316ee060800000000000000
+      internalID: 6984626992581643525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_29
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 409
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c8274e918ad4a170800000000000000
+      internalID: 8188910272707504327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_30
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 375
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8414811dcd5b10690800000000000000
+      internalID: -7637623533038190264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_31
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 409
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa221c1a91f302660800000000000000
+      internalID: 7358951170443911855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_32
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 375
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 833051eeb5c0f0430800000000000000
+      internalID: 3751230603598824248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_33
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 409
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f82d67be54bcd090800000000000000
+      internalID: -8008327718474274574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_34
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 375
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a44c3e18357eac150800000000000000
+      internalID: 5893777408215204938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_35
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 409
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f946b8b83a361020800000000000000
+      internalID: 2312099473992862194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_36
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 375
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bf3017043f851bf0800000000000000
+      internalID: -354219542059139152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_37
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 409
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d71afaffb7e337a40800000000000000
+      internalID: 5364700283419992445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_38
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 375
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 004fbaf821f468970800000000000000
+      internalID: 8756773466606924800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_39
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 409
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2105160764f48d5c0800000000000000
+      internalID: -4190512289316515822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_40
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 375
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d4e230291ecd7060800000000000000
+      internalID: 6952940007039624401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_41
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 409
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 311bac1eb5344e220800000000000000
+      internalID: 2514208553888821523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_42
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 375
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b7c567a080500660800000000000000
+      internalID: 7349963105363150768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_43
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 409
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a508e6aff7cf9400800000000000000
+      internalID: 333204798279517606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_44
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 375
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aa65138e11d886c0800000000000000
+      internalID: -4140829928388728159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_45
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 409
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2793d8f8609b87990800000000000000
+      internalID: -7387951750871959182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_46
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 375
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cfd45ff27444fc90800000000000000
+      internalID: -7137004248774680634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_47
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 341
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25b5c7017b2db7410800000000000000
+      internalID: 1476004986591402834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_48
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 307
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e1d71d6ba831c030800000000000000
+      internalID: 3513151493246538210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_49
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 341
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e210aa3314b122f0800000000000000
+      internalID: -999319647618592024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_50
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 307
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f80c8716909d1660800000000000000
+      internalID: 7358196340507805940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_51
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 341
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b9b7c289a6904370800000000000000
+      internalID: 8304803367658961331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_52
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 323
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd1133ba55c635670800000000000000
+      internalID: 8526277634742751709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_53
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 341
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6ec4661008952ea0800000000000000
+      internalID: -5898141010828669331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_54
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 307
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 625a32f8f1b1f7390800000000000000
+      internalID: -7818500605732477658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_55
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 341
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07bb960baddbeb250800000000000000
+      internalID: 5962411703645354864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_56
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 307
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b6e1b1f53cee23e0800000000000000
+      internalID: -2076462661738830154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_57
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 341
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 003c7a630c3801e60800000000000000
+      internalID: 7930983805373367040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_58
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 323
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9134c73bd5c0596e0800000000000000
+      internalID: -1831544076873481447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_59
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 341
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c21d92cd118fe3990800000000000000
+      internalID: -7404207981758656212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_60
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 307
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e294200d154f84ed0800000000000000
+      internalID: -2429423366747043538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_61
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 341
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57227b6061390bd20800000000000000
+      internalID: 3292293050419061365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_62
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 307
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de52d46d9d0cb8620800000000000000
+      internalID: 2777525637039859181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_63
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 341
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6d64db95ef362640800000000000000
+      internalID: 5054797887164411245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_64
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 307
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e00ba473dedf02920800000000000000
+      internalID: 2963647750086504462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_65
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 341
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffff44d6bb7517860800000000000000
+      internalID: 7525892914816548863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_66
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 307
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7381eb6be06907a40800000000000000
+      internalID: 5363952146137880631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_67
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 273
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0b5a31765342fd00800000000000000
+      internalID: 1004939705402940174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_68
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 239
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc5f0e93f8eb48d50800000000000000
+      internalID: 6738720464813749708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_69
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 273
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 964e3c50dd585e790800000000000000
+      internalID: -7501442419984702359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_70
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 239
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 874c8952c6d1e96b0800000000000000
+      internalID: -5287756562161941384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_71
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 273
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e6595c861ea140b0800000000000000
+      internalID: -5746120237680863511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_72
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 239
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07ad4356e947e02d0800000000000000
+      internalID: -3310580452419118480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_73
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 273
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2193366e0e7101360800000000000000
+      internalID: 7138231664087611666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_74
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 239
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94923cbac6e1b5090800000000000000
+      internalID: -8044802857280263863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_75
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 273
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a28be0735be74780800000000000000
+      internalID: -8698725411633528151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_76
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 205
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71c72814ec9929bd0800000000000000
+      internalID: -2624866521662194665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_77
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 273
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d943efcedc33f490800000000000000
+      internalID: -7713754809087342125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_78
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 273
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60e77cb9419f3ee20800000000000000
+      internalID: 3378818012366208518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_79
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 239
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59bdee99bba8e2550800000000000000
+      internalID: 6137995880498650005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_80
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 273
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47c0d6b58e4d4c950800000000000000
+      internalID: 6468529059242249332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_81
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 239
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cc6d204fe81560f0800000000000000
+      internalID: -1124465116106101567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_82
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 273
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ea8a9497d502ba70800000000000000
+      internalID: 8841135441950968552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_83
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 239
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf2d3b1e2e7947020800000000000000
+      internalID: 2338661107217191676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_84
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 273
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b238800fe8461f740800000000000000
+      internalID: 5184035211155374891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_85
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 239
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae787f9e53199be70800000000000000
+      internalID: 9131489380214999018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_86
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 273
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 834b96a9590938f50800000000000000
+      internalID: 6882503627767395384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_87
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 273
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31654f27fc0a7a630800000000000000
+      internalID: 3938293212006077971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_88
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 239
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 536d69daf2a727fb0800000000000000
+      internalID: -4651521119925905867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_89
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 205
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b607b7020be5a390800000000000000
+      internalID: -7807575985024989520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_90
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 171
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f53dd9a8090f8bf0800000000000000
+      internalID: -320027115705780748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_91
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 205
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e94b14de591f19800800000000000000
+      internalID: 617540250159395998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_92
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 171
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a3116f4ff4990d10800000000000000
+      internalID: 2092367326159639463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_93
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 205
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fe0316004e14d820800000000000000
+      internalID: 2942009716908429040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_94
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 171
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69f551518d874cfa0800000000000000
+      internalID: -5781363152174882922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_95
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 205
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59894d785fa2b1b10800000000000000
+      internalID: 1953202097429452949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_96
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 171
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66deff74dddb46fc0800000000000000
+      internalID: -3502465852094026394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_97
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 171
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 342570c46255ca7c0800000000000000
+      internalID: -4058775541194993085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_98
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 171
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5aa46b587a8896a0800000000000000
+      internalID: -6442247017419462054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_99
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 205
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8bfc8d016cb54580800000000000000
+      internalID: -8843455168246908017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_100
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 171
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2268cdec67f6a7be0800000000000000
+      internalID: -1478746971570403806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_101
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 205
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7d0a9b013f56daa0800000000000000
+      internalID: -6136612777993040517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_102
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 171
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 537a82645edd53730800000000000000
+      internalID: 3978329822646019893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_103
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 205
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5141515018e7c4940800000000000000
+      internalID: 5281735555599897621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_104
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 171
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bf8cfdf45db7cd70800000000000000
+      internalID: 9063420947842502581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_105
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 205
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06d52444a3ed8dd60800000000000000
+      internalID: 7915320686938316128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_106
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 171
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22621343385c81ee0800000000000000
+      internalID: -1290064125934623198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_107
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 205
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e546f8fc22cc89b0800000000000000
+      internalID: -5076469181542152730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_108
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 171
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09b7db99c6174e9f0800000000000000
+      internalID: -440102152325727344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_109
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 205
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bbe7c689fd1e9520800000000000000
+      internalID: 2710636983268928435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_110
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 171
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 000ccf103684e3bf0800000000000000
+      internalID: -342756931561275392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_111
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 137
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fae0d53af7f312d0800000000000000
+      internalID: -3309028647170413838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_112
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 103
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe2f1920a64161bd0800000000000000
+      internalID: -2659916084373490961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_113
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 137
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dbdd0321fc2626c0800000000000000
+      internalID: -4168594990897964074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_114
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 103
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dfb954acf3a146e0800000000000000
+      internalID: -1855021266015502378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_115
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 137
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30f5b913552c3dec0800000000000000
+      internalID: -3543274810650173693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_116
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 119
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc21ee4541f478b00800000000000000
+      internalID: 830719605015974607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_117
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 137
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb41c3514559e4cd0800000000000000
+      internalID: -2571954148815924033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_118
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 103
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c1225826ce8ddc30800000000000000
+      internalID: 4385818593859871175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_119
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 137
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e45e8cbd64837260800000000000000
+      internalID: 7094159444888409319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_120
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 103
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e3227063dffdadb0800000000000000
+      internalID: -4778882346248952855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_121
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 137
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75815b8a0007a2ca0800000000000000
+      internalID: -6040892802031347625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_122
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 119
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09c37f8ea6a35a120800000000000000
+      internalID: 2424408205258341520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_123
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 137
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43ffa9911c4260680800000000000000
+      internalID: -8789297210990067916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_124
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 103
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4950fee6a947cc8e0800000000000000
+      internalID: -1671833155026352748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_125
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 137
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4a53c7a38f65d380800000000000000
+      internalID: -8947122473455625651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_126
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 103
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7112f227482f14800800000000000000
+      internalID: 595023276454912279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_127
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 137
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c205663afa5c2f30800000000000000
+      internalID: 4552113354065642178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_128
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 103
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a327a906c1b8a6ed0800000000000000
+      internalID: -2419968895762140614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_129
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 137
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67cfd52f122a857f0800000000000000
+      internalID: -623570281706947466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_130
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 103
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8900df4f2d08b9c20800000000000000
+      internalID: 3214304402600689816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_131
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 69
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6718152990e624580800000000000000
+      internalID: -8844385730813656714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_132
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 35
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37d87deeba4b98f50800000000000000
+      internalID: 6884232155952024947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_133
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 69
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f29c2444755ba0d0800000000000000
+      internalID: -3410538334954679559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_134
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 35
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bd63f61fd8831e50800000000000000
+      internalID: 6778912355866865075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_135
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 69
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c46772140848c9c40800000000000000
+      internalID: 5520432929633171020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_136
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 35
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90af63ae3aaff4320800000000000000
+      internalID: 2544527896403704329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_137
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 69
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebb0af9a609d72450800000000000000
+      internalID: 6064054045922429886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_138
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 35
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59c25a0b0c7da6b30800000000000000
+      internalID: 4281471618366385301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_139
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 69
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1562b1d570082500800000000000000
+      internalID: 371547475287368987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_140
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 35
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de16937fb93038a50800000000000000
+      internalID: 6522060653765157357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_141
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 69
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cdccd803207b2890800000000000000
+      internalID: -7481763060171092535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_142
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 35
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40353fd7349c47a50800000000000000
+      internalID: 6518055852425040644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_143
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 69
+        width: 34
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7cdbd6c5c7af65c0800000000000000
+      internalID: -4219969857936171910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_144
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 35
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 676000efa46f18220800000000000000
+      internalID: 2486539271234651766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_145
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 35
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15d205b4616bf2e00800000000000000
+      internalID: 1022235847305473361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_146
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e20bee031d0c0f9c0800000000000000
+      internalID: -3895401672973832146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_147
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f1a9ce3e2ecd9c40800000000000000
+      internalID: 5520795416243315193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_148
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9041c09abfec8030800000000000000
+      internalID: 3498434595131572380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_149
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bf87e1e2352e4de0800000000000000
+      internalID: -1347098338068557898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_150
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7ae9d2bd357b6660800000000000000
+      internalID: 7380121322230770298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_151
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 1
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6732ff93c12ba6050800000000000000
+      internalID: 5794639704867414902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_152
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e66a41e4ab35640800000000000000
+      internalID: 5067598850238606873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_153
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 1
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fe439fb26144e460800000000000000
+      internalID: 7270007590859525881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_gray_154
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b02b5abfb5f36010800000000000000
+      internalID: 1181057731115294903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      terrain_gray_0: -7899551370062001875
+      terrain_gray_1: -3641450794129118582
+      terrain_gray_10: -7607906308376547788
+      terrain_gray_100: -1478746971570403806
+      terrain_gray_101: -6136612777993040517
+      terrain_gray_102: 3978329822646019893
+      terrain_gray_103: 5281735555599897621
+      terrain_gray_104: 9063420947842502581
+      terrain_gray_105: 7915320686938316128
+      terrain_gray_106: -1290064125934623198
+      terrain_gray_107: -5076469181542152730
+      terrain_gray_108: -440102152325727344
+      terrain_gray_109: 2710636983268928435
+      terrain_gray_11: -8892161018491836244
+      terrain_gray_110: -342756931561275392
+      terrain_gray_111: -3309028647170413838
+      terrain_gray_112: -2659916084373490961
+      terrain_gray_113: -4168594990897964074
+      terrain_gray_114: -1855021266015502378
+      terrain_gray_115: -3543274810650173693
+      terrain_gray_116: 830719605015974607
+      terrain_gray_117: -2571954148815924033
+      terrain_gray_118: 4385818593859871175
+      terrain_gray_119: 7094159444888409319
+      terrain_gray_12: -1691018867948687253
+      terrain_gray_120: -4778882346248952855
+      terrain_gray_121: -6040892802031347625
+      terrain_gray_122: 2424408205258341520
+      terrain_gray_123: -8789297210990067916
+      terrain_gray_124: -1671833155026352748
+      terrain_gray_125: -8947122473455625651
+      terrain_gray_126: 595023276454912279
+      terrain_gray_127: 4552113354065642178
+      terrain_gray_128: -2419968895762140614
+      terrain_gray_129: -623570281706947466
+      terrain_gray_13: -7820053034863176570
+      terrain_gray_130: 3214304402600689816
+      terrain_gray_131: -8844385730813656714
+      terrain_gray_132: 6884232155952024947
+      terrain_gray_133: -3410538334954679559
+      terrain_gray_134: 6778912355866865075
+      terrain_gray_135: 5520432929633171020
+      terrain_gray_136: 2544527896403704329
+      terrain_gray_137: 6064054045922429886
+      terrain_gray_138: 4281471618366385301
+      terrain_gray_139: 371547475287368987
+      terrain_gray_14: 1186353396082462133
+      terrain_gray_140: 6522060653765157357
+      terrain_gray_141: -7481763060171092535
+      terrain_gray_142: 6518055852425040644
+      terrain_gray_143: -4219969857936171910
+      terrain_gray_144: 2486539271234651766
+      terrain_gray_145: 1022235847305473361
+      terrain_gray_146: -3895401672973832146
+      terrain_gray_147: 5520795416243315193
+      terrain_gray_148: 3498434595131572380
+      terrain_gray_149: -1347098338068557898
+      terrain_gray_15: -2008016224591825382
+      terrain_gray_150: 7380121322230770298
+      terrain_gray_151: 5794639704867414902
+      terrain_gray_152: 5067598850238606873
+      terrain_gray_153: 7270007590859525881
+      terrain_gray_154: 1181057731115294903
+      terrain_gray_16: -2844860952072672150
+      terrain_gray_17: -2229703872226165095
+      terrain_gray_18: -8626555645567121107
+      terrain_gray_19: -9009195726101610626
+      terrain_gray_2: -819991853489506684
+      terrain_gray_20: -617648450045543356
+      terrain_gray_21: 5474545893812724344
+      terrain_gray_22: 9048453354840653909
+      terrain_gray_23: -2880291341972019019
+      terrain_gray_24: 223169479474184508
+      terrain_gray_25: -2445227186289318284
+      terrain_gray_26: 1130958739599882487
+      terrain_gray_27: 5992713042990445394
+      terrain_gray_28: 6984626992581643525
+      terrain_gray_29: 8188910272707504327
+      terrain_gray_3: -5154764220235925516
+      terrain_gray_30: -7637623533038190264
+      terrain_gray_31: 7358951170443911855
+      terrain_gray_32: 3751230603598824248
+      terrain_gray_33: -8008327718474274574
+      terrain_gray_34: 5893777408215204938
+      terrain_gray_35: 2312099473992862194
+      terrain_gray_36: -354219542059139152
+      terrain_gray_37: 5364700283419992445
+      terrain_gray_38: 8756773466606924800
+      terrain_gray_39: -4190512289316515822
+      terrain_gray_4: 7332911447909409852
+      terrain_gray_40: 6952940007039624401
+      terrain_gray_41: 2514208553888821523
+      terrain_gray_42: 7349963105363150768
+      terrain_gray_43: 333204798279517606
+      terrain_gray_44: -4140829928388728159
+      terrain_gray_45: -7387951750871959182
+      terrain_gray_46: -7137004248774680634
+      terrain_gray_47: 1476004986591402834
+      terrain_gray_48: 3513151493246538210
+      terrain_gray_49: -999319647618592024
+      terrain_gray_5: -1807747680468731233
+      terrain_gray_50: 7358196340507805940
+      terrain_gray_51: 8304803367658961331
+      terrain_gray_52: 8526277634742751709
+      terrain_gray_53: -5898141010828669331
+      terrain_gray_54: -7818500605732477658
+      terrain_gray_55: 5962411703645354864
+      terrain_gray_56: -2076462661738830154
+      terrain_gray_57: 7930983805373367040
+      terrain_gray_58: -1831544076873481447
+      terrain_gray_59: -7404207981758656212
+      terrain_gray_6: -1032029624429410184
+      terrain_gray_60: -2429423366747043538
+      terrain_gray_61: 3292293050419061365
+      terrain_gray_62: 2777525637039859181
+      terrain_gray_63: 5054797887164411245
+      terrain_gray_64: 2963647750086504462
+      terrain_gray_65: 7525892914816548863
+      terrain_gray_66: 5363952146137880631
+      terrain_gray_67: 1004939705402940174
+      terrain_gray_68: 6738720464813749708
+      terrain_gray_69: -7501442419984702359
+      terrain_gray_7: 4511452676070110749
+      terrain_gray_70: -5287756562161941384
+      terrain_gray_71: -5746120237680863511
+      terrain_gray_72: -3310580452419118480
+      terrain_gray_73: 7138231664087611666
+      terrain_gray_74: -8044802857280263863
+      terrain_gray_75: -8698725411633528151
+      terrain_gray_76: -2624866521662194665
+      terrain_gray_77: -7713754809087342125
+      terrain_gray_78: 3378818012366208518
+      terrain_gray_79: 6137995880498650005
+      terrain_gray_8: -6906992580243620560
+      terrain_gray_80: 6468529059242249332
+      terrain_gray_81: -1124465116106101567
+      terrain_gray_82: 8841135441950968552
+      terrain_gray_83: 2338661107217191676
+      terrain_gray_84: 5184035211155374891
+      terrain_gray_85: 9131489380214999018
+      terrain_gray_86: 6882503627767395384
+      terrain_gray_87: 3938293212006077971
+      terrain_gray_88: -4651521119925905867
+      terrain_gray_89: -7807575985024989520
+      terrain_gray_9: 7601370974452445565
+      terrain_gray_90: -320027115705780748
+      terrain_gray_91: 617540250159395998
+      terrain_gray_92: 2092367326159639463
+      terrain_gray_93: 2942009716908429040
+      terrain_gray_94: -5781363152174882922
+      terrain_gray_95: 1953202097429452949
+      terrain_gray_96: -3502465852094026394
+      terrain_gray_97: -4058775541194993085
+      terrain_gray_98: -6442247017419462054
+      terrain_gray_99: -8843455168246908017
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

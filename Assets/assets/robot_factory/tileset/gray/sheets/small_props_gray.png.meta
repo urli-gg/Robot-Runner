@@ -1,0 +1,1703 @@
+fileFormatVersion: 2
+guid: 1644d91ef290d5d4ead7243323947daf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4048484943543547128
+    second: small_props_gray_0
+  - first:
+      213: 2214194331198145516
+    second: small_props_gray_1
+  - first:
+      213: 3567903802375847142
+    second: small_props_gray_2
+  - first:
+      213: -2486563432069673973
+    second: small_props_gray_3
+  - first:
+      213: -7925529356507539029
+    second: small_props_gray_4
+  - first:
+      213: -2874724053853490946
+    second: small_props_gray_5
+  - first:
+      213: 970216697342286128
+    second: small_props_gray_6
+  - first:
+      213: -6924719840543543629
+    second: small_props_gray_7
+  - first:
+      213: -2965463711669981940
+    second: small_props_gray_8
+  - first:
+      213: -2570139585312581847
+    second: small_props_gray_9
+  - first:
+      213: -4555319610477183780
+    second: small_props_gray_10
+  - first:
+      213: 7739721926316905039
+    second: small_props_gray_11
+  - first:
+      213: -2919684729101691656
+    second: small_props_gray_12
+  - first:
+      213: 87576072464840982
+    second: small_props_gray_13
+  - first:
+      213: 4946856864832717057
+    second: small_props_gray_14
+  - first:
+      213: 1469193954010692887
+    second: small_props_gray_15
+  - first:
+      213: 7704136680697411388
+    second: small_props_gray_16
+  - first:
+      213: 5938346315445061758
+    second: small_props_gray_17
+  - first:
+      213: 8840266399558122340
+    second: small_props_gray_18
+  - first:
+      213: 5093514673620219662
+    second: small_props_gray_19
+  - first:
+      213: -8588395221739208685
+    second: small_props_gray_20
+  - first:
+      213: -5600737532891423856
+    second: small_props_gray_21
+  - first:
+      213: 5999941952597707818
+    second: small_props_gray_22
+  - first:
+      213: -2811022062807125214
+    second: small_props_gray_23
+  - first:
+      213: -3781086208853402433
+    second: small_props_gray_24
+  - first:
+      213: 5693582215284481257
+    second: small_props_gray_25
+  - first:
+      213: -3033751460839325011
+    second: small_props_gray_26
+  - first:
+      213: 2407369639700846890
+    second: small_props_gray_27
+  - first:
+      213: 3564670906237292218
+    second: small_props_gray_28
+  - first:
+      213: -4458745611414308887
+    second: small_props_gray_29
+  - first:
+      213: 4130898011722024676
+    second: small_props_gray_30
+  - first:
+      213: 6659740113959977890
+    second: small_props_gray_31
+  - first:
+      213: -148498781292931586
+    second: small_props_gray_32
+  - first:
+      213: 8350383966628316601
+    second: small_props_gray_33
+  - first:
+      213: -3634527535133854579
+    second: small_props_gray_34
+  - first:
+      213: 1323462156136947225
+    second: small_props_gray_35
+  - first:
+      213: -7246077840742757341
+    second: small_props_gray_36
+  - first:
+      213: -3191476316265370773
+    second: small_props_gray_37
+  - first:
+      213: 101882978196758104
+    second: small_props_gray_38
+  - first:
+      213: -4818560709941666464
+    second: small_props_gray_39
+  - first:
+      213: 2737315113306235309
+    second: small_props_gray_40
+  - first:
+      213: 4271606827957388077
+    second: small_props_gray_41
+  - first:
+      213: 7293596884446686675
+    second: small_props_gray_42
+  - first:
+      213: -5742694813963762271
+    second: small_props_gray_43
+  - first:
+      213: -3301820526361070797
+    second: small_props_gray_44
+  - first:
+      213: 5395695016095552924
+    second: small_props_gray_45
+  - first:
+      213: -9014829008643811869
+    second: small_props_gray_46
+  - first:
+      213: -7196234757247780655
+    second: small_props_gray_47
+  - first:
+      213: -703442022007101606
+    second: small_props_gray_48
+  - first:
+      213: -1216149738536758453
+    second: small_props_gray_49
+  - first:
+      213: -2517105252048376196
+    second: small_props_gray_50
+  - first:
+      213: -8127850913983405820
+    second: small_props_gray_51
+  - first:
+      213: -4324554214362073863
+    second: small_props_gray_52
+  - first:
+      213: 2199626037135229264
+    second: small_props_gray_53
+  - first:
+      213: 2849126089116990580
+    second: small_props_gray_54
+  - first:
+      213: -679886103640047285
+    second: small_props_gray_55
+  - first:
+      213: 5930888152044710327
+    second: small_props_gray_56
+  - first:
+      213: -1285865375306110931
+    second: small_props_gray_57
+  - first:
+      213: -9145128459182005446
+    second: small_props_gray_58
+  - first:
+      213: 1211083013960996747
+    second: small_props_gray_59
+  - first:
+      213: 3001888606609528509
+    second: small_props_gray_60
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: small_props_gray_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 111
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80bc195c464e0d7c0800000000000000
+      internalID: -4048484943543547128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 111
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce3cfbe43066abe10800000000000000
+      internalID: 2214194331198145516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_2
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 111
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ecb06dca9db38130800000000000000
+      internalID: 3567903802375847142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_3
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 111
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0cc200abb3fd7dd0800000000000000
+      internalID: -2486563432069673973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_4
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba91070aa0dd20290800000000000000
+      internalID: -7925529356507539029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_5
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 116
+        width: 32
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef0bac634bdea18d0800000000000000
+      internalID: -2874724053853490946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_6
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 116
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0395d3022f6e67d00800000000000000
+      internalID: 970216697342286128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_7
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3be6d476ef376ef90800000000000000
+      internalID: -6924719840543543629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_8
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 111
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0d6997477e88d6d0800000000000000
+      internalID: -2965463711669981940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_9
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 111
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92716421aa7055cd0800000000000000
+      internalID: -2570139585312581847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_10
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 115
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdcf22b03f048c0c0800000000000000
+      internalID: -4555319610477183780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_11
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 111
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f42db6ec514096b60800000000000000
+      internalID: 7739721926316905039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_12
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f4d2c145323b77d0800000000000000
+      internalID: -2919684729101691656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_13
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 100
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 619371259f1273100800000000000000
+      internalID: 87576072464840982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_14
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 100
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1018e07eb14c6a440800000000000000
+      internalID: 4946856864832717057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_15
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 100
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71d75f6fd10a36410800000000000000
+      internalID: 1469193954010692887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_16
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 95
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c37b60a2e779aea60800000000000000
+      internalID: 7704136680697411388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_17
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 95
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e784a5dd28e396250800000000000000
+      internalID: 5938346315445061758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_18
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 103
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46bbb71e37feeaa70800000000000000
+      internalID: 8840266399558122340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_19
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 96
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e077f5beb9ccfa640800000000000000
+      internalID: 5093514673620219662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_20
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 82
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31082919c04efc880800000000000000
+      internalID: -8588395221739208685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_21
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 95
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09b1fc743ee2642b0800000000000000
+      internalID: -5600737532891423856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_22
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 95
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2ccc85ba63144350800000000000000
+      internalID: 5999941952597707818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_23
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 99
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 223789ac35e3df8d0800000000000000
+      internalID: -2811022062807125214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_24
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 99
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbc1a284022e68bc0800000000000000
+      internalID: -3781086208853402433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_25
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 95
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ec5381ebdaa30f40800000000000000
+      internalID: 5693582215284481257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_26
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 95
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da289dfae13f5e5d0800000000000000
+      internalID: -3033751460839325011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_27
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 79
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a29dd69bee1b86120800000000000000
+      internalID: 2407369639700846890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_28
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 84
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abe81738d41487130800000000000000
+      internalID: 3564670906237292218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_29
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 79
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e771d76d7a5f12c0800000000000000
+      internalID: -4458745611414308887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_30
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 82
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e60f00fad5e35930800000000000000
+      internalID: 4130898011722024676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_31
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 64
+        width: 6
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a3010d49562c6c50800000000000000
+      internalID: 6659740113959977890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_32
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 79
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef5d47b252d60fdf0800000000000000
+      internalID: -148498781292931586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_33
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 80
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b58ff4b9f582e370800000000000000
+      internalID: 8350383966628316601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_34
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 79
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8478fd96709f8dc0800000000000000
+      internalID: -3634527535133854579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_35
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 83
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e173aa1d1ed5210800000000000000
+      internalID: 1323462156136947225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_36
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 79
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32cc2bf5892c07b90800000000000000
+      internalID: -7246077840742757341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_37
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 80
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6b2ee3133995b3d0800000000000000
+      internalID: -3191476316265370773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_38
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 63
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85e93146706f96100800000000000000
+      internalID: 101882978196758104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_39
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 68
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06dd54b6098012db0800000000000000
+      internalID: -4818560709941666464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_40
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 63
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da12de6b795ecf520800000000000000
+      internalID: 2737315113306235309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_41
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 66
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d23888037cbc74b30800000000000000
+      internalID: 4271606827957388077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_42
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 47
+        width: 7
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dd275829bf083560800000000000000
+      internalID: 7293596884446686675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_43
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 66
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a546382e79dd40b0800000000000000
+      internalID: -5742694813963762271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_44
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 66
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 333b72e99b39d22d0800000000000000
+      internalID: -3301820526361070797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_45
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 63
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9598be870c51ea40800000000000000
+      internalID: 5395695016095552924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_46
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 67
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e516ec77c4e4e280800000000000000
+      internalID: -9014829008643811869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_47
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 63
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d83de59d96d12c90800000000000000
+      internalID: -7196234757247780655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_48
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 64
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a572f2e353fdc36f0800000000000000
+      internalID: -703442022007101606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_49
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 47
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4315d8914e5f1fe0800000000000000
+      internalID: -1216149738536758453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_50
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 47
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7ee2650c12711dd0800000000000000
+      internalID: -2517105252048376196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_51
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 47
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4016fac28a2143f80800000000000000
+      internalID: -8127850913983405820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_52
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 47
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f4b701cad81cf3c0800000000000000
+      internalID: -4324554214362073863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_53
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 48
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05145260a34a68e10800000000000000
+      internalID: 2199626037135229264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_54
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 48
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47cbd1e25112a8720800000000000000
+      internalID: 2849126089116990580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_55
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 31
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b418fc0e03f8096f0800000000000000
+      internalID: -679886103640047285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_56
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 15
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b9a231e95fbe4250800000000000000
+      internalID: 5930888152044710327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_57
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 31
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d28a7e30140b72ee0800000000000000
+      internalID: -1285865375306110931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_58
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 31
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a33242d8e1af51180800000000000000
+      internalID: -9145128459182005446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_59
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 31
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8797a8a591aec010800000000000000
+      internalID: 1211083013960996747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_props_gray_60
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 15
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db6d04478c9d8a920800000000000000
+      internalID: 3001888606609528509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      small_props_gray_0: -4048484943543547128
+      small_props_gray_1: 2214194331198145516
+      small_props_gray_10: -4555319610477183780
+      small_props_gray_11: 7739721926316905039
+      small_props_gray_12: -2919684729101691656
+      small_props_gray_13: 87576072464840982
+      small_props_gray_14: 4946856864832717057
+      small_props_gray_15: 1469193954010692887
+      small_props_gray_16: 7704136680697411388
+      small_props_gray_17: 5938346315445061758
+      small_props_gray_18: 8840266399558122340
+      small_props_gray_19: 5093514673620219662
+      small_props_gray_2: 3567903802375847142
+      small_props_gray_20: -8588395221739208685
+      small_props_gray_21: -5600737532891423856
+      small_props_gray_22: 5999941952597707818
+      small_props_gray_23: -2811022062807125214
+      small_props_gray_24: -3781086208853402433
+      small_props_gray_25: 5693582215284481257
+      small_props_gray_26: -3033751460839325011
+      small_props_gray_27: 2407369639700846890
+      small_props_gray_28: 3564670906237292218
+      small_props_gray_29: -4458745611414308887
+      small_props_gray_3: -2486563432069673973
+      small_props_gray_30: 4130898011722024676
+      small_props_gray_31: 6659740113959977890
+      small_props_gray_32: -148498781292931586
+      small_props_gray_33: 8350383966628316601
+      small_props_gray_34: -3634527535133854579
+      small_props_gray_35: 1323462156136947225
+      small_props_gray_36: -7246077840742757341
+      small_props_gray_37: -3191476316265370773
+      small_props_gray_38: 101882978196758104
+      small_props_gray_39: -4818560709941666464
+      small_props_gray_4: -7925529356507539029
+      small_props_gray_40: 2737315113306235309
+      small_props_gray_41: 4271606827957388077
+      small_props_gray_42: 7293596884446686675
+      small_props_gray_43: -5742694813963762271
+      small_props_gray_44: -3301820526361070797
+      small_props_gray_45: 5395695016095552924
+      small_props_gray_46: -9014829008643811869
+      small_props_gray_47: -7196234757247780655
+      small_props_gray_48: -703442022007101606
+      small_props_gray_49: -1216149738536758453
+      small_props_gray_5: -2874724053853490946
+      small_props_gray_50: -2517105252048376196
+      small_props_gray_51: -8127850913983405820
+      small_props_gray_52: -4324554214362073863
+      small_props_gray_53: 2199626037135229264
+      small_props_gray_54: 2849126089116990580
+      small_props_gray_55: -679886103640047285
+      small_props_gray_56: 5930888152044710327
+      small_props_gray_57: -1285865375306110931
+      small_props_gray_58: -9145128459182005446
+      small_props_gray_59: 1211083013960996747
+      small_props_gray_6: 970216697342286128
+      small_props_gray_60: 3001888606609528509
+      small_props_gray_7: -6924719840543543629
+      small_props_gray_8: -2965463711669981940
+      small_props_gray_9: -2570139585312581847
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
