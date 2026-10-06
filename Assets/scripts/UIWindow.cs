@@ -62,6 +62,8 @@ public class UIWindow : MonoBehaviour
         else
         {
             _isShowing = true;
+            _canvasGroup.transform.localScale = Vector3.zero;
+
             _canvasRectTransform.gameObject.SetActive(true);
 
             RectTransform rectTransform = _canvasGroup.GetComponent<RectTransform>();

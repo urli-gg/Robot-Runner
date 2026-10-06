@@ -416,6 +416,7 @@ MonoBehaviour:
   - {fileID: 147962478}
   - {fileID: 376982771}
   - {fileID: 654424254}
+  - {fileID: 1367404636}
 --- !u!4 &809276148
 Transform:
   m_ObjectHideFlags: 0
@@ -432,8 +433,82 @@ Transform:
   - {fileID: 147962477}
   - {fileID: 376982772}
   - {fileID: 654424253}
+  - {fileID: 1367404637}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1367404636 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7640046430907767506, guid: 9faf47bc728e0fe4daaa90147a6b686d, type: 3}
+  m_PrefabInstance: {fileID: 2938826058530662592}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ec910bf349307248b1f51d0c51ae4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CreditsUI
+--- !u!4 &1367404637 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4893982317523729896, guid: 9faf47bc728e0fe4daaa90147a6b686d, type: 3}
+  m_PrefabInstance: {fileID: 2938826058530662592}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2938826058530662592
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 809276148}
+    m_Modifications:
+    - target: {fileID: 4893982317523729896, guid: 9faf47bc728e0fe4daaa90147a6b686d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893982317523729896, guid: 9faf47bc728e0fe4daaa90147a6b686d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893982317523729896, guid: 9faf47bc728e0fe4daaa90147a6b686d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893982317523729896, guid: 9faf47bc728e0fe4daaa90147a6b686d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893982317523729896, guid: 9faf47bc728e0fe4daaa90147a6b686d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893982317523729896, guid: 9faf47bc728e0fe4daaa90147a6b686d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893982317523729896, guid: 9faf47bc728e0fe4daaa90147a6b686d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893982317523729896, guid: 9faf47bc728e0fe4daaa90147a6b686d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893982317523729896, guid: 9faf47bc728e0fe4daaa90147a6b686d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893982317523729896, guid: 9faf47bc728e0fe4daaa90147a6b686d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7237674325128076542, guid: 9faf47bc728e0fe4daaa90147a6b686d, type: 3}
+      propertyPath: m_Name
+      value: CreditsUI
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9faf47bc728e0fe4daaa90147a6b686d, type: 3}
 --- !u!1001 &3434590034054910132
 PrefabInstance:
   m_ObjectHideFlags: 0
