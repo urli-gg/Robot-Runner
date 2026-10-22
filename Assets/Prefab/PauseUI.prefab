@@ -225,6 +225,7 @@ GameObject:
   - component: {fileID: 4389819402729557155}
   - component: {fileID: 8898006238679466264}
   - component: {fileID: 3139560339531321787}
+  - component: {fileID: 7966630356252505673}
   m_Layer: 0
   m_Name: PausePanel
   m_TagString: Untagged
@@ -308,6 +309,23 @@ MonoBehaviour:
   m_EffectColor: {r: 0.15294118, g: 0.8509804, b: 0.9098039, a: 0.5}
   m_EffectDistance: {x: 3, y: -3}
   m_UseGraphicAlpha: 1
+--- !u!114 &7966630356252505673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466664095825067541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9dc1f944d6a192459c90ee68eb1eb1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponsiveElement
+  rectTransform: {fileID: 3780793993339204242}
+  mobileAnchorMin: {x: 0.23962449, y: 0.14809254}
+  mobileAnchorMax: {x: 0.7603755, y: 0.85190743}
+  tabletAnchorMin: {x: 0.23962449, y: 0.14809254}
+  tabletAnchorMax: {x: 0.7603755, y: 0.85190743}
 --- !u!1 &1550068342883047367
 GameObject:
   m_ObjectHideFlags: 0
