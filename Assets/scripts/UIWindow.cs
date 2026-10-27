@@ -70,6 +70,7 @@ public class UIWindow : MonoBehaviour
 
             rectTransform.DOScale(Vector3.one, showDuration)
                 .SetEase(showEase)
+                .SetUpdate(true)
                 .OnComplete(() =>
                 {
                     _isShowing = false;
@@ -101,6 +102,7 @@ public class UIWindow : MonoBehaviour
 
             rectTransform.DOScale(Vector3.zero, hideDuration)
                 .SetEase(hideEase)
+                .SetUpdate(true)
                 .OnComplete(() =>
                 {
                     _canvasRectTransform.gameObject.SetActive(false);

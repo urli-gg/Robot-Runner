@@ -38,8 +38,7 @@ public class UIManager : MonoBehaviour
 
         Instance = this;
 
-        // Asegura que el UIManager no se destruya al cargar una nueva escena.
-        DontDestroyOnLoad(this.gameObject);
+        
     }
 
     /// <summary>
