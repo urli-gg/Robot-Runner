@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class PauseUI : UIWindow
 {
+    public void OpenSettings() 
+    {
+        UIManager.Instance.ShowWindow("settingsui");
+    }
+        
     public void Resume()
     {
         GameManager.Instance.ResumeGame();

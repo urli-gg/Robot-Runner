@@ -17,5 +17,10 @@ public class CreditsUI : UIWindow
         Hide();
     }
 
+    public void Back()
+    {
+        UIManager.Instance.HideWindow("creditsui");
+    }
+
     #endregion
 }

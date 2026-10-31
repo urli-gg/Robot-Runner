@@ -20,6 +20,11 @@ public class GameOverUI : UIWindow
         GameManager.Instance.RestartGame();
     }
 
+    public void MainMenu()
+    {
+        GameManager.Instance.ReturnToMainMenu();
+    }
+
     #region Test Methods
 
     [Button("Test Show")]

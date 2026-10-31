@@ -607,7 +607,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!114 &1906132849196218860
 MonoBehaviour:
@@ -2008,13 +2008,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1323290121335450786}
+        m_TargetAssemblyTypeName: SettingsUI, Assembly-CSharp
+        m_MethodName: Back
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2316,6 +2316,8 @@ MonoBehaviour:
   showEase: 27
   hideEase: 26
   _volumeSlider: {fileID: 5975942885390107640}
+  _musicToggle: {fileID: 5711679047769419471}
+  _sfxToggle: {fileID: 4762225887321242550}
 --- !u!1 &8994492183252322862
 GameObject:
   m_ObjectHideFlags: 0

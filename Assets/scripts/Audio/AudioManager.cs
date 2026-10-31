@@ -65,10 +65,32 @@ namespace Dino.Utility.Audio
 
         }
 
+
         private void Start()
         {
             Initialize();
+
+            float volume = PlayerPrefs.GetFloat("GameVolume", 0.5f);
+
+            bool musicEnabled =
+                PlayerPrefs.GetInt("MusicEnabled", 1) == 1;
+
+            bool sfxEnabled =
+                PlayerPrefs.GetInt("SFXEnabled", 1) == 1;
+
+            UpdateAudioMixerGroupVolume(
+                musicEnabled ? volume : 0f,
+                AudioType.Music
+            );
+
+            UpdateAudioMixerGroupVolume(
+                sfxEnabled ? volume : 0f,
+                AudioType.SFX
+            );
+
+            PlaySound("backgroundMusic");
         }
+
 
         private void Update()
         {
@@ -104,19 +126,30 @@ namespace Dino.Utility.Audio
             _musicAudioData = _audioManagerData.audioData.FindAll(x => x.audioType == AudioType.Music);
         }
 
-        private void SetAudioInMixerGroup(AudioSource audioSource, AudioType audioType)
+
+        private void SetAudioInMixerGroup(
+            AudioSource audioSource,
+            AudioType audioType)
         {
             switch (audioType)
             {
                 case AudioType.Music:
+                    audioSource.outputAudioMixerGroup =
+                        _audioManagerData.MusicAudioMixerGroup;
                     break;
+
                 case AudioType.SFX:
-                    audioSource.outputAudioMixerGroup = _audioManagerData.SfxAudioMixerGroup;
+                    audioSource.outputAudioMixerGroup =
+                        _audioManagerData.SfxAudioMixerGroup;
                     break;
+
                 case AudioType.Ambience:
+                    audioSource.outputAudioMixerGroup =
+                        _audioManagerData.AmbienceAudioMixerGroup;
                     break;
             }
         }
+
 
         #endregion
 
@@ -169,24 +202,45 @@ namespace Dino.Utility.Audio
             }
         }
 
-        public void UpdateAudioMixerGroupVolume(float value, AudioType audioType)
+
+        public void UpdateAudioMixerGroupVolume(
+            float value,
+            AudioType audioType)
         {
-            float volume = value;
+            float volume = Mathf.Clamp01(value);
+
+            float decibels = volume <= 0.0001f
+                ? -80f
+                : Mathf.Log10(volume) * 20f;
 
             switch (audioType)
             {
                 case AudioType.Music:
-                    _audioManagerData.MusicAudioMixerGroup.audioMixer.SetFloat(_audioManagerData.MusicVolumeParameterName, Mathf.Lerp(-80f, 20f, volume));
-                    break;
-                case AudioType.SFX:
-                    _audioManagerData.SfxAudioMixerGroup.audioMixer.SetFloat(_audioManagerData.SfxVolumeParameterName, Mathf.Lerp(-80f, 20f, volume));
-                    break;
-                case AudioType.Ambience:
-                    _audioManagerData.AmbienceAudioMixerGroup.audioMixer.SetFloat(_audioManagerData.AmbienceVolumeParameterName, Mathf.Lerp(-80f, 20f, volume));
+                    _audioManagerData.MusicAudioMixerGroup.audioMixer
+                        .SetFloat(
+                            _audioManagerData.MusicVolumeParameterName,
+                            decibels
+                        );
                     break;
 
+                case AudioType.SFX:
+                    _audioManagerData.SfxAudioMixerGroup.audioMixer
+                        .SetFloat(
+                            _audioManagerData.SfxVolumeParameterName,
+                            decibels
+                        );
+                    break;
+
+                case AudioType.Ambience:
+                    _audioManagerData.AmbienceAudioMixerGroup.audioMixer
+                        .SetFloat(
+                            _audioManagerData.AmbienceVolumeParameterName,
+                            decibels
+                        );
+                    break;
             }
         }
+
 
         #endregion
 
