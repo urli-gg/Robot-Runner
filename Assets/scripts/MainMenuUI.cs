@@ -1,8 +1,14 @@
+
 using NaughtyAttributes;
 using UnityEngine;
 
 public class MainMenuUI : UIWindow
 {
+    public void Play()
+    {
+        GameManager.Instance.StartGame();
+    }
+
     #region Test Methods
 
     [Button("Test Show")]
@@ -19,3 +25,4 @@ public class MainMenuUI : UIWindow
 
     #endregion
 }
+

@@ -44,6 +44,11 @@ public class RunnerController : MonoBehaviour
 
     private void HandleTap(bool isPressed)
     {
+        if (GameManager.Instance == null || !GameManager.Instance.IsPlaying)
+        {
+            isHolding = false;
+            return;
+        }
         isHolding = isPressed;
 
         if (!isPressed || !isGrounded)

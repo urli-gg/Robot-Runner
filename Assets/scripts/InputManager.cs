@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -26,6 +27,7 @@ public class InputManager : MonoBehaviour
     public event Action<bool> OnTapEvent;
 
     private bool _isTouching = false;
+    private bool _touchStartedOnUI = false;
 
     #endregion
 
@@ -99,21 +101,73 @@ public class InputManager : MonoBehaviour
 
     #region Tap
 
+
     public void OnTap(InputAction.CallbackContext context)
     {
         if (context.started)
         {
+            _touchStartedOnUI = IsPointerOverUI(context);
+
+            // Si tocamos un botón de la interfaz, no enviamos el salto.
+            if (_touchStartedOnUI)
+                return;
+
             _isTouching = true;
             OnTapEvent?.Invoke(true);
-            Debug.Log("Touch started");
         }
         else if (context.canceled)
         {
-            OnTapEvent?.Invoke(false);
-            _isTouching = false;
-            Debug.Log("Touch ended");
+            // Si el toque comenzó en la UI, ignoramos también
+            // cuando se levanta el dedo.
+            if (!_touchStartedOnUI)
+            {
+                _isTouching = false;
+                OnTapEvent?.Invoke(false);
+            }
+
+            _touchStartedOnUI = false;
         }
     }
+
+    private bool IsPointerOverUI(InputAction.CallbackContext context)
+    {
+        if (EventSystem.current == null)
+            return false;
+
+        Vector2 screenPosition;
+
+        if (context.control.device is Touchscreen touchscreen)
+        {
+            screenPosition =
+                touchscreen.primaryTouch.position.ReadValue();
+        }
+        else if (context.control.device is Mouse mouse)
+        {
+            screenPosition = mouse.position.ReadValue();
+        }
+        else
+        {
+            return false;
+        }
+
+        PointerEventData pointerData =
+            new PointerEventData(EventSystem.current);
+
+        pointerData.position = screenPosition;
+
+        List<RaycastResult> results = new List<RaycastResult>();
+
+        EventSystem.current.RaycastAll(pointerData, results);
+
+        foreach (RaycastResult result in results)
+        {
+            if (result.gameObject.GetComponentInParent<Canvas>() != null)
+                return true;
+        }
+
+        return false;
+    }
+
 
     #endregion
 

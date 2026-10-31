@@ -1,9 +1,18 @@
+
 using NaughtyAttributes;
 using UnityEngine;
 
 public class PauseUI : UIWindow
 {
-    #region Test Methods
+    public void Resume()
+    {
+        GameManager.Instance.ResumeGame();
+    }
+
+    public void MainMenu()
+    {
+        GameManager.Instance.ReturnToMainMenu();
+    }
 
     [Button("Test Show")]
     private void TestShow()
@@ -16,6 +25,5 @@ public class PauseUI : UIWindow
     {
         Hide();
     }
-
-    #endregion
 }
+
