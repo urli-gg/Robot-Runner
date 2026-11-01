@@ -11,8 +11,8 @@ public class GameOverUI : UIWindow
 
     public void SetScores(int score, int best)
     {
-        scoreText.text = score.ToString("D5");
-        bestText.text = best.ToString("D5");
+        scoreText.text = $"SCORE: {score:D5}";
+        bestText.text = $"BEST: {score:D5}";
     }
 
     public void PlayAgain()

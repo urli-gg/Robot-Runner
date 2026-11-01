@@ -149,6 +149,7 @@ GameObject:
   - component: {fileID: 5213307445518544739}
   - component: {fileID: 4576890704086862475}
   - component: {fileID: 1415465591708182612}
+  - component: {fileID: 1325451931882992495}
   m_Layer: 0
   m_Name: GameOverPanel
   m_TagString: Untagged
@@ -175,8 +176,8 @@ RectTransform:
   - {fileID: 4019753202441197473}
   m_Father: {fileID: 5435219765763657584}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.23958333, y: 0.12037037}
-  m_AnchorMax: {x: 0.7604167, y: 0.8796296}
+  m_AnchorMin: {x: 0.24, y: 0.12}
+  m_AnchorMax: {x: 0.76, y: 0.88}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -233,6 +234,23 @@ MonoBehaviour:
   m_EffectColor: {r: 0.9098039, g: 0.23137255, b: 0.35686275, a: 0.5}
   m_EffectDistance: {x: 3, y: -3}
   m_UseGraphicAlpha: 1
+--- !u!114 &1325451931882992495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2890446740521692991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9dc1f944d6a192459c90ee68eb1eb1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponsiveElement
+  rectTransform: {fileID: 3188862169846715782}
+  mobileAnchorMin: {x: 0.24, y: 0.12}
+  mobileAnchorMax: {x: 0.76, y: 0.88}
+  tabletAnchorMin: {x: 0.18, y: 0.2}
+  tabletAnchorMax: {x: 0.82, y: 0.8}
 --- !u!1 &3500759993604495814
 GameObject:
   m_ObjectHideFlags: 0

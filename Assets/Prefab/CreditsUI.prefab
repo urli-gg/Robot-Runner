@@ -1083,6 +1083,7 @@ GameObject:
   - component: {fileID: 2403165588958051192}
   - component: {fileID: 7630850441345373054}
   - component: {fileID: 982477695174135349}
+  - component: {fileID: 220257262312044654}
   m_Layer: 0
   m_Name: CreditsPanel
   m_TagString: Untagged
@@ -1168,6 +1169,23 @@ MonoBehaviour:
   m_EffectColor: {r: 0.94509804, g: 0.24705882, b: 0.72156864, a: 0.5}
   m_EffectDistance: {x: 3, y: -3}
   m_UseGraphicAlpha: 1
+--- !u!114 &220257262312044654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7232271628642838259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9dc1f944d6a192459c90ee68eb1eb1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponsiveElement
+  rectTransform: {fileID: 8659966074744733574}
+  mobileAnchorMin: {x: 0.14, y: 0.12}
+  mobileAnchorMax: {x: 0.86, y: 0.88}
+  tabletAnchorMin: {x: 0.19, y: 0.2}
+  tabletAnchorMax: {x: 0.81, y: 0.8}
 --- !u!1 &7237674325128076542
 GameObject:
   m_ObjectHideFlags: 0
