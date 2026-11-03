@@ -12,7 +12,7 @@ public class GameOverUI : UIWindow
     public void SetScores(int score, int best)
     {
         scoreText.text = $"SCORE: {score:D5}";
-        bestText.text = $"BEST: {score:D5}";
+        bestText.text = $"BEST: {best:D5}";
     }
 
     public void PlayAgain()

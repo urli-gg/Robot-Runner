@@ -11,9 +11,11 @@ public class ObstacleHit : MonoBehaviour
         if (robot == null)
             return;
 
-        Debug.Log("¡El robot chocó con un obstáculo!");
-
-        GameManager.Instance.EndGame();
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.TakeDamage();
+        }
     }
 }
+
 

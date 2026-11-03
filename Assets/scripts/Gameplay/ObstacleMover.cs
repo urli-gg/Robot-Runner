@@ -8,6 +8,7 @@ public class ObstacleMover : MonoBehaviour
 
     private void Update()
     {
+
         // El obstáculo se desplaza hacia la izquierda.
         transform.position += Vector3.left * speed * Time.deltaTime;
 
@@ -17,5 +18,11 @@ public class ObstacleMover : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public void SetSpeed(float newSpeed)
+    {
+        speed = Mathf.Max(0.1f, newSpeed);
+    }
+
 }
 

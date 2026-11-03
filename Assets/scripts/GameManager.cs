@@ -1,6 +1,6 @@
 
-
 using NaughtyAttributes;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -14,8 +14,14 @@ public class GameManager : MonoBehaviour
     [Header("Score Settings")]
     [SerializeField] private float pointsPerSecond = 10f;
 
-    [Header("Gameplay UI")]
+    [Header("Lives Settings")]
+    [SerializeField] private int startingLives = 2;
+    [SerializeField] private float invulnerabilityTime = 1.5f;
+
+    [Header("Gameplay HUD")]
     [SerializeField] private GameObject pauseButton;
+    [SerializeField] private TMP_Text livesHUDText;
+    [SerializeField] private TMP_Text scoreHUDText;
 
     private static bool startAfterReload;
 
@@ -24,25 +30,32 @@ public class GameManager : MonoBehaviour
     private bool isPaused;
 
     private float scoreTimer;
+    private float lastDamageTime = -999f;
+
     private int score;
     private int bestScore;
+    private int lives;
 
     public bool IsGameOver => isGameOver;
     public bool IsPlaying => isPlaying && !isGameOver && !isPaused;
+
+    public int Score => score;
+    public int Lives => lives;
 
     private void Awake()
     {
         Instance = this;
 
         bestScore = PlayerPrefs.GetInt("BestScore", 0);
+        lives = Mathf.Max(1, startingLives);
 
         isPlaying = startAfterReload;
         startAfterReload = false;
 
         Time.timeScale = isPlaying ? 1f : 0f;
 
-        if (pauseButton != null)
-            pauseButton.SetActive(isPlaying);
+        UpdateHUDText();
+        UpdateHUDVisibility();
     }
 
     private void Start()
@@ -62,7 +75,14 @@ public class GameManager : MonoBehaviour
             return;
 
         scoreTimer += Time.deltaTime * pointsPerSecond;
-        score = Mathf.FloorToInt(scoreTimer);
+
+        int newScore = Mathf.FloorToInt(scoreTimer);
+
+        if (newScore != score)
+        {
+            score = newScore;
+            UpdateHUDText();
+        }
     }
 
     public void StartGame()
@@ -73,11 +93,9 @@ public class GameManager : MonoBehaviour
         isPlaying = true;
 
         UIManager.HideWindow("mainmenuui");
-
         Time.timeScale = 1f;
 
-        if (pauseButton != null)
-            pauseButton.SetActive(true);
+        UpdateHUDVisibility();
     }
 
     public void PauseGame()
@@ -88,9 +106,7 @@ public class GameManager : MonoBehaviour
         isPaused = true;
         Time.timeScale = 0f;
 
-        if (pauseButton != null)
-            pauseButton.SetActive(false);
-
+        UpdateHUDVisibility();
         UIManager.ShowWindow("pauseui");
     }
 
@@ -102,11 +118,29 @@ public class GameManager : MonoBehaviour
         isPaused = false;
 
         UIManager.HideWindow("pauseui");
-
         Time.timeScale = 1f;
 
-        if (pauseButton != null)
-            pauseButton.SetActive(true);
+        UpdateHUDVisibility();
+    }
+
+    public void TakeDamage()
+    {
+        if (!IsPlaying)
+            return;
+
+        // Evita perder varias vidas por el mismo choque.
+        if (Time.time - lastDamageTime < invulnerabilityTime)
+            return;
+
+        lastDamageTime = Time.time;
+        lives--;
+
+        Debug.Log("Vidas restantes: " + lives);
+
+        UpdateHUDText();
+
+        if (lives <= 0)
+            EndGame();
     }
 
     public void EndGame()
@@ -117,8 +151,7 @@ public class GameManager : MonoBehaviour
         isGameOver = true;
         isPlaying = false;
 
-        if (pauseButton != null)
-            pauseButton.SetActive(false);
+        UpdateHUDVisibility();
 
         if (score > bestScore)
         {
@@ -137,6 +170,36 @@ public class GameManager : MonoBehaviour
             gameOverUI.SetScores(score, bestScore);
             UIManager.ShowWindow("gameoverui");
         }
+    }
+
+    private void UpdateHUDText()
+    {
+        if (livesHUDText != null)
+        {
+            livesHUDText.text =
+                "LIVES  <color=#FF58C8>" +
+                new string('♥', Mathf.Max(0, lives)) +
+                "</color>";
+        }
+
+        if (scoreHUDText != null)
+        {
+            scoreHUDText.text = $"SCORE: {score:D5}";
+        }
+    }
+
+    private void UpdateHUDVisibility()
+    {
+        bool visible = IsPlaying;
+
+        if (pauseButton != null)
+            pauseButton.SetActive(visible);
+
+        if (livesHUDText != null)
+            livesHUDText.gameObject.SetActive(visible);
+
+        if (scoreHUDText != null)
+            scoreHUDText.gameObject.SetActive(visible);
     }
 
     public void RestartGame()
@@ -166,4 +229,5 @@ public class GameManager : MonoBehaviour
         UIManager.ShowWindow(uiToShow);
     }
 }
+
 
