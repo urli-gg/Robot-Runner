@@ -54,6 +54,8 @@ internal sealed class RobotRunnerSmoke : MonoBehaviour
     private IEnumerator Run()
     {
         Directory.CreateDirectory(directory);
+        InputSettings.BackgroundBehavior previousFocusBehavior = InputSystem.settings.backgroundBehavior;
+        InputSystem.settings.backgroundBehavior = InputSettings.BackgroundBehavior.IgnoreFocus;
         touch = InputSystem.AddDevice<Touchscreen>();
         foreach (string key in Prefs)
             saved[key] = PlayerPrefs.HasKey(key) ? key == "GameVolume" ? PlayerPrefs.GetFloat(key) : PlayerPrefs.GetInt(key) : null;
@@ -93,6 +95,7 @@ internal sealed class RobotRunnerSmoke : MonoBehaviour
         findings.Add(success ? "PASS" : "FAIL");
         File.WriteAllLines(Path.Combine(directory, "smoke-test.txt"), findings);
         InputSystem.RemoveDevice(touch);
+        InputSystem.settings.backgroundBehavior = previousFocusBehavior;
         foreach (var entry in saved)
         {
             if (!entry.Value.HasValue)
@@ -120,7 +123,7 @@ internal sealed class RobotRunnerSmoke : MonoBehaviour
         yield return CaptureLayout("03b-menu-16x9", 1280, 720);
 
         yield return ClickAt(ButtonIn("mainmenuui", "SettingsButton").transform.position);
-        yield return new WaitForSecondsRealtime(0.35f);
+        yield return new WaitForSecondsRealtime(0.55f);
         UIWindow settings = Window("settingsui");
         Check(settings.CanvasGroup.alpha > 0.99f, "Settings opens from main menu via touch.");
         var labels = settings.GetComponentsInChildren<TMP_Text>().Where(text =>
