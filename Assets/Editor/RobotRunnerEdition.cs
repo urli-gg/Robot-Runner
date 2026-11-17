@@ -192,13 +192,24 @@ public static class RobotRunnerEdition
 
     public static void RefreshInterfaceAndBuildWindows()
     {
+        RefreshInterface();
+        BuildWindows();
+    }
+
+    public static void RefreshInterfaceAndBuildAndroid()
+    {
+        RefreshInterface();
+        BuildAndroid();
+    }
+
+    private static void RefreshInterface()
+    {
         Scene scene = EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
         FactoryArt art = AssetDatabase.LoadAssetAtPath<FactoryArt>(AssetRoot + "/FactoryArt.asset");
         RunnerInterfaceImporter.Build(scene, art, Find<FactoryBackdrop>(scene));
         EditorSceneManager.MarkSceneDirty(scene);
         EditorSceneManager.SaveScene(scene);
         AssetDatabase.SaveAssets();
-        BuildWindows();
     }
 
     private static void Build(BuildTarget target, string fileName, BuildOptions options)

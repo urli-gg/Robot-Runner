@@ -237,6 +237,7 @@ internal static class RunnerInterfaceImporter
         RectTransform card = Child(safe, text.name + " Frame");
         ImageAt(card, panel, Color.white);
         Anchor(card, point, offset, size);
+        card.SetAsLastSibling();
         card.SetSiblingIndex(text.transform.GetSiblingIndex());
         SetObject(RobotRunnerEdition.GetOrAdd<HudCard>(text.gameObject), "frame", card.gameObject);
     }
@@ -346,6 +347,8 @@ internal static class RunnerInterfaceImporter
         TextAlignmentOptions alignment, float left, float bottom, float right, float top)
     {
         var rect = Named(host, name);
+        if (rect.parent != host)
+            rect.SetParent(host, false);
         Dock(rect, left, bottom, right, top);
         TMP_Text text = rect.GetComponent<TMP_Text>();
         SetTextStyle(text, size, color, alignment);
