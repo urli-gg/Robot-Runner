@@ -19,10 +19,16 @@ public class ResponsiveElement : MonoBehaviour
     void Start()
     {
         _responsiveManager = ResponsiveManager.Instance;
-        _responsiveManager.OnScreenSizeChanged.AddListener(UpdateAnchors);
+        if (_responsiveManager != null)
+            _responsiveManager.OnScreenSizeChanged.AddListener(UpdateAnchors);
         UpdateAnchors();
     }
 
+    private void OnDestroy()
+    {
+        if (_responsiveManager != null)
+            _responsiveManager.OnScreenSizeChanged.RemoveListener(UpdateAnchors);
+    }
 
     public void UpdateAnchors()
     {

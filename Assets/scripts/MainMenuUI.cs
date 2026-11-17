@@ -9,6 +9,10 @@ public class MainMenuUI : UIWindow
         GameManager.Instance.StartGame();
     }
 
+    public void OpenSettings() => UIManager.Instance.ShowWindow("settingsui");
+
+    public void OpenCredits() => UIManager.Instance.ShowWindow("creditsui");
+
     #region Test Methods
 
     [Button("Test Show")]

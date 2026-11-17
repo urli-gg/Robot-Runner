@@ -3,182 +3,144 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.Controls;
+using UnityEngine.UI;
 
+[RequireComponent(typeof(PlayerInput))]
 public class InputManager : MonoBehaviour
 {
-
     public static InputManager Instance { get; private set; }
 
-    #region Drag Direction
     public event Action<Vector2> OnDragEnd;
-
-    private Vector2 startPosition;
-    private Vector2 _currentPosition;
-    private bool _isDragging = false;
-
-    private InputAction _contactAction;
-    private InputAction _positionAction;
-
-    #endregion
-
-    #region Tap
-
     public event Action<bool> OnTapEvent;
-
-    private bool _isTouching = false;
-    private bool _touchStartedOnUI = false;
-
-    #endregion
-
-    #region Continuos
-
     public event Action<Vector2> OnContinuousEvent;
 
-    #endregion
+    private Vector2 dragStart;
+    private Vector2 dragPosition;
+    private bool dragging;
+    private bool touching;
+    private InputAction contactAction;
+    private InputAction positionAction;
+    private readonly List<RaycastResult> raycasts = new(16);
+    private EventSystem cachedEventSystem;
+    private PointerEventData pointer;
 
     private void Awake()
     {
         if (Instance != null && Instance != this)
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
             return;
         }
 
         Instance = this;
-        DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(gameObject);
     }
 
     private void Start()
     {
-        PlayerInput playerInput = GetComponent<PlayerInput>();
-
-        #region Drag Direction
-
-        var dragMap = playerInput.actions.FindActionMap("Drag");
-
-        _contactAction = dragMap.FindAction("PrimaryContact");
-        _positionAction = dragMap.FindAction("PrimaryPosition");
-
-        _contactAction.started += OnTouchStart;
-        _contactAction.canceled += OnTouchEnd;
-
-        _positionAction.performed += OnPositionChanged;
-
-        #endregion
+        InputActionMap dragMap = GetComponent<PlayerInput>().actions.FindActionMap("Drag");
+        contactAction = dragMap.FindAction("PrimaryContact");
+        positionAction = dragMap.FindAction("PrimaryPosition");
+        contactAction.started += StartDrag;
+        contactAction.canceled += FinishDrag;
+        positionAction.performed += UpdateDrag;
     }
 
-    #region Drag Direction
-
-    private void OnTouchStart(InputAction.CallbackContext obj)
+    private void OnDestroy()
     {
-        _isDragging = true;
-        startPosition = _positionAction.ReadValue<Vector2>();
-        _currentPosition = startPosition;
+        if (Instance != this)
+            return;
+        Instance = null;
+        if (contactAction != null)
+        {
+            contactAction.started -= StartDrag;
+            contactAction.canceled -= FinishDrag;
+            positionAction.performed -= UpdateDrag;
+        }
     }
 
-    private void OnPositionChanged(InputAction.CallbackContext obj)
+    private void StartDrag(InputAction.CallbackContext context)
     {
-        if (_isDragging)
-            _currentPosition = obj.ReadValue<Vector2>();
+        dragging = true;
+        dragStart = dragPosition = positionAction.ReadValue<Vector2>();
     }
 
-    private void OnTouchEnd(InputAction.CallbackContext context)
+    private void UpdateDrag(InputAction.CallbackContext context)
     {
-        if (!_isDragging) return;
-
-        _isDragging = false;
-
-        Vector2 dragDirection = _currentPosition - startPosition;
-
-        if (dragDirection.sqrMagnitude > 0)
-            dragDirection.Normalize();
-
-        OnDragEnd?.Invoke(dragDirection);
+        if (dragging)
+            dragPosition = context.ReadValue<Vector2>();
     }
 
-    #endregion
-
-    #region Tap
-
+    private void FinishDrag(InputAction.CallbackContext context)
+    {
+        if (!dragging)
+            return;
+        dragging = false;
+        OnDragEnd?.Invoke((dragPosition - dragStart).normalized);
+    }
 
     public void OnTap(InputAction.CallbackContext context)
     {
-        if (context.started)
+        if (context.started && GameManager.Instance != null && GameManager.Instance.IsPlaying && !IsPointerOverUI(context))
         {
-            _touchStartedOnUI = IsPointerOverUI(context);
-
-            // Si tocamos un botón de la interfaz, no enviamos el salto.
-            if (_touchStartedOnUI)
-                return;
-
-            _isTouching = true;
+            touching = true;
             OnTapEvent?.Invoke(true);
         }
         else if (context.canceled)
         {
-            // Si el toque comenzó en la UI, ignoramos también
-            // cuando se levanta el dedo.
-            if (!_touchStartedOnUI)
-            {
-                _isTouching = false;
-                OnTapEvent?.Invoke(false);
-            }
-
-            _touchStartedOnUI = false;
+            ReleaseTap();
         }
+    }
+
+    private void OnApplicationFocus(bool focused)
+    {
+        if (!focused)
+            ReleaseTap();
+    }
+
+    private void ReleaseTap()
+    {
+        if (!touching)
+            return;
+        touching = false;
+        OnTapEvent?.Invoke(false);
     }
 
     private bool IsPointerOverUI(InputAction.CallbackContext context)
     {
-        if (EventSystem.current == null)
+        EventSystem current = EventSystem.current;
+        if (current == null)
             return false;
 
-        Vector2 screenPosition;
-
+        Vector2 position;
         if (context.control.device is Touchscreen touchscreen)
-        {
-            screenPosition =
-                touchscreen.primaryTouch.position.ReadValue();
-        }
+            position = touchscreen.primaryTouch.position.ReadValue();
         else if (context.control.device is Mouse mouse)
-        {
-            screenPosition = mouse.position.ReadValue();
-        }
+            position = mouse.position.ReadValue();
         else
-        {
             return false;
-        }
 
-        PointerEventData pointerData =
-            new PointerEventData(EventSystem.current);
-
-        pointerData.position = screenPosition;
-
-        List<RaycastResult> results = new List<RaycastResult>();
-
-        EventSystem.current.RaycastAll(pointerData, results);
-
-        foreach (RaycastResult result in results)
+        if (cachedEventSystem != current)
         {
-            if (result.gameObject.GetComponentInParent<Canvas>() != null)
-                return true;
+            cachedEventSystem = current;
+            pointer = new PointerEventData(current);
         }
-
-        return false;
+        pointer.Reset();
+        pointer.position = position;
+        current.RaycastAll(pointer, raycasts);
+        bool blocked = false;
+        foreach (RaycastResult result in raycasts)
+        {
+            if (result.module is GraphicRaycaster)
+            {
+                blocked = true;
+                break;
+            }
+        }
+        raycasts.Clear();
+        return blocked;
     }
 
-
-    #endregion
-
-    #region Continuos
-
-    public void OnContinuous(InputAction.CallbackContext context)
-    {
-        Vector2 value = context.ReadValue<Vector2>();
-        Debug.Log($"Continuous input value: {value}");
-        OnContinuousEvent?.Invoke(value);
-    }
-
-    #endregion
+    public void OnContinuous(InputAction.CallbackContext context) =>
+        OnContinuousEvent?.Invoke(context.ReadValue<Vector2>());
 }

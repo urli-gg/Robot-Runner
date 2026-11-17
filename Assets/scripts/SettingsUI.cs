@@ -46,8 +46,6 @@ public class SettingsUI : UIWindow
     private void OnVolumeChanged(float value)
     {
         PlayerPrefs.SetFloat("GameVolume", value);
-        PlayerPrefs.Save();
-
         ApplyVolume();
     }
 
@@ -56,8 +54,7 @@ public class SettingsUI : UIWindow
         PlayerPrefs.SetInt(
             "MusicEnabled", enabled ? 1 : 0);
 
-        PlayerPrefs.Save();
-
+        AudioManager.Instance?.PlaySound("click");
         ApplyVolume();
     }
 
@@ -66,9 +63,8 @@ public class SettingsUI : UIWindow
         PlayerPrefs.SetInt(
             "SFXEnabled", enabled ? 1 : 0);
 
-        PlayerPrefs.Save();
-
         ApplyVolume();
+        AudioManager.Instance?.PlaySound("click");
     }
 
     private void ApplyVolume()
@@ -93,6 +89,7 @@ public class SettingsUI : UIWindow
 
     public void Back()
     {
+        PlayerPrefs.Save();
         UIManager.Instance.HideWindow("settingsui");
     }
 

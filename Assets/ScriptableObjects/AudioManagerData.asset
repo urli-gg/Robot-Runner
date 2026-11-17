@@ -22,7 +22,7 @@ MonoBehaviour:
   - name: click
     clip: {fileID: 8300000, guid: 1d32957c5faa546448af0b5ff9795a91, type: 3}
     loop: 0
-    volume: 1
+    volume: 0.6
     pitch: 1
     audioType: 1
   - name: backgroundMusic
@@ -31,3 +31,39 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     audioType: 0
+  - name: runnerJump
+    clip: {fileID: 8300000, guid: 94452d92e07c97c4b9f399e1cd38cdd4, type: 3}
+    loop: 0
+    volume: 0.67
+    pitch: 1
+    audioType: 1
+  - name: runnerLand
+    clip: {fileID: 8300000, guid: 7ba608d977d1e3c4ab80a8502ea82714, type: 3}
+    loop: 0
+    volume: 0.36
+    pitch: 1
+    audioType: 1
+  - name: runnerHit
+    clip: {fileID: 8300000, guid: 088d8f135f0b5a54a9cff726b2f9f573, type: 3}
+    loop: 0
+    volume: 0.84
+    pitch: 1
+    audioType: 1
+  - name: runnerShutdown
+    clip: {fileID: 8300000, guid: 74458fe7505dde142948c076990fbd7a, type: 3}
+    loop: 0
+    volume: 0.77
+    pitch: 1
+    audioType: 1
+  - name: runnerRecord
+    clip: {fileID: 8300000, guid: f9a8db19569e866419c933a5305a2fe5, type: 3}
+    loop: 0
+    volume: 0.68
+    pitch: 1
+    audioType: 1
+  - name: sectorEntry
+    clip: {fileID: 8300000, guid: 1b8c948f2fcc22b4e9199568917127e6, type: 3}
+    loop: 0
+    volume: 0.45
+    pitch: 1
+    audioType: 1

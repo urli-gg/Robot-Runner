@@ -1,4 +1,6 @@
-
+using System;
+using System.Collections;
+using Dino.Utility.Audio;
 using NaughtyAttributes;
 using TMPro;
 using UnityEngine;
@@ -11,62 +13,61 @@ public class GameManager : MonoBehaviour
     public UIManager UIManager;
     public string uiToShow;
 
-    [Header("Score Settings")]
     [SerializeField] private float pointsPerSecond = 10f;
-
-    [Header("Lives Settings")]
     [SerializeField] private int startingLives = 2;
     [SerializeField] private float invulnerabilityTime = 1.5f;
-
-    [Header("Gameplay HUD")]
     [SerializeField] private GameObject pauseButton;
     [SerializeField] private TMP_Text livesHUDText;
     [SerializeField] private TMP_Text scoreHUDText;
 
     private static bool startAfterReload;
-
     private bool isGameOver;
     private bool isPlaying;
     private bool isPaused;
-
+    private bool recordAnnounced;
+    private bool reloading;
     private float scoreTimer;
-    private float lastDamageTime = -999f;
-
+    private float lastDamageTime = float.NegativeInfinity;
     private int score;
     private int bestScore;
     private int lives;
 
-    public bool IsGameOver => isGameOver;
-    public bool IsPlaying => isPlaying && !isGameOver && !isPaused;
+    public event Action<bool, float> Damaged;
+    public event Action NewRecord;
 
+    public bool IsGameOver => isGameOver;
+    public bool HasStarted => isPlaying || isGameOver;
+    public bool IsPlaying => isPlaying && !isGameOver && !isPaused && !reloading;
     public int Score => score;
     public int Lives => lives;
 
     private void Awake()
     {
         Instance = this;
-
+#if UNITY_ANDROID || UNITY_IOS
+        Application.targetFrameRate = 60;
+#endif
         bestScore = PlayerPrefs.GetInt("BestScore", 0);
         lives = Mathf.Max(1, startingLives);
-
         isPlaying = startAfterReload;
         startAfterReload = false;
-
         Time.timeScale = isPlaying ? 1f : 0f;
-
-        UpdateHUDText();
+        UpdateLives();
+        UpdateScore();
         UpdateHUDVisibility();
     }
 
     private void Start()
     {
-        if (isPlaying && UIManager != null)
-        {
-            UIWindow menu = UIManager.GetWindow("mainmenuui");
+        if (isPlaying)
+            UIManager.GetWindow("mainmenuui")?.Hide(true);
+        AudioManager.Instance?.SetMusicEnergy(isPlaying ? 0.78f : 0.50f);
+    }
 
-            if (menu != null)
-                menu.Hide(true);
-        }
+    private void OnDestroy()
+    {
+        if (Instance == this)
+            Instance = null;
     }
 
     private void Update()
@@ -75,70 +76,68 @@ public class GameManager : MonoBehaviour
             return;
 
         scoreTimer += Time.deltaTime * pointsPerSecond;
-
         int newScore = Mathf.FloorToInt(scoreTimer);
+        if (newScore == score)
+            return;
 
-        if (newScore != score)
+        score = newScore;
+        UpdateScore();
+        if (!recordAnnounced && bestScore > 0 && score > bestScore)
         {
-            score = newScore;
-            UpdateHUDText();
+            recordAnnounced = true;
+            NewRecord?.Invoke();
+            AudioManager.Instance?.PlaySound("runnerRecord");
         }
     }
 
     public void StartGame()
     {
-        if (isPlaying || isGameOver)
+        if (HasStarted)
             return;
-
         isPlaying = true;
-
         UIManager.HideWindow("mainmenuui");
         Time.timeScale = 1f;
-
         UpdateHUDVisibility();
+        AudioManager.Instance?.SetMusicEnergy(0.78f);
     }
 
     public void PauseGame()
     {
         if (!IsPlaying)
             return;
-
         isPaused = true;
         Time.timeScale = 0f;
-
         UpdateHUDVisibility();
         UIManager.ShowWindow("pauseui");
+        AudioManager.Instance?.SetMusicEnergy(0.27f);
     }
 
     public void ResumeGame()
     {
         if (!isPaused || isGameOver)
             return;
-
         isPaused = false;
-
         UIManager.HideWindow("pauseui");
         Time.timeScale = 1f;
-
         UpdateHUDVisibility();
+        AudioManager.Instance?.SetMusicEnergy(0.78f);
+    }
+
+    private void OnApplicationPause(bool paused)
+    {
+        if (paused && IsPlaying)
+            PauseGame();
     }
 
     public void TakeDamage()
     {
-        if (!IsPlaying)
-            return;
-
-        // Evita perder varias vidas por el mismo choque.
-        if (Time.time - lastDamageTime < invulnerabilityTime)
+        if (!IsPlaying || Time.time - lastDamageTime < invulnerabilityTime)
             return;
 
         lastDamageTime = Time.time;
         lives--;
-
-        Debug.Log("Vidas restantes: " + lives);
-
-        UpdateHUDText();
-
+        UpdateLives();
+        Damaged?.Invoke(lives <= 0, invulnerabilityTime);
         if (lives <= 0)
             EndGame();
     }
@@ -150,84 +149,70 @@ public class GameManager : MonoBehaviour
 
         isGameOver = true;
         isPlaying = false;
-
+        Time.timeScale = 0f;
         UpdateHUDVisibility();
 
-        if (score > bestScore)
+        bool newBest = score > bestScore;
+        if (newBest)
         {
             bestScore = score;
             PlayerPrefs.SetInt("BestScore", bestScore);
             PlayerPrefs.Save();
+            if (!recordAnnounced)
+                AudioManager.Instance?.PlaySound("runnerRecord");
         }
 
-        Time.timeScale = 0f;
+        AudioManager.Instance?.SetMusicEnergy(0.30f);
+        StartCoroutine(ShowResult(newBest));
+    }
 
-        GameOverUI gameOverUI =
-            UIManager.GetWindow("gameoverui") as GameOverUI;
-
-        if (gameOverUI != null)
+    private IEnumerator ShowResult(bool newBest)
+    {
+        yield return new WaitForSecondsRealtime(0.31f);
+        if (UIManager.GetWindow("gameoverui") is GameOverUI result)
         {
-            gameOverUI.SetScores(score, bestScore);
-            UIManager.ShowWindow("gameoverui");
+            result.SetScores(score, bestScore, newBest);
+            result.Show();
         }
     }
 
-    private void UpdateHUDText()
+    private void UpdateLives()
     {
         if (livesHUDText != null)
-        {
-            livesHUDText.text =
-                "LIVES  <color=#FF58C8>" +
-                new string('♥', Mathf.Max(0, lives)) +
-                "</color>";
-        }
+            livesHUDText.text = "LIVES  <color=#FF74C9>" + new string('♥', Mathf.Max(0, lives)) + "</color>";
+    }
 
+    private void UpdateScore()
+    {
         if (scoreHUDText != null)
-        {
-            scoreHUDText.text = $"SCORE: {score:D5}";
-        }
+            scoreHUDText.SetText("SCORE  {0:00000}", score);
     }
 
     private void UpdateHUDVisibility()
     {
         bool visible = IsPlaying;
-
         if (pauseButton != null)
             pauseButton.SetActive(visible);
-
         if (livesHUDText != null)
             livesHUDText.gameObject.SetActive(visible);
-
         if (scoreHUDText != null)
             scoreHUDText.gameObject.SetActive(visible);
     }
 
-    public void RestartGame()
-    {
-        startAfterReload = true;
-        ReloadScene();
-    }
+    public void RestartGame() => ReloadScene(true);
 
-    public void ReturnToMainMenu()
-    {
-        startAfterReload = false;
-        ReloadScene();
-    }
+    public void ReturnToMainMenu() => ReloadScene(false);
 
-    private void ReloadScene()
+    private void ReloadScene(bool startPlaying)
     {
+        if (reloading)
+            return;
+        reloading = true;
+        startAfterReload = startPlaying;
         Time.timeScale = 1f;
-
-        SceneManager.LoadScene(
-            SceneManager.GetActiveScene().buildIndex
-        );
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     [Button]
-    private void Test()
-    {
-        UIManager.ShowWindow(uiToShow);
-    }
+    private void Test() => UIManager.ShowWindow(uiToShow);
 }
-
-
