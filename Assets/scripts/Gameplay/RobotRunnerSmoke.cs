@@ -123,6 +123,10 @@ internal sealed class RobotRunnerSmoke : MonoBehaviour
         yield return new WaitForSecondsRealtime(0.35f);
         UIWindow settings = Window("settingsui");
         Check(settings.CanvasGroup.alpha > 0.99f, "Settings opens from main menu via touch.");
+        var labels = settings.GetComponentsInChildren<TMP_Text>().Where(text =>
+            text.name == "MusicLabel" || text.name == "SFXLabel" || text.name == "VolumeLabel").ToArray();
+        Check(labels.Length == 3 && labels.All(text => text.rectTransform.rect.height > 40f &&
+            text.transform.parent.name == "SettingsPanel"), "All three audio labels have room in the settings panel.");
         Toggle music = settings.GetComponentsInChildren<Toggle>().Single(toggle => toggle.name == "MusicToggle");
         Toggle sfx = settings.GetComponentsInChildren<Toggle>().Single(toggle => toggle.name == "SFXToggle");
         Slider volume = settings.GetComponentInChildren<Slider>();
@@ -156,6 +160,13 @@ internal sealed class RobotRunnerSmoke : MonoBehaviour
         yield return ClickAt(ButtonIn("mainmenuui", "PlayButton").transform.position);
         yield return new WaitForSecondsRealtime(0.28f);
         Check(game.IsPlaying, "PLAY starts gameplay.");
+        foreach (string name in new[] { "LivesText", "ScoreHUDText" })
+        {
+            var text = GameObject.Find(name).GetComponent<TMP_Text>();
+            Transform frame = text.transform.parent.Find(name + " Frame");
+            Check(text.isActiveAndEnabled && frame.GetSiblingIndex() < text.transform.GetSiblingIndex(),
+                name + " renders above its HUD frame.");
+        }
         runner = FindFirstObjectByType<RunnerController>();
         profile = runner.GetJumpProfile();
         spawner = FindFirstObjectByType<ObstacleSpawner>();
@@ -181,15 +192,24 @@ internal sealed class RobotRunnerSmoke : MonoBehaviour
         yield return ClickAt(new Vector2(Screen.width * 0.06f, Screen.height * 0.36f));
         Check(game.Score == pausedScore && jumps == 2, "Paused touch and score remain idle.");
         yield return CaptureLayout("06-pause", 1280, 590);
+        yield return ClickAt(ButtonIn("pauseui", "SettingsButton").transform.position);
+        yield return new WaitForSecondsRealtime(0.35f);
+        Check(Window("settingsui").CanvasGroup.alpha > 0.99f && !game.IsPlaying, "Settings also opens over Pause.");
+        yield return ClickAt(ButtonIn("settingsui", "BackButton").transform.position);
+        yield return new WaitForSecondsRealtime(0.24f);
+        Check(Window("pauseui").CanvasGroup.alpha > 0.99f && !game.IsPlaying, "Back from Settings returns to Pause.");
         yield return ClickAt(ButtonIn("pauseui", "ResumeButton").transform.position);
         yield return new WaitForSecondsRealtime(0.25f);
         Check(GameManager.Instance == game && game.IsPlaying && runner.Grounded && jumps == 2,
             "Resume restores the run without a queued jump.");
 
-        yield return CaptureLayout("07-gameplay-night", 1280, 590);
         MethodInfo tap = typeof(RunnerController).GetMethod("HandleTap", Private);
         driveJump = (Action<bool>)Delegate.CreateDelegate(typeof(Action<bool>), runner, tap);
         autoplay = true;
+        yield return new WaitUntil(() => spawner.ActiveCount > 0);
+        yield return new WaitForSeconds(0.42f);
+        yield return CaptureLayout("07-gameplay-night", 1280, 590);
+        yield return CaptureLayout("07b-gameplay-tablet", 1200, 900);
         Time.timeScale = 4f;
         FactoryBackdrop world = FindFirstObjectByType<FactoryBackdrop>();
         foreach (string file in new[] { "08-gameplay-day", "09-gameplay-hot", "10-gameplay-toxic" })
