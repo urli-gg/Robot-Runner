@@ -1,48 +1,20 @@
-using System;
 using System.Collections.Generic;
-using Dino.Utility.Audio;
 using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.Audio;
-using UnityEngine.Events;
-using UnityEngine.Rendering;
-using AudioType = Dino.Utility.Audio.AudioType;
 
 namespace Dino.Utility.Audio
 {
-    /// <summary>
-    /// Last update 27/04/2025 Dino
-    /// A class that allows you to manage audio.
-    /// </summary>
     public class AudioManager : MonoBehaviour
     {
-        #region Singleton
         public static AudioManager Instance { get; private set; }
-        #endregion
 
-        #region serialized fields
-
-
-
-        [Header("Audio Manager Data")]
-        [SerializeField]
-        private AudioManagerData _audioManagerData;
-
-
-        [Header("Audio Test")]
+        [SerializeField] private AudioManagerData _audioManagerData;
         public string _soundNameTest;
-
-        #endregion
-
-        #region private fields
-
-        private GameObject _soundsContainer;
-        private List<AudioSource> _audioSources = new List<AudioSource>();
-
-        private List<AudioData> _sfxAudioData = new List<AudioData>();
-        private List<AudioData> _musicAudioData = new List<AudioData>();
-
-        #endregion
+        private readonly Dictionary<string, AudioSource> sources = new();
+        private AudioSource music;
+        private float musicEnergy = 0.5f;
+        private float musicFullVolume = 1f;
 
         public AudioManagerData AudioManagerData
         {
@@ -50,10 +22,7 @@ namespace Dino.Utility.Audio
             set => _audioManagerData = value;
         }
 
-
-        #region unity methods
-
-        void Awake()
+        private void Awake()
         {
             if (Instance != null && Instance != this)
             {
@@ -62,204 +31,94 @@ namespace Dino.Utility.Audio
             }
             Instance = this;
             DontDestroyOnLoad(gameObject);
-
         }
-
 
         private void Start()
         {
-            Initialize();
+            foreach (AudioData sound in _audioManagerData.audioData)
+            {
+                if (sound.clip == null || sources.ContainsKey(sound.name))
+                    continue;
+
+                AudioSource source = gameObject.AddComponent<AudioSource>();
+                source.playOnAwake = false;
+                source.outputAudioMixerGroup = MixerGroup(sound.audioType);
+                source.clip = sound.clip;
+                source.volume = sound.volume;
+                source.pitch = sound.pitch;
+                source.loop = sound.loop;
+                sources.Add(sound.name, source);
+            }
 
             float volume = PlayerPrefs.GetFloat("GameVolume", 0.5f);
-
-            bool musicEnabled =
-                PlayerPrefs.GetInt("MusicEnabled", 1) == 1;
-
-            bool sfxEnabled =
-                PlayerPrefs.GetInt("SFXEnabled", 1) == 1;
-
-            UpdateAudioMixerGroupVolume(
-                musicEnabled ? volume : 0f,
-                AudioType.Music
-            );
-
-            UpdateAudioMixerGroupVolume(
-                sfxEnabled ? volume : 0f,
-                AudioType.SFX
-            );
-
-            PlaySound("backgroundMusic");
+            UpdateAudioMixerGroupVolume(PlayerPrefs.GetInt("MusicEnabled", 1) == 1 ? volume : 0f, AudioType.Music);
+            UpdateAudioMixerGroupVolume(PlayerPrefs.GetInt("SFXEnabled", 1) == 1 ? volume : 0f, AudioType.SFX);
+            if (sources.TryGetValue("backgroundMusic", out music))
+            {
+                musicFullVolume = music.volume;
+                music.volume *= musicEnergy;
+                music.Play();
+            }
         }
-
 
         private void Update()
         {
-
-
+            if (music != null)
+                music.volume = Mathf.MoveTowards(music.volume, musicFullVolume * musicEnergy, Time.unscaledDeltaTime * 1.8f);
         }
 
-
-        #endregion
-
-        #region private methods
-
-
-
-        private AudioSource FindAudioSource(AudioClip clip)
+        private void OnApplicationPause(bool pause)
         {
-            return _audioSources.Find(x => x.clip == clip);
+            if (pause)
+                PlayerPrefs.Save();
         }
 
-        private void Initialize()
+        private void OnDestroy()
         {
-            _soundsContainer = new GameObject("SoundsContainer");
-            _audioSources = new List<AudioSource>();
-            _soundsContainer.transform.SetParent(transform);
-            PrepareLists();
+            if (Instance == this)
+                Instance = null;
         }
 
-
-
-        private void PrepareLists()
-        {
-            _sfxAudioData = _audioManagerData.audioData.FindAll(x => x.audioType == AudioType.SFX);
-            _musicAudioData = _audioManagerData.audioData.FindAll(x => x.audioType == AudioType.Music);
-        }
-
-
-        private void SetAudioInMixerGroup(
-            AudioSource audioSource,
-            AudioType audioType)
-        {
-            switch (audioType)
-            {
-                case AudioType.Music:
-                    audioSource.outputAudioMixerGroup =
-                        _audioManagerData.MusicAudioMixerGroup;
-                    break;
-
-                case AudioType.SFX:
-                    audioSource.outputAudioMixerGroup =
-                        _audioManagerData.SfxAudioMixerGroup;
-                    break;
-
-                case AudioType.Ambience:
-                    audioSource.outputAudioMixerGroup =
-                        _audioManagerData.AmbienceAudioMixerGroup;
-                    break;
-            }
-        }
-
-
-        #endregion
-
-
-        #region public methdos
+        public void SetMusicEnergy(float target) => musicEnergy = Mathf.Clamp01(target);
 
         public void PlaySound(string soundName)
         {
-            AudioData audioData = _audioManagerData.audioData.Find(x => x.name == soundName);
-            if (audioData == null)
-            {
-                Debug.LogWarning("Sound: " + soundName + " not found!");
-                return;
-            }
-
-            AudioSource audioSource = FindAudioSource(audioData.clip);
-
-            if (audioSource == null)
-            {
-                GameObject go = new GameObject("AS : " + audioData.name);
-                audioSource = go.AddComponent<AudioSource>();
-                audioSource.transform.SetParent(_soundsContainer.transform);
-                audioSource.clip = audioData.clip;
-                audioSource.loop = audioData.loop;
-                audioSource.volume = audioData.volume;
-                audioSource.pitch = audioData.pitch;
-                audioSource.Play();
-                SetAudioInMixerGroup(audioSource, audioData.audioType);
-                _audioSources.Add(audioSource);
-            }
-            else
-            {
-                audioSource.Play();
-            }
+            if (sources.TryGetValue(soundName, out AudioSource source))
+                source.Play();
         }
 
         public void StopSound(string soundName)
         {
-            AudioData audioData = _audioManagerData.audioData.Find(x => x.name == soundName);
-            if (audioData == null)
-            {
-                Debug.LogWarning("Sound: " + soundName + " not found!");
-                return;
-            }
-
-            AudioSource audioSource = FindAudioSource(audioData.clip);
-            if (audioSource != null)
-            {
-                audioSource.Stop();
-            }
+            if (sources.TryGetValue(soundName, out AudioSource source))
+                source.Stop();
         }
 
-
-        public void UpdateAudioMixerGroupVolume(
-            float value,
-            AudioType audioType)
+        public void UpdateAudioMixerGroupVolume(float value, AudioType audioType)
         {
+            AudioMixerGroup group = MixerGroup(audioType);
+            if (group == null)
+                return;
             float volume = Mathf.Clamp01(value);
-
-            float decibels = volume <= 0.0001f
-                ? -80f
-                : Mathf.Log10(volume) * 20f;
-
-            switch (audioType)
+            float decibels = volume <= 0.0001f ? -80f : Mathf.Log10(volume) * 20f;
+            string parameter = audioType switch
             {
-                case AudioType.Music:
-                    _audioManagerData.MusicAudioMixerGroup.audioMixer
-                        .SetFloat(
-                            _audioManagerData.MusicVolumeParameterName,
-                            decibels
-                        );
-                    break;
-
-                case AudioType.SFX:
-                    _audioManagerData.SfxAudioMixerGroup.audioMixer
-                        .SetFloat(
-                            _audioManagerData.SfxVolumeParameterName,
-                            decibels
-                        );
-                    break;
-
-                case AudioType.Ambience:
-                    _audioManagerData.AmbienceAudioMixerGroup.audioMixer
-                        .SetFloat(
-                            _audioManagerData.AmbienceVolumeParameterName,
-                            decibels
-                        );
-                    break;
-            }
+                AudioType.Music => _audioManagerData.MusicVolumeParameterName,
+                AudioType.Ambience => _audioManagerData.AmbienceVolumeParameterName,
+                _ => _audioManagerData.SfxVolumeParameterName
+            };
+            group.audioMixer.SetFloat(parameter, decibels);
         }
 
-
-        #endregion
+        private AudioMixerGroup MixerGroup(AudioType audioType) => audioType switch
+        {
+            AudioType.Music => _audioManagerData.MusicAudioMixerGroup,
+            AudioType.Ambience => _audioManagerData.AmbienceAudioMixerGroup,
+            _ => _audioManagerData.SfxAudioMixerGroup
+        };
 
         [Button]
-        void TestSound()
-        {
-            PlaySound(_soundNameTest);
-            Debug.Log("Playing sound: " + _soundNameTest);
-
-        }
+        private void TestSound() => PlaySound(_soundNameTest);
     }
-}
 
-namespace Dino.Utility.Audio
-{
-    public enum AudioType
-    {
-        Music,
-        SFX,
-        Ambience
-    }
+    public enum AudioType { Music, SFX, Ambience }
 }

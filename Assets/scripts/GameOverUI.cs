@@ -9,10 +9,10 @@ public class GameOverUI : UIWindow
     [SerializeField] private TMP_Text scoreText;
     [SerializeField] private TMP_Text bestText;
 
-    public void SetScores(int score, int best)
+    public void SetScores(int score, int best, bool newBest = false)
     {
-        scoreText.text = $"SCORE: {score:D5}";
-        bestText.text = $"BEST: {best:D5}";
+        scoreText.text = $"SCORE   {score:D5}";
+        bestText.text = (newBest ? "NEW BEST   " : "BEST   ") + best.ToString("D5");
     }
 
     public void PlayAgain()

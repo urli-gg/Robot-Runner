@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -43,6 +42,8 @@ public class ResponsiveManager : MonoBehaviour
 
     private void OnEnable()
     {
+        if (Instance != this)
+            return;
         _lastScreenSize = new Vector2(Screen.width, Screen.height);
         Application.onBeforeRender += CheckScreenSizeChange;
     }
@@ -52,11 +53,10 @@ public class ResponsiveManager : MonoBehaviour
         Application.onBeforeRender -= CheckScreenSizeChange;
     }
 
-    private void Start()
+    private void OnDestroy()
     {
-        // Debug.Log(CurrentScreenSize);
-        // Debug.Log(CurrentOrientation);
-        // Debug.Log(CurrentDeviceType);
+        if (Instance == this)
+            Instance = null;
     }
 
     #endregion
@@ -72,12 +72,6 @@ public class ResponsiveManager : MonoBehaviour
             _lastScreenSize = currentScreenSize;
 
             OnScreenSizeChanged?.Invoke();
-
-            Debug.Log(
-                $"Screen size changed: {currentScreenSize.x}x{currentScreenSize.y} Orientation: {(IsPortrait() ? "Portrait" : "Landscape")}"
-            );
-
-            Debug.Log($"Device type: {CurrentDeviceType}");
         }
     }
 
@@ -90,17 +84,10 @@ public class ResponsiveManager : MonoBehaviour
 
     private DeviceType GetDeviceTypeByResolution(int width, int height)
     {
-        float aspectRatio =
-            (float)Math.Max(width, height) /
-            Math.Min(width, height);
-
-        int minDimension =
-            Math.Min(width, height);
-
-        if (minDimension >= 600 && aspectRatio < 2.0f)
-            return DeviceType.Tablet;
-        else
-            return DeviceType.Mobile;
+        int shortSide = Mathf.Min(width, height);
+        return shortSide >= 600 && (float)Mathf.Max(width, height) / shortSide <= 1.65f
+            ? DeviceType.Tablet
+            : DeviceType.Mobile;
     }
 
     #endregion

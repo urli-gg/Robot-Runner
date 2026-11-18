@@ -4,6 +4,12 @@
 [Oo]bj/
 [Bb]uild/
 [Bb]uilds/
+/Builds Android/
+*.apk
+*.aab
+*.keystore
+*.jks
+/.utmp/
 [Ll]ogs/
 [Uu]ser[Ss]ettings/
 

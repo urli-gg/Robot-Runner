@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 970256f02bb957e4593e64edfed8e473, type: 3}
+  m_Name: FactoryArt
+  m_EditorClassIdentifier: Assembly-CSharp::FactoryArt
+  biomes:
+  - name: Night Factory
+    accent: {r: 0.27450982, g: 0.9529412, b: 0.972549, a: 1}
+    wall: {fileID: 21300000, guid: 3f8961925f9931946846a341fd870323, type: 3}
+    rooms:
+    - {fileID: 21300000, guid: 62705eb4e48849f4bbd89c96484b88bb, type: 3}
+    - {fileID: 21300000, guid: 901d4f6573d51a34e88b97ff6e258ef5, type: 3}
+    - {fileID: 21300000, guid: c7e706e953c39134ba288697c4dbe3e3, type: 3}
+    - {fileID: 21300000, guid: f1627d63d4d61064c9ff959121e27312, type: 3}
+    deck: {fileID: 21300000, guid: a3bb7a749ff607044a9cb545eaf1f04f, type: 3}
+    conveyor:
+    - {fileID: -1762587996, guid: f6a9af5642abeaf408ad48c2e2752f6d, type: 3}
+    - {fileID: -1461344881, guid: f6a9af5642abeaf408ad48c2e2752f6d, type: 3}
+    - {fileID: -137832820, guid: f6a9af5642abeaf408ad48c2e2752f6d, type: 3}
+    arm:
+    - {fileID: 876901791, guid: f6a9af5642abeaf408ad48c2e2752f6d, type: 3}
+    - {fileID: 1254215436, guid: f6a9af5642abeaf408ad48c2e2752f6d, type: 3}
+    - {fileID: 1412238557, guid: f6a9af5642abeaf408ad48c2e2752f6d, type: 3}
+    fluid:
+    - {fileID: -23120184, guid: f6a9af5642abeaf408ad48c2e2752f6d, type: 3}
+    - {fileID: -94465802, guid: f6a9af5642abeaf408ad48c2e2752f6d, type: 3}
+    - {fileID: -1916155507, guid: f6a9af5642abeaf408ad48c2e2752f6d, type: 3}
+  - name: Day Factory
+    accent: {r: 0.46666667, g: 0.8784314, b: 0.99215686, a: 1}
+    wall: {fileID: 21300000, guid: 1848dbaf407287949a70e0823b4aa362, type: 3}
+    rooms:
+    - {fileID: 21300000, guid: 7b2c76f8610f98e439941bd85f0ecfda, type: 3}
+    - {fileID: 21300000, guid: 6560d5ae0799ffb4e98eae6dc42ff883, type: 3}
+    - {fileID: 21300000, guid: 281f377796a8a9845a26f129526261fb, type: 3}
+    - {fileID: 21300000, guid: e90e514b7e35c0e4b8e6071f770c2db4, type: 3}
+    deck: {fileID: 21300000, guid: 96970d0c49d280540a54330751e5ccd8, type: 3}
+    conveyor:
+    - {fileID: 1798895363, guid: 87e2a2ee86e3cca41b1040161fa3a67b, type: 3}
+    - {fileID: 38670563, guid: 87e2a2ee86e3cca41b1040161fa3a67b, type: 3}
+    - {fileID: 498243659, guid: 87e2a2ee86e3cca41b1040161fa3a67b, type: 3}
+    arm:
+    - {fileID: 1276444303, guid: 87e2a2ee86e3cca41b1040161fa3a67b, type: 3}
+    - {fileID: -1544396328, guid: 87e2a2ee86e3cca41b1040161fa3a67b, type: 3}
+    - {fileID: -293086605, guid: 87e2a2ee86e3cca41b1040161fa3a67b, type: 3}
+    fluid:
+    - {fileID: 1704780182, guid: 87e2a2ee86e3cca41b1040161fa3a67b, type: 3}
+    - {fileID: 132570366, guid: 87e2a2ee86e3cca41b1040161fa3a67b, type: 3}
+    - {fileID: -1898324045, guid: 87e2a2ee86e3cca41b1040161fa3a67b, type: 3}
+  - name: Hot Factory
+    accent: {r: 1, g: 0.50980395, b: 0.29803923, a: 1}
+    wall: {fileID: 21300000, guid: 1a8dd59aad62a4b48b1a7b41b16b857d, type: 3}
+    rooms:
+    - {fileID: 21300000, guid: c04134801dac1974483761cc1a778718, type: 3}
+    - {fileID: 21300000, guid: 7e3009579a56b544f979d83c754d0b3f, type: 3}
+    - {fileID: 21300000, guid: 0db28cce008a3694a9c8a6ea6f3789dc, type: 3}
+    - {fileID: 21300000, guid: 6f5abfa80d2b27d4987b73ba4e30893c, type: 3}
+    deck: {fileID: 21300000, guid: c5230a25d5db57449901eb2708fa1d4b, type: 3}
+    conveyor:
+    - {fileID: 189499807, guid: 3801ee6f3a187b64dbe0c1d35caf217f, type: 3}
+    - {fileID: -2044993761, guid: 3801ee6f3a187b64dbe0c1d35caf217f, type: 3}
+    - {fileID: -2107651627, guid: 3801ee6f3a187b64dbe0c1d35caf217f, type: 3}
+    arm:
+    - {fileID: -2136769240, guid: 3801ee6f3a187b64dbe0c1d35caf217f, type: 3}
+    - {fileID: 1323042942, guid: 3801ee6f3a187b64dbe0c1d35caf217f, type: 3}
+    - {fileID: -2141887560, guid: 3801ee6f3a187b64dbe0c1d35caf217f, type: 3}
+    fluid:
+    - {fileID: -1237318414, guid: 3801ee6f3a187b64dbe0c1d35caf217f, type: 3}
+    - {fileID: 1729290066, guid: 3801ee6f3a187b64dbe0c1d35caf217f, type: 3}
+    - {fileID: -54128586, guid: 3801ee6f3a187b64dbe0c1d35caf217f, type: 3}
+  - name: Toxic Factory
+    accent: {r: 0.5882353, g: 0.96862745, b: 0.39215687, a: 1}
+    wall: {fileID: 21300000, guid: 81414e7ab874dbe4eb61741deeb30c66, type: 3}
+    rooms:
+    - {fileID: 21300000, guid: e55f27da47760e2459e054e110c56579, type: 3}
+    - {fileID: 21300000, guid: a19b193c203a2a741ae85bfb8cfa8d18, type: 3}
+    - {fileID: 21300000, guid: c252a44a56e97464a949477ffb48f496, type: 3}
+    - {fileID: 21300000, guid: 8f4386c8b760a5b42938d4722dd95dc7, type: 3}
+    deck: {fileID: 21300000, guid: 5ab3c2a05edce8f4ba8b8e90684786c2, type: 3}
+    conveyor:
+    - {fileID: 1471478586, guid: e3e8a8fb2c054ae4abede11774e9c060, type: 3}
+    - {fileID: -1721115045, guid: e3e8a8fb2c054ae4abede11774e9c060, type: 3}
+    - {fileID: -994408747, guid: e3e8a8fb2c054ae4abede11774e9c060, type: 3}
+    arm:
+    - {fileID: 1448802199, guid: e3e8a8fb2c054ae4abede11774e9c060, type: 3}
+    - {fileID: -1463236681, guid: e3e8a8fb2c054ae4abede11774e9c060, type: 3}
+    - {fileID: 1551190638, guid: e3e8a8fb2c054ae4abede11774e9c060, type: 3}
+    fluid:
+    - {fileID: -1259803465, guid: e3e8a8fb2c054ae4abede11774e9c060, type: 3}
+    - {fileID: 196636702, guid: e3e8a8fb2c054ae4abede11774e9c060, type: 3}
+    - {fileID: 2129865602, guid: e3e8a8fb2c054ae4abede11774e9c060, type: 3}
+  steam:
+  - {fileID: 1265968318, guid: 369961eb029a16d4e85c9230bc89e361, type: 3}
+  - {fileID: 1760053044, guid: 369961eb029a16d4e85c9230bc89e361, type: 3}
+  - {fileID: -984644944, guid: 369961eb029a16d4e85c9230bc89e361, type: 3}
+  - {fileID: 1775102118, guid: 369961eb029a16d4e85c9230bc89e361, type: 3}
+  - {fileID: 768078338, guid: 369961eb029a16d4e85c9230bc89e361, type: 3}
+  - {fileID: 1690444241, guid: 369961eb029a16d4e85c9230bc89e361, type: 3}
+  spark:
+  - {fileID: 940655308, guid: 369961eb029a16d4e85c9230bc89e361, type: 3}
+  - {fileID: -260229296, guid: 369961eb029a16d4e85c9230bc89e361, type: 3}
+  - {fileID: -849430257, guid: 369961eb029a16d4e85c9230bc89e361, type: 3}
+  impact:
+  - {fileID: 109333016, guid: 369961eb029a16d4e85c9230bc89e361, type: 3}
+  - {fileID: 1742193826, guid: 369961eb029a16d4e85c9230bc89e361, type: 3}
+  - {fileID: 1762903188, guid: 369961eb029a16d4e85c9230bc89e361, type: 3}
+  - {fileID: 726701855, guid: 369961eb029a16d4e85c9230bc89e361, type: 3}
+  - {fileID: -1196351543, guid: 369961eb029a16d4e85c9230bc89e361, type: 3}
+  - {fileID: -766329880, guid: 369961eb029a16d4e85c9230bc89e361, type: 3}
+  - {fileID: -1653723051, guid: 369961eb029a16d4e85c9230bc89e361, type: 3}
+  idle:
+  - {fileID: -1876817681, guid: 652cedea8f2601449a668f923e76b24e, type: 3}
+  - {fileID: -705910986, guid: 652cedea8f2601449a668f923e76b24e, type: 3}
+  - {fileID: -788360676, guid: 652cedea8f2601449a668f923e76b24e, type: 3}
+  run:
+  - {fileID: 1133547951, guid: 652cedea8f2601449a668f923e76b24e, type: 3}
+  - {fileID: -279804893, guid: 652cedea8f2601449a668f923e76b24e, type: 3}
+  - {fileID: -2106754225, guid: 652cedea8f2601449a668f923e76b24e, type: 3}
+  hurt:
+  - {fileID: 1409016984, guid: 652cedea8f2601449a668f923e76b24e, type: 3}
+  - {fileID: -2135841343, guid: 652cedea8f2601449a668f923e76b24e, type: 3}
+  - {fileID: 2125632269, guid: 652cedea8f2601449a668f923e76b24e, type: 3}
+  dead:
+  - {fileID: -1782699692, guid: 652cedea8f2601449a668f923e76b24e, type: 3}
+  - {fileID: 1131844168, guid: 652cedea8f2601449a668f923e76b24e, type: 3}
+  - {fileID: -104659521, guid: 652cedea8f2601449a668f923e76b24e, type: 3}
+  droneIdle:
+  - {fileID: -174983605, guid: 652cedea8f2601449a668f923e76b24e, type: 3}
+  - {fileID: -1251744441, guid: 652cedea8f2601449a668f923e76b24e, type: 3}
+  - {fileID: 1848992240, guid: 652cedea8f2601449a668f923e76b24e, type: 3}
+  droneMove:
+  - {fileID: -1334985510, guid: 652cedea8f2601449a668f923e76b24e, type: 3}
+  - {fileID: 95157575, guid: 652cedea8f2601449a668f923e76b24e, type: 3}
+  - {fileID: 592715040, guid: 652cedea8f2601449a668f923e76b24e, type: 3}
+  droneAltIdle:
+  - {fileID: -616722398, guid: 652cedea8f2601449a668f923e76b24e, type: 3}
+  - {fileID: 978679451, guid: 652cedea8f2601449a668f923e76b24e, type: 3}
+  - {fileID: -1510538599, guid: 652cedea8f2601449a668f923e76b24e, type: 3}
+  droneAltMove:
+  - {fileID: -356126103, guid: 652cedea8f2601449a668f923e76b24e, type: 3}
+  - {fileID: 1997699402, guid: 652cedea8f2601449a668f923e76b24e, type: 3}
+  - {fileID: -244591745, guid: 652cedea8f2601449a668f923e76b24e, type: 3}
+  saw:
+  - {fileID: -577463184, guid: 87e2a2ee86e3cca41b1040161fa3a67b, type: 3}
+  - {fileID: 240212151, guid: 87e2a2ee86e3cca41b1040161fa3a67b, type: 3}
+  - {fileID: -1823183680, guid: 87e2a2ee86e3cca41b1040161fa3a67b, type: 3}
+  crates:
+  - {fileID: 1449757429, guid: 167406da2e4532848a82b26cc66814a1, type: 3}
+  - {fileID: 35793668, guid: 167406da2e4532848a82b26cc66814a1, type: 3}

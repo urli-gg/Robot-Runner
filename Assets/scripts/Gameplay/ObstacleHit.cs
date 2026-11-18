@@ -1,21 +1,17 @@
-
 using UnityEngine;
 
-public class ObstacleHit : MonoBehaviour
+public sealed class ObstacleHit : MonoBehaviour
 {
+    private ObstacleMover obstacle;
+
+    private void Awake()
+    {
+        obstacle = GetComponentInParent<ObstacleMover>();
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        RunnerController robot =
-            other.GetComponentInParent<RunnerController>();
-
-        if (robot == null)
-            return;
-
-        if (GameManager.Instance != null)
-        {
-            GameManager.Instance.TakeDamage();
-        }
+        if (other.TryGetComponent<RunnerController>(out _))
+            obstacle.Hit();
     }
 }
-
-
