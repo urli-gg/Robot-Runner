@@ -125,7 +125,7 @@ internal sealed class RobotRunnerSmoke : MonoBehaviour
         yield return ClickAt(ButtonIn("mainmenuui", "SettingsButton").transform.position);
         yield return new WaitForSecondsRealtime(0.55f);
         UIWindow settings = Window("settingsui");
-        Check(settings.CanvasGroup.alpha > 0.99f, "Settings opens from main menu via touch.");
+        Check(settings.CanvasGroup.alpha > 0.99f, "Settings opens from the main menu's pointer target.");
         var labels = settings.GetComponentsInChildren<TMP_Text>().Where(text =>
             text.name == "MusicLabel" || text.name == "SFXLabel" || text.name == "VolumeLabel").ToArray();
         Check(labels.Length == 3 && labels.All(text => text.rectTransform.rect.height > 40f &&
@@ -147,7 +147,7 @@ internal sealed class RobotRunnerSmoke : MonoBehaviour
             PlayerPrefs.GetInt("SFXEnabled", 1) == 0 &&
             Mathf.Abs(savedVolume - 0.31f) < 0.05f &&
             Mathf.Abs(PlayerPrefs.GetFloat("GameVolume") - savedVolume) < 0.01f,
-            "Touch toggles and moves the volume slider. Audio controls persist their values.");
+            "The toggle and volume pointer targets persist their values.");
         Check(AudioManager.Instance.AudioManagerData.MusicAudioMixerGroup.audioMixer.GetFloat("MusicVolume", out float muted) &&
             muted < -79f, "Music toggle controls the mixer.");
         yield return CaptureLayout("04-settings", 1440, 648);
@@ -188,11 +188,15 @@ internal sealed class RobotRunnerSmoke : MonoBehaviour
         Check(jumps == 2 && shortApex > 0.8f && longApex > shortApex + 0.5f,
             $"Actual touch jumps produce distinct heights ({shortApex:F2} and {longApex:F2} units).");
 
-        yield return ClickAt(GameObject.Find("PauseButton").transform.position);
+        Vector2 pausePosition = GameObject.Find("PauseButton").transform.position;
+        yield return TouchClick(pausePosition);
+        Check(jumps == 2, "A synthetic touch over Pause is filtered from jump input.");
+        if (game.IsPlaying)
+            yield return ClickAt(pausePosition);
         yield return new WaitForSecondsRealtime(0.36f);
         int pausedScore = game.Score;
         Check(!game.IsPlaying && Window("pauseui").CanvasGroup.alpha > 0.99f && jumps == 2, "Touching Pause does not jump.");
-        yield return ClickAt(new Vector2(Screen.width * 0.06f, Screen.height * 0.36f));
+        yield return TouchClick(new Vector2(Screen.width * 0.06f, Screen.height * 0.36f));
         Check(game.Score == pausedScore && jumps == 2, "Paused touch and score remain idle.");
         yield return CaptureLayout("06-pause", 1280, 590);
         yield return ClickAt(ButtonIn("pauseui", "SettingsButton").transform.position);
@@ -348,13 +352,34 @@ internal sealed class RobotRunnerSmoke : MonoBehaviour
 
     private IEnumerator ClickAt(Vector2 position)
     {
+        EventSystem system = EventSystem.current;
+        var pointer = new PointerEventData(system)
+        {
+            position = position,
+            button = PointerEventData.InputButton.Left
+        };
         var results = new List<RaycastResult>();
-        EventSystem.current.RaycastAll(new PointerEventData(EventSystem.current) { position = position }, results);
-        findings.Add("Touch target: " + (results.Count == 0 ? "none" : results[0].gameObject.name));
+        system.RaycastAll(pointer, results);
+        Check(results.Count != 0, "The control is reachable via Unity's graphic raycaster.");
+        RaycastResult hit = results[0];
+        pointer.pointerCurrentRaycast = pointer.pointerPressRaycast = hit;
+        GameObject pressed = ExecuteEvents.ExecuteHierarchy(hit.gameObject, pointer, ExecuteEvents.pointerDownHandler);
+        if (pressed != null)
+            ExecuteEvents.Execute(pressed, pointer, ExecuteEvents.pointerUpHandler);
+        ExecuteEvents.ExecuteHierarchy(hit.gameObject, pointer, ExecuteEvents.pointerClickHandler);
+        yield return null;
+    }
+
+    private IEnumerator TouchClick(Vector2 position)
+    {
         SetTouch(position, TouchPhase.Began);
-        yield return new WaitForSecondsRealtime(0.105f);
+        yield return null;
+        yield return null;
+        yield return new WaitForSecondsRealtime(0.10f);
         SetTouch(position, TouchPhase.Ended);
-        yield return new WaitForSecondsRealtime(0.105f);
+        yield return null;
+        yield return null;
+        yield return new WaitForSecondsRealtime(0.10f);
     }
 
     private void SetTouch(Vector2 position, TouchPhase phase)

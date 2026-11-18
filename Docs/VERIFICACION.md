@@ -2,7 +2,7 @@
 
 ## Prueba de escritorio
 
-La prueba de humo usa el player de desarrollo de Windows construido con Unity 6000.5.9f1. Inyecta toques con Input System para pulsar controles reales. La prueba de recorrido usa el controlador del juego con colliders activos y registra las instancias del pool.
+La prueba de humo usa el player de desarrollo de Windows construido con Unity 6000.5.9f1. Los saltos y el descarte de toques sobre Pause se prueban con eventos táctiles de Input System. La navegación y los ajustes se prueban con el raycaster y los eventos de puntero de Unity. La prueba de recorrido usa el controlador del juego con colliders activos y registra las instancias del pool.
 
 | Comprobación | Cobertura |
 |---|---|
@@ -15,7 +15,11 @@ La prueba de humo usa el player de desarrollo de Windows construido con Unity 60
 
 El comando de compilación valida las referencias de scripts en la escena y los prefabs de obstáculos. El perfil de salto y los colliders se comprueban a 61 velocidades entre 5,6 y 7,85 unidades por segundo.
 
-En la revisión visual se corrigió el orden de dibujo del HUD y el parentesco de las etiquetas SFX y Volume. El test comprueba esas relaciones y el retorno a Pause al cerrar Settings.
+La pasada final terminó con **PASS**. Los toques de referencia produjeron saltos de 1,29 y 2,49 unidades. La partida automatizada completó 300 segundos sin perder vidas, con 95 saltos, un máximo observado de dos obstáculos activos y nueve instancias asignadas al pool.
+
+En la revisión visual se corrigió el orden de dibujo del HUD y el parentesco de las etiquetas SFX y Volume. El test comprueba esas relaciones y el retorno a Pause al cerrar Settings. También se corrigió el registro que emitía «Window not found» por cada ventana descartada durante una búsqueda que finalmente tenía éxito.
+
+Las capturas locales comparan la partida archivada de `main` (`2d32b4c`) con Professional Edition a 1280 × 590. Ambas proceden de players de desarrollo de Windows.
 
 ## APK de prueba
 
