@@ -32,6 +32,8 @@ internal static class RunnerAudioImporter
         });
         Add(data, "sectorEntry", 0.28, 0.45f, (t, noise) =>
             Sweep(420, 390, t) * 0.46 + Sweep(628, 590, t) * 0.24);
+        Add(data, "barrierWarning", 0.14, 0.31f, (t, noise) =>
+            Sweep(620, -1300, t) * 0.42 + Sweep(117, 430, t) * 0.22 + noise * 0.18);
         EditorUtility.SetDirty(data);
     }
 

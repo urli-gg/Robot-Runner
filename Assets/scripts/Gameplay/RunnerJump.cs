@@ -23,7 +23,9 @@ public readonly struct RunnerJump
         Height = height;
     }
 
-    public float LongFlight => TimeAbove(0f, true) + Step;
+    public float LongFlight => Flight(true);
+
+    public float Flight(bool hold) => ClearanceWindow(0f, hold).y + Step;
 
     public float TimeAbove(float clearance, bool hold)
     {

@@ -258,6 +258,12 @@ internal static class FactoryArtImporter
         return pixels;
     }
 
+    internal static Sprite[] HazardClip(int biome, string category, string prefix, int pixelsPerUnit = 25)
+    {
+        var names = NamesFor(prefix, 3);
+        return Clip(ImportFrames(biome, category, names, pixelsPerUnit, Pivot.Gameplay), prefix, 3);
+    }
+
     private enum Pivot { Center, Gameplay }
 
     private static IDictionary<string, Sprite> ImportFrames(int biome, string category,

@@ -147,6 +147,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObstacleMover
   kind: 0
+  firstLevel: 0
+  holdJump: 0
+  stageWeights: {x: 1, y: 1, z: 1, w: 1}
 --- !u!114 &6521690280640751926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,6 +205,9 @@ MonoBehaviour:
   kind: 0
   visuals:
   - {fileID: 2703185248399418554}
+  biomeClips: []
+  pressHitbox: {fileID: 0}
+  pressTop: 0
 --- !u!1 &7942272330474310241
 GameObject:
   m_ObjectHideFlags: 0
