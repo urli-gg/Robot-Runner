@@ -1423,6 +1423,72 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Toggle_Activation_PingPong_01
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 52
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12246a8afd01887448f132b89e813147
+      internalID: 1988754079
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toggle_Activation_PingPong_02
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 52
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8bbbddd0980b3b4a9bfb09d3bdb9b75
+      internalID: 332513478
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toggle_Activation_PingPong_03
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 52
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c7c838109846849af4395377161382
+      internalID: -85263864
+      vertices: []
+      indices:
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -1449,6 +1515,9 @@ TextureImporter:
       RoboticArm_Grab_PingPong_01: 1276444303
       RoboticArm_Grab_PingPong_02: -1544396328
       RoboticArm_Grab_PingPong_03: -293086605
+      Toggle_Activation_PingPong_01: 1988754079
+      Toggle_Activation_PingPong_02: 332513478
+      Toggle_Activation_PingPong_03: -85263864
       props_animated_0: -6290253329420320134
       props_animated_1: -8130273253793748619
       props_animated_10: -4558985433041199708

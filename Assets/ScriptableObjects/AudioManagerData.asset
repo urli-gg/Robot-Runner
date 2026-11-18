@@ -67,3 +67,9 @@ MonoBehaviour:
     volume: 0.45
     pitch: 1
     audioType: 1
+  - name: barrierWarning
+    clip: {fileID: 8300000, guid: 2dee1e866a14bce4383d2457026507c7, type: 3}
+    loop: 0
+    volume: 0.31
+    pitch: 1
+    audioType: 1

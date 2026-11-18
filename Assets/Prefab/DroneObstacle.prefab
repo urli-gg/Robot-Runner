@@ -48,6 +48,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObstacleMover
   kind: 2
+  firstLevel: 0
+  holdJump: 0
+  stageWeights: {x: 1, y: 1, z: 1, w: 1}
 --- !u!50 &7661120291230347730
 Rigidbody2D:
   serializedVersion: 5
@@ -91,6 +94,9 @@ MonoBehaviour:
   kind: 2
   visuals:
   - {fileID: 5795358508070646628}
+  biomeClips: []
+  pressHitbox: {fileID: 0}
+  pressTop: 0
 --- !u!1 &7241990408819535420
 GameObject:
   m_ObjectHideFlags: 0
