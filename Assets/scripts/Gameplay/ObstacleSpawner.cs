@@ -4,84 +4,119 @@ using UnityEngine;
 
 public sealed class ObstacleSpawner : MonoBehaviour
 {
+    [Serializable]
+    private sealed class Stage
+    {
+        public float interval;
+        public float jitter;
+        public float recovery;
+        [Range(0f, 1f)] public float patternChance;
+
+        public Stage(float interval, float jitter, float recovery, float patternChance)
+        {
+            this.interval = interval;
+            this.jitter = jitter;
+            this.recovery = recovery;
+            this.patternChance = patternChance;
+        }
+    }
+
+    [Serializable]
+    private sealed class Pattern
+    {
+        [Range(0, 3)] public int firstLevel;
+        public ObstacleKind[] kinds;
+
+        public Pattern(int firstLevel, params ObstacleKind[] kinds)
+        {
+            this.firstLevel = firstLevel;
+            this.kinds = kinds;
+        }
+    }
+
+    private sealed class Hazard
+    {
+        public ObstacleMover prefab;
+        public ObstacleEnvelope bounds;
+        public Vector2 window;
+        public float flight;
+        public readonly Stack<ObstacleMover> pool = new(2);
+        public float Lead => (window.x + window.y) * 0.5f;
+    }
+
     [SerializeField] private GameObject[] obstaclePrefabs;
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private RunnerController runner;
     [SerializeField] private Camera worldCamera;
-    [SerializeField] private float minSpawnTime = 3.2f;
-    [SerializeField] private float maxSpawnTime = 4.2f;
-    [SerializeField] private float minimumSpawnTime = 1.45f;
-    [SerializeField] private float secondsPerLevel = 25f;
-    [SerializeField] private float timeReductionPerLevel = 0.65f;
-    [SerializeField] private float baseObstacleSpeed = 5.6f;
-    [SerializeField] private float speedIncreasePerLevel = 0.75f;
-
-    // 0 = tap, 1 = hold, 2 = stay on the ground.
-    private static readonly int[][][] Patterns =
+    [SerializeField, Min(1f)] private float secondsPerLevel = 18f;
+    [SerializeField, Min(1f)] private float baseObstacleSpeed = 5.6f;
+    [SerializeField, Min(1f)] private float maximumSpeed = 9.4f;
+    [SerializeField, Min(0f)] private float speedIncreasePerLevel = 1.27f;
+    [SerializeField, Min(0.4f)] private float reactionTime = 0.60f;
+    [SerializeField, Min(0f)] private float safetyDistance = 0.12f;
+    [SerializeField] private Stage[] stages =
     {
-        new[] { new[] { 0 }, new[] { 1 }, new[] { 2 } },
-        new[] { new[] { 0, 2 }, new[] { 1, 0 }, new[] { 2, 1 } },
-        new[] { new[] { 2, 0, 1 }, new[] { 1, 2, 0 }, new[] { 0, 1, 2 } },
-        new[] { new[] { 0, 2, 1, 0 }, new[] { 1, 0, 2, 1 }, new[] { 2, 1, 0, 2 } }
+        new(2.25f, 0.55f, 0.42f, 0f),
+        new(1.40f, 0.32f, 0.28f, 0.54f),
+        new(0.98f, 0.22f, 0.22f, 0.68f),
+        new(0.72f, 0.14f, 0.16f, 0.80f)
+    };
+    [SerializeField] private Pattern[] patterns =
+    {
+        new(1, ObstacleKind.Saw, ObstacleKind.Patrol),
+        new(1, ObstacleKind.Boxes, ObstacleKind.Drone),
+        new(1, ObstacleKind.Patrol, ObstacleKind.Barrier),
+        new(2, ObstacleKind.Drone, ObstacleKind.Saw, ObstacleKind.Roller),
+        new(2, ObstacleKind.Roller, ObstacleKind.Barrier, ObstacleKind.Press),
+        new(3, ObstacleKind.Press, ObstacleKind.Boxes, ObstacleKind.Roller, ObstacleKind.Drone),
+        new(3, ObstacleKind.Saw, ObstacleKind.Patrol, ObstacleKind.Press, ObstacleKind.Barrier)
     };
 
+    private const float Clearance = 0.045f;
     private readonly List<ObstacleMover> active = new(12);
-    private Stack<ObstacleMover>[] pools;
-    private ObstacleMover[] prefabs;
-    private ObstacleEnvelope[] envelopes;
+    private readonly Dictionary<ObstacleKind, Hazard> hazards = new();
+    private System.Random random;
+    private FactoryBackdrop backdrop;
     private RunnerJump jump;
     private ObstacleMover previous;
     private float nextSpawnTime;
-    private int[] pattern;
+    private Pattern pattern;
     private int patternPosition;
-    private int lastKind = -1;
-    private int lastPattern = -1;
-    private int lastPatternLevel = -1;
+    private bool selecting = true;
+    private Hazard pending;
 
     public float SurvivalTime { get; private set; }
-    public float Speed => baseObstacleSpeed + SpeedProgress * speedIncreasePerLevel;
-    public int Level => Mathf.Min(Patterns.Length - 1, (int)SpeedProgress);
+    public float Speed => Mathf.Min(maximumSpeed, baseObstacleSpeed + SpeedProgress * speedIncreasePerLevel);
+    public int Level => (int)SpeedProgress;
     public int ActiveCount => active.Count;
     public int AllocatedCount { get; private set; }
+    public int ReusedCount { get; private set; }
+    public int CompletedPatterns { get; private set; }
+    public int TypeCount => hazards.Count;
+    public float MaxSpeed => Mathf.Min(maximumSpeed, baseObstacleSpeed + 3f * speedIncreasePerLevel);
 
-    private float SpeedProgress => Mathf.Clamp(SurvivalTime / Mathf.Max(1f, secondsPerLevel), 0f, Patterns.Length - 1);
-    private float MaxSpeed => baseObstacleSpeed + (Patterns.Length - 1) * speedIncreasePerLevel;
+    private float SpeedProgress => Mathf.Clamp(SurvivalTime / secondsPerLevel, 0f, 3f);
 
     private void Start()
     {
-        if (runner == null || spawnPoint == null || worldCamera == null ||
-            obstaclePrefabs == null || obstaclePrefabs.Length != 3)
+        try
         {
-            Debug.LogError("ObstacleSpawner requires a runner, camera, spawn point and three obstacle prefabs.", this);
+            ConfigureCourse();
+        }
+        catch (InvalidOperationException error)
+        {
+            Debug.LogError(error.Message, this);
             enabled = false;
             return;
         }
 
-        jump = runner.GetJumpProfile();
-        prefabs = new ObstacleMover[3];
-        envelopes = new ObstacleEnvelope[3];
-        pools = new Stack<ObstacleMover>[3];
-        foreach (GameObject prefabObject in obstaclePrefabs)
+        random = new System.Random();
+        backdrop = FindAnyObjectByType<FactoryBackdrop>();
+        foreach (Hazard hazard in hazards.Values)
         {
-            ObstacleMover prefab = prefabObject.GetComponent<ObstacleMover>();
-            int kind = (int)prefab.Kind;
-            prefabs[kind] = prefab;
-            envelopes[kind] = prefab.Measure();
+            hazard.pool.Push(Create(hazard));
+            hazard.pool.Push(Create(hazard));
         }
-
-        for (int i = 0; i < pools.Length; i++)
-        {
-            if (prefabs[i] == null || !Passable((ObstacleKind)i, envelopes[i], jump, baseObstacleSpeed))
-            {
-                Debug.LogError($"Obstacle kind {(ObstacleKind)i} is missing or fails its clearance check.", this);
-                enabled = false;
-                return;
-            }
-            pools[i] = new Stack<ObstacleMover>(3);
-            for (int j = 0; j < 3; j++)
-                pools[i].Push(Create(i));
-        }
-
         nextSpawnTime = 0.85f;
     }
 
@@ -90,122 +125,243 @@ public sealed class ObstacleSpawner : MonoBehaviour
         if (!GameManager.Instance.IsPlaying)
             return;
 
-        float delta = Time.fixedDeltaTime;
-        SurvivalTime += delta;
+        SurvivalTime += Time.fixedDeltaTime;
         float halfWidth = worldCamera.orthographicSize * worldCamera.aspect;
         float cameraX = worldCamera.transform.position.x;
-        float distance = Speed * delta;
+        float distance = Speed * Time.fixedDeltaTime;
         for (int i = active.Count - 1; i >= 0; i--)
         {
             ObstacleMover obstacle = active[i];
-            if (obstacle.X + envelopes[(int)obstacle.Kind].Right < cameraX - halfWidth - 0.8f)
+            Hazard hazard = hazards[obstacle.Kind];
+            if (obstacle.X + hazard.bounds.Right < cameraX - halfWidth - 0.8f)
             {
                 if (previous == obstacle)
                     previous = null;
                 obstacle.gameObject.SetActive(false);
-                pools[(int)obstacle.Kind].Push(obstacle);
+                hazard.pool.Push(obstacle);
                 active.RemoveAt(i);
             }
             else
-            {
                 obstacle.Advance(distance);
-            }
         }
 
         if (SurvivalTime < nextSpawnTime)
             return;
 
-        EnsurePattern();
-        int kind = pattern[patternPosition];
-        float spawnX = Mathf.Max(spawnPoint.position.x, cameraX + halfWidth + 1.25f);
-        float gap = previous == null ? float.PositiveInfinity :
-            spawnX + envelopes[kind].Left - (previous.X + envelopes[(int)previous.Kind].Right);
-        if (gap < RequiredGap(jump, MaxSpeed, Level) + distance)
-            return;
+        Stage stage = stages[Level];
+        if (selecting)
+        {
+            if (pattern == null)
+            {
+                pattern = SelectPattern(random, Level, previous != null ? previous.Kind : null);
+                patternPosition = 0;
+            }
+            pending = pattern == null ? SelectSingle(random, Level, previous != null ? previous.Kind : null) :
+                hazards[pattern.kinds[patternPosition]];
+            selecting = false;
+        }
 
-        ObstacleMover mover = pools[kind].Count > 0 ? pools[kind].Pop() : Create(kind);
-        mover.Launch(new Vector2(spawnX, spawnPoint.position.y));
+        // Spawn beyond the viewport and reserve reaction time before the jump command.
+        float spawnX = Mathf.Max(Mathf.Max(spawnPoint.position.x, cameraX + halfWidth + 0.25f - pending.bounds.Left),
+            runner.transform.position.x + MaxSpeed * (reactionTime + pending.Lead) - Center(pending.bounds));
+        if (previous != null)
+        {
+            Hazard prior = hazards[previous.Kind];
+            float centerGap = spawnX + Center(pending.bounds) - (previous.X + Center(prior.bounds));
+            float approachTime = (spawnX + Center(pending.bounds) - runner.transform.position.x) / Speed;
+            float speedBound = Mathf.Min(MaxSpeed, Speed + approachTime * speedIncreasePerLevel / secondsPerLevel);
+            if (centerGap < RequiredSeparation(prior, pending, stage, speedBound) + distance)
+                return;
+        }
+
+        ObstacleMover mover;
+        if (pending.pool.Count > 0)
+        {
+            mover = pending.pool.Pop();
+            if (mover.HasLaunched)
+                ReusedCount++;
+        }
+        else
+            mover = Create(pending);
+
+        mover.Launch(new Vector2(spawnX, spawnPoint.position.y), backdrop != null ? backdrop.BiomeIndex : 0);
         active.Add(mover);
         previous = mover;
-        lastKind = kind;
+        selecting = true;
 
-        patternPosition++;
-        float reduction = Level * timeReductionPerLevel;
-        float min = Mathf.Max(minimumSpawnTime, minSpawnTime - reduction);
-        float max = Mathf.Max(min + 0.45f, maxSpawnTime - reduction);
-        float recovery = patternPosition >= pattern.Length && Level > 0 ? 0.55f : 0f;
-        nextSpawnTime = SurvivalTime + UnityEngine.Random.Range(min, max) + recovery;
+        bool inPattern = pattern != null && ++patternPosition < pattern.kinds.Length;
+        if (pattern != null && !inPattern)
+            CompletedPatterns++;
+        if (!inPattern)
+            pattern = null;
+        nextSpawnTime = SurvivalTime + stage.interval + stage.jitter * (float)random.NextDouble()
+            + (inPattern ? 0f : stage.recovery);
     }
 
-    private void EnsurePattern()
+    private Pattern SelectPattern(System.Random source, int level, ObstacleKind? prior)
     {
-        if (pattern != null && patternPosition < pattern.Length)
-            return;
+        if (source.NextDouble() >= stages[level].patternChance)
+            return null;
 
-        int[][] options = Patterns[Level];
-        int first = UnityEngine.Random.Range(0, options.Length);
-        for (int i = 0; i < options.Length; i++)
+        Pattern choice = null;
+        int count = 0;
+        foreach (Pattern candidate in patterns)
         {
-            int candidate = (first + i) % options.Length;
-            if ((Level == lastPatternLevel && candidate == lastPattern) || options[candidate][0] == lastKind)
+            if (candidate.firstLevel > level || candidate.kinds[0] == prior || !Available(candidate, level))
                 continue;
-            lastPattern = candidate;
-            break;
+            if (source.Next(++count) == 0)
+                choice = candidate;
         }
-        lastPatternLevel = Level;
-        pattern = options[lastPattern];
-        patternPosition = 0;
+        return choice;
     }
 
-    private ObstacleMover Create(int kind)
+    private bool Available(Pattern candidate, int level)
     {
-        ObstacleMover obstacle = Instantiate(prefabs[kind], transform);
+        foreach (ObstacleKind kind in candidate.kinds)
+            if (!hazards.TryGetValue(kind, out Hazard hazard) || hazard.prefab.FirstLevel > level)
+                return false;
+        return true;
+    }
+
+    private Hazard SelectSingle(System.Random source, int level, ObstacleKind? prior)
+    {
+        Hazard choice = null;
+        double total = 0;
+        foreach (Hazard hazard in hazards.Values)
+        {
+            float weight = hazard.prefab.WeightAt(level);
+            if (weight <= 0f)
+                continue;
+            if (hazard.prefab.Kind == prior)
+                weight *= 0.2f;
+            total += weight;
+            if (source.NextDouble() * total < weight)
+                choice = hazard;
+        }
+        return choice;
+    }
+
+    private ObstacleMover Create(Hazard hazard)
+    {
+        ObstacleMover obstacle = Instantiate(hazard.prefab, transform);
         obstacle.gameObject.SetActive(false);
         AllocatedCount++;
         return obstacle;
     }
 
+    private void ConfigureCourse()
+    {
+        if (runner == null || spawnPoint == null || worldCamera == null || !worldCamera.orthographic ||
+            obstaclePrefabs == null || obstaclePrefabs.Length == 0 || stages.Length != 4 ||
+            baseObstacleSpeed <= 0f || maximumSpeed < baseObstacleSpeed || secondsPerLevel <= 0f ||
+            speedIncreasePerLevel < 0f || reactionTime < 0.4f || safetyDistance < 0f)
+            throw new InvalidOperationException("Obstacle course configuration is incomplete.");
+
+        jump = runner.GetJumpProfile();
+        hazards.Clear();
+        foreach (GameObject root in obstaclePrefabs)
+        {
+            if (root == null || !root.TryGetComponent(out ObstacleMover prefab) || hazards.ContainsKey(prefab.Kind))
+                throw new InvalidOperationException("Obstacle prefabs must each have a unique kind and a mover.");
+
+            ObstacleEnvelope bounds = prefab.Measure();
+            if (!(bounds.Right > bounds.Left && bounds.Top > bounds.Bottom))
+                throw new InvalidOperationException($"{prefab.name} has no supported trigger geometry.");
+
+            bool ground = bounds.Bottom < jump.Height + Clearance;
+            bool hold = prefab.RequiresHold;
+            var hazard = new Hazard
+            {
+                prefab = prefab,
+                bounds = bounds,
+                window = ground ? jump.ClearanceWindow(bounds.Top + Clearance, hold) : Vector2.zero,
+                flight = ground ? jump.Flight(hold) : 0f
+            };
+            if (ground && hazard.window.y - hazard.window.x < 2f * ApproachRadius(hazard) / baseObstacleSpeed + 2f * jump.Step)
+                throw new InvalidOperationException($"{prefab.name} has insufficient jump clearance at base speed.");
+            hazards.Add(prefab.Kind, hazard);
+        }
+
+        for (int level = 0; level < stages.Length; level++)
+        {
+            Stage stage = stages[level];
+            if (stage.interval <= 0f || stage.jitter < 0f || stage.recovery < 0.12f ||
+                SelectSingle(new System.Random(0), level, null) == null)
+                throw new InvalidOperationException($"Invalid obstacle settings for stage {level + 1}.");
+        }
+
+        foreach (Pattern item in patterns)
+            if (item.kinds == null || item.kinds.Length < 2)
+                throw new InvalidOperationException("An obstacle pattern needs at least two members.");
+    }
+
+    private float RequiredSeparation(Hazard previousHazard, Hazard next, Stage stage, float speedBound)
+    {
+        // Invariant: the runner finishes the previous action, then has recovery time
+        // before starting the next action. A grounded action occupies the whole hitbox.
+        float after = previousHazard.flight > 0f
+            ? speedBound * (previousHazard.flight - previousHazard.Lead + jump.Step)
+            : ApproachRadius(previousHazard);
+        float before = next.flight > 0f ? speedBound * (next.Lead + jump.Step) : ApproachRadius(next);
+        return Mathf.Max(ApproachRadius(previousHazard) + ApproachRadius(next),
+            after + before + speedBound * stage.recovery) + safetyDistance;
+    }
+
+    private float ApproachRadius(Hazard hazard) => (hazard.bounds.Right - hazard.bounds.Left + jump.Width) * 0.5f;
+    private static float Center(ObstacleEnvelope bounds) => (bounds.Left + bounds.Right) * 0.5f;
+
     public void ValidateCourse()
     {
-        RunnerJump profile = runner.GetJumpProfile();
-        foreach (GameObject prefab in obstaclePrefabs)
+        if (random == null)
+            ConfigureCourse();
+        // Aspect 4:3 is the narrowest supported landscape layout. The reaction
+        // clock begins when the hazard enters view, not when it is instantiated.
+        float viewRight = worldCamera.transform.position.x + worldCamera.orthographicSize * (4f / 3f);
+        foreach (Hazard hazard in hazards.Values)
         {
-            ObstacleMover mover = prefab.GetComponent<ObstacleMover>();
-            ObstacleEnvelope bounds = mover.Measure();
-            for (int step = 0; step <= 60; step++)
+            float sight = viewRight - runner.transform.position.x + Center(hazard.bounds) - hazard.bounds.Left;
+            float visibleReaction = sight / MaxSpeed - Mathf.Max(hazard.Lead, ApproachRadius(hazard) / MaxSpeed);
+            if (visibleReaction < reactionTime)
+                throw new InvalidOperationException($"{hazard.prefab.name} gives {visibleReaction:F3} s of visible reaction at maximum speed (requires {reactionTime:F3} s).");
+
+            for (int sample = 0; sample <= 60; sample++)
             {
-                float speed = Mathf.Lerp(baseObstacleSpeed, MaxSpeed, step / 60f);
-                if (!Passable(mover.Kind, bounds, profile, speed))
-                    throw new InvalidOperationException($"{mover.name} fails clearance at {speed:F2} units/s.");
+                float speed = Mathf.Lerp(baseObstacleSpeed, MaxSpeed, sample / 60f);
+                if (hazard.flight > 0f && hazard.window.y - hazard.window.x <
+                    2f * ApproachRadius(hazard) / speed + 2f * jump.Step)
+                    throw new InvalidOperationException($"{hazard.prefab.name} fails clearance at {speed:F2} units/s.");
             }
         }
 
-        for (int level = 0; level < Patterns.Length; level++)
+        // Check all legal adjacencies, including joins between different patterns.
+        // Returning to the ground between decisions makes this proof compositional.
+        foreach (Stage stage in stages)
+        foreach (Hazard prior in hazards.Values)
+        foreach (Hazard next in hazards.Values)
         {
-            foreach (int[] pattern in Patterns[level])
-                foreach (int kind in pattern)
-                    if (kind is < 0 or > 2)
-                        throw new InvalidOperationException("Pattern references an unknown obstacle.");
-
-            float recoveryTime = (RequiredGap(profile, MaxSpeed, level) - profile.Width) / MaxSpeed;
-            if (recoveryTime < profile.LongFlight + 0.2f)
-                throw new InvalidOperationException($"Level {level + 1} leaves insufficient time to land.");
+            float after = prior.flight > 0f ? prior.flight - prior.Lead : ApproachRadius(prior) / MaxSpeed;
+            float before = next.flight > 0f ? next.Lead : ApproachRadius(next) / MaxSpeed;
+            if (RequiredSeparation(prior, next, stage, MaxSpeed) / MaxSpeed - after - before < stage.recovery - 0.001f)
+                throw new InvalidOperationException("Consecutive obstacles leave insufficient recovery.");
         }
-    }
 
-    private static bool Passable(ObstacleKind kind, ObstacleEnvelope obstacle, RunnerJump profile, float speed)
-    {
-        const float clearance = 0.045f;
-        if (kind == ObstacleKind.Drone)
-            return obstacle.Bottom >= profile.Height + clearance;
-
-        float requiredTime = (obstacle.Right - obstacle.Left + profile.Width) / speed + profile.Step;
-        return profile.TimeAbove(obstacle.Top + clearance, kind == ObstacleKind.Boxes) >= requiredTime;
-    }
-
-    private static float RequiredGap(RunnerJump profile, float maxSpeed, int level)
-    {
-        float recovery = Mathf.Lerp(0.5f, 0.24f, level / (Patterns.Length - 1f));
-        return profile.Width + (profile.LongFlight + recovery) * maxSpeed;
+        for (int seed = 0; seed < 128; seed++)
+        {
+            var source = new System.Random(seed);
+            ObstacleKind? prior = null;
+            for (int level = 0; level < stages.Length; level++)
+            for (int sequence = 0; sequence < 64; sequence++)
+            {
+                Pattern selected = SelectPattern(source, level, prior);
+                if (selected == null)
+                    prior = SelectSingle(source, level, prior).prefab.Kind;
+                else
+                {
+                    if (!Available(selected, level))
+                        throw new InvalidOperationException("An unavailable course pattern was selected.");
+                    prior = selected.kinds[selected.kinds.Length - 1];
+                }
+            }
+        }
     }
 }
