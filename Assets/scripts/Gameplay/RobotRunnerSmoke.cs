@@ -34,6 +34,11 @@ internal sealed class RobotRunnerSmoke : MonoBehaviour
     private bool autoplay;
     private int maxActive;
     private int timedJumps;
+    private FactoryBackdrop backdrop;
+    private readonly HashSet<(ObstacleKind, int)> captures = new();
+    private readonly int[] stageSpawns = new int[4];
+    private readonly Dictionary<ObstacleMover, float> lastPosition = new();
+    private float holdUntil;
     private readonly HashSet<ObstacleKind> testedKinds = new();
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
@@ -177,6 +182,8 @@ internal sealed class RobotRunnerSmoke : MonoBehaviour
         Check(spawner.enabled, "Course enabled after checking collider envelopes at 61 speeds.");
         // Delay spawns until the touch and UI assertions finish.
         typeof(ObstacleSpawner).GetField("nextSpawnTime", Private).SetValue(spawner, 8f);
+        typeof(ObstacleSpawner).GetField("random", Private).SetValue(spawner, new System.Random(173));
+        backdrop = FindAnyObjectByType<FactoryBackdrop>();
         Vector2 openSpace = new(Screen.width * 0.50f, Screen.height * 0.29f);
         int jumps = 0;
         runner.Jumped += () => jumps++;
@@ -227,17 +234,40 @@ internal sealed class RobotRunnerSmoke : MonoBehaviour
             yield return new WaitForSeconds(3.2f);
             yield return CaptureLayout(file, 1280, 590);
         }
-        yield return new WaitUntil(() => spawner.SurvivalTime >= 300f || game.IsGameOver);
+        yield return new WaitUntil(() => spawner.SurvivalTime >= 420f || game.IsGameOver);
         Time.timeScale = 1f;
         autoplay = false;
         driveJump(false);
-        Check(game.IsPlaying && game.Lives == 2 && testedKinds.Count == 3, "Autoplay crossed all three collider types without taking damage.");
-        Check(spawner.AllocatedCount <= 12 && maxActive <= 6,
-            $"300 in-game seconds at all difficulty tiers. {timedJumps} planned jumps, {maxActive} simultaneously active obstacles, {spawner.AllocatedCount} pooled instances.");
+        Check(game.IsPlaying && game.Lives == 2 && testedKinds.Count == spawner.TypeCount &&
+            Enum.GetValues(typeof(ObstacleKind)).Cast<ObstacleKind>().All(testedKinds.Contains),
+            $"Autoplay crossed all {testedKinds.Count} obstacle types without damage at {spawner.SurvivalTime:F1} s.");
+        Check(spawner.AllocatedCount <= spawner.TypeCount * 3 && spawner.ReusedCount > 100 &&
+            maxActive is >= 3 and <= 6 && spawner.CompletedPatterns > 20 &&
+            Mathf.Approximately(spawner.Speed, spawner.MaxSpeed) && stageSpawns.All(count => count > 0),
+            $"420 s, {timedJumps} jumps, {maxActive} peak active, {spawner.AllocatedCount} pooled, " +
+            $"{spawner.ReusedCount} reuses, {spawner.CompletedPatterns} patterns, {spawner.Speed:F2} units/s. " +
+            $"Spawns by stage: {string.Join(", ", stageSpawns)}.");
+        Check(captures.Count == 16, $"Captured {captures.Count} hazard/biome combinations during active gameplay.");
 
         yield return new WaitUntil(() => runner.Grounded);
         spawner.enabled = false;
         var prefabs = (GameObject[])typeof(ObstacleSpawner).GetField("obstaclePrefabs", Private).GetValue(spawner);
+        threats.Clear();
+        spawner.GetComponentsInChildren(false, threats);
+        foreach (ObstacleMover obstacle in threats)
+            obstacle.gameObject.SetActive(false);
+        var livesField = typeof(GameManager).GetField("lives", Private);
+        var damageField = typeof(GameManager).GetField("lastDamageTime", Private);
+        foreach (GameObject prefab in prefabs)
+        {
+            ObstacleMover impact = MoveIntoRunner(prefab);
+            yield return new WaitForSeconds(0.14f);
+            Check(game.Lives == 1, $"{impact.Kind} trigger consumes one life on contact.");
+            Destroy(impact.gameObject);
+            yield return null;
+            livesField.SetValue(game, 2);
+            damageField.SetValue(game, float.NegativeInfinity);
+        }
         GameObject boxes = prefabs.Single(prefab => prefab.GetComponent<ObstacleMover>().Kind == ObstacleKind.Boxes);
         ObstacleMover first = MoveIntoRunner(boxes);
         yield return new WaitForSeconds(0.14f);
@@ -298,44 +328,74 @@ internal sealed class RobotRunnerSmoke : MonoBehaviour
             return;
 
         maxActive = Mathf.Max(maxActive, spawner.ActiveCount);
-        if (cleared != null && cleared.X < runner.transform.position.x - 1.5f)
+        if (cleared != null && Time.time >= holdUntil)
+            driveJump(false);
+
+        threats.Clear();
+        spawner.GetComponentsInChildren(false, threats);
+        ObstacleMover nearest = null;
+        float nearestDistance = float.PositiveInfinity;
+        float runnerX = runner.transform.position.x;
+        foreach (ObstacleMover obstacle in threats)
+        {
+            float x = obstacle.X;
+            if (!lastPosition.TryGetValue(obstacle, out float priorX) || x > priorX + 1f)
+                stageSpawns[spawner.Level]++;
+            ObstacleEnvelope bounds = obstacle.Measure();
+            if (x + bounds.Right < runnerX - profile.Width * 0.5f &&
+                (!lastPosition.ContainsKey(obstacle) || priorX + bounds.Right >= runnerX - profile.Width * 0.5f))
+                testedKinds.Add(obstacle.Kind);
+            lastPosition[obstacle] = x;
+
+            if (obstacle.Kind >= ObstacleKind.Patrol && x > -0.5f && x < 1.4f && obstacle.BiomeIndex == backdrop.BiomeIndex &&
+                captures.Add((obstacle.Kind, backdrop.BiomeIndex)))
+                ScreenCapture.CaptureScreenshot(Path.Combine(directory, $"hazard-{backdrop.BiomeIndex}-{obstacle.Kind}.png"));
+
+            float distance = x + (bounds.Left + bounds.Right) * 0.5f - runnerX;
+            if (distance > 0f && distance < nearestDistance)
+            {
+                nearest = obstacle;
+                nearestDistance = distance;
+            }
+        }
+
+        if (cleared != null && cleared != nearest && runner.Grounded)
         {
             driveJump(false);
             cleared = null;
         }
-        if (cleared != null || !runner.Grounded)
+        if (cleared != null || nearest == null || !runner.Grounded)
             return;
 
-        threats.Clear();
-        spawner.GetComponentsInChildren(false, threats);
-        foreach (ObstacleMover obstacle in threats)
-        {
-            ObstacleEnvelope envelope = obstacle.Measure();
-            float distance = obstacle.X + (envelope.Left + envelope.Right) * 0.5f - runner.transform.position.x;
-            if (distance < 0.5f || distance > 5f)
-                continue;
-            testedKinds.Add(obstacle.Kind);
-            if (obstacle.Kind == ObstacleKind.Drone)
-                continue;
+        ObstacleEnvelope envelope = nearest.Measure();
+        if (envelope.Bottom >= profile.Height + 0.045f)
+            return;
 
-            bool hold = obstacle.Kind == ObstacleKind.Boxes;
-            Vector2 window = profile.ClearanceWindow(envelope.Top + 0.045f, hold);
-            float lead = (window.x + window.y) * 0.5f + profile.Step * 0.5f;
-            if (distance > spawner.Speed * lead)
-                continue;
-            driveJump(true);
-            if (!hold)
-                driveJump(false);
-            cleared = obstacle;
-            timedJumps++;
-            break;
-        }
+        bool hold = nearest.RequiresHold;
+        Vector2 window = profile.ClearanceWindow(envelope.Top + 0.045f, hold);
+        float lead = (window.x + window.y) * 0.5f + profile.Step * 0.25f;
+        if (nearestDistance > spawner.Speed * lead)
+            return;
+        driveJump(true);
+        holdUntil = Time.time + (hold ? 0.25f : 0f);
+        if (!hold)
+            driveJump(false);
+        cleared = nearest;
+        timedJumps++;
     }
 
     private ObstacleMover MoveIntoRunner(GameObject prefab)
     {
         ObstacleMover obstacle = Instantiate(prefab).GetComponent<ObstacleMover>();
-        obstacle.Launch(new Vector2(runner.transform.position.x, runner.transform.position.y - 0.5f));
+        ObstacleEnvelope bounds = obstacle.Measure();
+        obstacle.Launch(new Vector2(runner.transform.position.x - (bounds.Left + bounds.Right) * 0.5f,
+            runner.transform.position.y - (bounds.Bottom + bounds.Top) * 0.5f));
+        // The press starts retracted, so align its current trigger with the runner.
+        if (obstacle.Kind == ObstacleKind.Press)
+        {
+            BoxCollider2D press = obstacle.GetComponent<BoxCollider2D>();
+            obstacle.Launch(new Vector2(runner.transform.position.x, runner.transform.position.y - press.offset.y));
+        }
         return obstacle;
     }
 
